@@ -1,0 +1,13 @@
+15:26:09.678 	INFO 	redisstreamsmgr.cp 	0043 	RedisStreams   	 Creating new instance of Redis QueueMgr
+15:26:09.678 	INFO 	redisstreamsmgr.cp 	0564 	connectStream  	 Connecting to redis host [127.0.0.1], port [1337]
+15:26:09.679 	INFO 	redisstreamsmgr.cp 	0581 	connectStream  	 Successfully connected to redis
+15:26:09.679 	INFO 	atmserver_main.cpp 	0377 	connectToRedis 	 127.0.0.1 , port [1337]
+15:26:09.679 	INFO 	atmserver_main.cpp 	0479 	main           	 Run Program
+15:26:09.680 	INFO 	dbconnmgr.cpp      	0160 	DBConnMgr      	 Connection pool created with Minimum connections [1] Maximum connections [50] Connection increments [1] and Retry counts [5]
+15:26:09.735 	INFO 	connectionstring.c 	0506 	parseConnectio 	 Database credentials: iris/******@10.100.53.26:1521/CMSATM
+15:26:09.849 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:09.852 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:09.928 	ERROR 	atmserver_main.cpp 	0568 	main           	 Polling not defined in param, setting default polling time
+15:26:09.929 	ERROR 	atmserver_main.cpp 	0582 	main           	 Polling not defined in param, setting default polling counter
+15:26:09.930 	ERROR 	redisconnection.cp 	0024 	RedisConnectio 	 Failed connecting to redis
+15:26:09.930 	INFO 	redisstreamsmgr.cp 	0043 	RedisStreams   	 Creating new instance of Redis QueueMgr

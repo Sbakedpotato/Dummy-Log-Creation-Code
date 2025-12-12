@@ -1,0 +1,4 @@
+12:25:12.50 	INFO 	redisstreamreader. 	0419 	onConnect      	 Reader Connected -> 2001
+12:25:12.51 	INFO 	redisstreamreader. 	0286 	createGroup    	 Creating group [iris_2001GROUP]
+12:25:12.51 	ERROR 	redisstreamreader. 	0389 	handleAuth     	 ERR AUTH <password> called without any password configured for the default user. Are you sure your configuration is correct?
+12:25:12.53 	INFO 	redisstreamreader. 	0276 	groupCallback  	 Group created

@@ -1,0 +1,95 @@
+00:03:32.479 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+00:03:32.479 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [4]
+00:03:32.479 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+00:03:32.479 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+00:03:32.481 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251030190051000210] updated successfully.
+00:04:22.796 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:04:22.796 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:04:22.798 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+00:04:22.798 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:04:22.798 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+00:04:22.798 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+00:04:22.798 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:04:22.798 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+00:04:22.798 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+00:04:22.799 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+00:04:22.799 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+00:04:22.799 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [41] to 241
+00:04:22.800 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:04:22.800 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000
+00:04:22.801 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+00:04:22.801 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [3]
+00:04:22.801 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+00:04:22.801 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+00:04:22.802 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251030190051000210] updated successfully.
+00:05:13.18 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:05:13.18 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:05:13.20 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+00:05:13.20 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:05:13.20 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+00:05:13.20 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+00:05:13.20 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:05:13.20 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+00:05:13.20 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+00:05:13.20 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+00:05:13.21 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+00:05:13.21 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [41] to 241
+00:05:13.21 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:05:13.21 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000
+00:05:13.23 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+00:05:13.23 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [2]
+00:05:13.23 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+00:05:13.23 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+00:05:13.26 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251030190051000210] updated successfully.
+00:06:04.83 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:06:04.83 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:06:04.86 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+00:06:04.86 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:06:04.86 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+00:06:04.86 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+00:06:04.86 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:06:04.86 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+00:06:04.86 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+00:06:04.87 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+00:06:04.87 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+00:06:04.87 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [41] to 241
+00:06:04.88 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:06:04.88 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000
+00:06:04.90 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+00:06:04.90 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [1]
+00:06:04.90 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+00:06:04.90 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+00:06:04.91 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251030190051000210] updated successfully.
+00:06:54.288 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:06:54.288 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:06:54.290 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+00:06:54.290 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:06:54.290 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+00:06:54.290 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+00:06:54.290 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:06:54.290 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+00:06:54.290 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+00:06:54.291 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+00:06:54.291 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+00:06:54.291 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [41] to 241
+00:06:54.292 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:06:54.292 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000
+00:06:54.293 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+00:06:54.293 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [0]
+00:06:54.293 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+00:06:54.293 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+00:06:54.295 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251030190051000210] updated successfully.
+11:45:51.396 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:45:51.396 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+11:45:51.481 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+11:45:51.481 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:45:51.481 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+11:45:51.481 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+11:45:51.481 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:45:51.481 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+11:45:51.481 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+11:45:51.482 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+11:45:51.482 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+11:45:51.483 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [42] to 241
+11:45:51.485 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:45:51.485 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000

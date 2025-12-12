@@ -1,0 +1,851 @@
+00:03:29.811 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531723 Received message with priority [1]
+00:03:29.812 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531723 Applying Outgoing Rules
+00:03:29.812 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531723 No record found
+00:03:29.812 	ERROR 	rediscache.cpp     	0066 	find           	61751228531723 Unable to find key:RULEENGINE_OUTGOING_HOST
+00:03:29.812 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531723 No record found
+00:03:29.812 	ERROR 	rediscache.cpp     	0066 	find           	61751228531723 Unable to find key:RULEENGINE_OUTGOING_HOST*
+00:03:29.813 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531723 No record found
+00:03:29.813 	ERROR 	rediscache.cpp     	0066 	find           	61751228531723 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:03:29.815 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531723 Payment Network Record got and FRMS Mode = []
+00:03:29.816 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531723 No record found
+00:03:29.816 	ERROR 	rediscache.cpp     	0066 	find           	61751228531723 Unable to find key:Configuration_FRMSV2
+00:03:29.816 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531723 Could not find corresponding parameter for key = [V2FRMS]
+00:03:29.816 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531723 Attaching library ./lib/libtranslatorhostiso87.so
+00:03:29.816 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531723 Setting message format [hostiso87]
+00:03:29.817 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531723 Message Stamp = [20251030190051000210530319000210484838**********]
+00:03:29.817 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531723 DateTime = [20251030190051]
+00:03:29.817 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531723 Stan [000210]
+00:03:29.817 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531723 RRN [530319000210]
+00:03:29.817 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531723 STEP 1: Institution based customization done successfully
+00:03:29.817 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531723 STEP 2: Outgoing fields mapped successfully
+00:03:29.817 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531723 STEP 3: Transaction specific customization done successfully
+00:03:29.817 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531723 Build sub fields, for UAEPOS
+00:03:29.817 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531723 STEP 4: Subfields built successfully
+00:03:29.817 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531723 Start building message
+00:03:29.817 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 LLVariable  ->ASCII ->Length = [18], Position = [2]
+00:03:29.817 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+00:03:29.817 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [6], Position = [18]
+00:03:29.817 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+00:03:29.817 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.817 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.817 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [12], Position = [24]
+00:03:29.817 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-4 AMOUNT_TRANSACTION [12][000000006200]Fixed Encoded[ASCII]
+00:03:29.817 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [10], Position = [36]
+00:03:29.817 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-7 TRANSMISSION_DATE_TIME [10][1030190051]Fixed Encoded[ASCII]
+00:03:29.817 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [6], Position = [46]
+00:03:29.817 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000210]Fixed Encoded[ASCII]
+00:03:29.817 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [6], Position = [52]
+00:03:29.817 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-12 TIME_LOCAL_TRANSACTION [6][000052]Fixed Encoded[ASCII]
+00:03:29.817 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [4], Position = [58]
+00:03:29.817 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+00:03:29.817 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [4], Position = [62]
+00:03:29.817 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-15 DATE_SETTLEMENT [4][1031]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [4], Position = [66]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [3], Position = [70]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-22 POS_ENTRY_MODE [3][0100]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 LLVariable  ->ASCII ->Length = [13], Position = [75]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [12], Position = [86]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530319000210]Fixed Encoded[ASCII]
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [3], Position = [98]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-49 CURRENCY_CODE_TRANSACTION [3][840]Fixed Encoded[ASCII]
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531723 Condition unmatched
+00:03:29.818 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61751228531723 Building bitmap
+00:03:29.818 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61751228531723 Bitmap [0111001000111110000001000000000100001000000000001000000000000000]
+00:03:29.818 	INFO 	translatoriso.cpp  	0087 	buildMessage   	61751228531723 Bitmap built successfully
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [3], Position = [0]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-1 ApplMessageProtocol [3][ISO]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [2], Position = [3]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-2 Product [2][01]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [2], Position = [5]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-3 Version [2][10]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [3], Position = [7]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-4 FIELD_IN_ERROR [3][000]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [1], Position = [10]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-5 ACQUIRER_TYPE [1][0]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [1], Position = [11]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-6 ISSUER_TYPE [1][0]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531723 Fixed     ->ASCII ->Length = [4], Position = [12]
+00:03:29.818 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531723 DE-7 MESSAGE_TYPE [4][0200]Fixed Encoded[ASCII]
+00:03:29.818 	INFO 	translatoriso.cpp  	0118 	buildMessage   	61751228531723 Header built successfully
+00:03:29.818 	INFO 	translatoriso.cpp  	0120 	buildMessage   	61751228531723 Message built successfully
+00:03:29.818 	INFO 	translatoriso.cpp  	0127 	buildMessage   	61751228531723 Header Length is = [16]
+00:03:29.818 	INFO 	translatoriso.cpp  	0130 	buildMessage   	61751228531723 Message Fields Length is = [109]
+00:03:29.818 	INFO 	translatoriso.cpp  	0133 	buildMessage   	61751228531723 Message Length is = [125]
+00:03:29.818 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61751228531723 Message built successfully
+00:03:29.820 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531723 THREADTIME 00:00:00.008216
+00:03:29.820 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531723 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:03:29.821 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531723 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:03:29.822 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531723 401
+00:03:29.822 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531723 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:03:29.823 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531723 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:03:32.480 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531725 Received message with priority [1]
+00:03:32.480 	CRITICAL 	logger.cpp         	0596 	setLogType     	61751228531725 null value received in logLevel
+00:03:32.480 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531725 Applying Outgoing Rules
+00:03:32.481 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:03:32.481 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST
+00:03:32.481 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:03:32.481 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST*
+00:03:32.481 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:03:32.481 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:03:32.483 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531725 Payment Network Record got and FRMS Mode = []
+00:03:32.483 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:03:32.483 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:Configuration_FRMSV2
+00:03:32.483 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531725 Could not find corresponding parameter for key = [V2FRMS]
+00:03:32.483 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531725 Attaching library ./lib/libtranslatorhostiso87.so
+00:03:32.483 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531725 Setting message format [hostiso87]
+00:03:32.484 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531725 Message Stamp = [20251030190051000210530319000210484838**********]
+00:03:32.484 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531725 DateTime = [20251030190051]
+00:03:32.484 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531725 Stan [000210]
+00:03:32.484 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531725 RRN [530319000210]
+00:03:32.484 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531725 STEP 1: Institution based customization done successfully
+00:03:32.484 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531725 STEP 2: Outgoing fields mapped successfully
+00:03:32.484 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531725 STEP 3: Transaction specific customization done successfully
+00:03:32.484 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531725 Build sub fields, for UAEPOS
+00:03:32.484 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531725 STEP 4: Subfields built successfully
+00:03:32.484 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531725 Start building message
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [18], Position = [2]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [18]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [24]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-4 AMOUNT_TRANSACTION [12][000000006200]Fixed Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [10], Position = [36]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-7 TRANSMISSION_DATE_TIME [10][1030190051]Fixed Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [46]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000210]Fixed Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [52]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-12 TIME_LOCAL_TRANSACTION [6][000052]Fixed Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [58]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [62]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [13], Position = [68]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [79]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530319000210]Fixed Encoded[ASCII]
+00:03:32.484 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [91]
+00:03:32.484 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-38 AUTH_ID_RESPONSE [6][009409]Fixed Encoded[ASCII]
+00:03:32.484 	ERROR 	translatoriso.cpp  	0552 	buildOutgoingM 	61751228531725 Failed validating mandatory fields
+00:03:32.484 	INFO 	translatoriso.cpp  	0553 	buildOutgoingM 	61751228531725 Reject Message received, inserting into DB
+00:03:32.484 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61751228531725 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+00:03:32.490 	INFO 	message.cpp        	1012 	insertRejectMe 	61751228531725 Reject log with id [61751228531725] inserted successfully
+00:03:32.490 	ERROR 	translatoriso.cpp  	0074 	buildMessage   	61751228531725 Failed building message fields
+00:03:32.490 	ERROR 	translator.cpp     	0503 	ProcessOutgoin 	61751228531725 Failed building outgoing raw message
+00:03:32.490 	ERROR 	translator.cpp     	0539 	ProcessOutgoin 	61751228531725 Failed processing outgoing message
+00:03:32.490 	ERROR 	translationmgr.cpp 	1204 	processOutgoin 	61751228531725 Unable to build message. Ignoring message
+00:03:32.490 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531725 THREADTIME 00:00:00.009700
+00:03:32.490 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:03:32.490 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:04:22.801 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531725 429
+00:04:22.801 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:04:22.802 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:04:22.803 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531725 Received message with priority [1]
+00:04:22.803 	CRITICAL 	logger.cpp         	0596 	setLogType     	61751228531725 null value received in logLevel
+00:04:22.803 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531725 Applying Outgoing Rules
+00:04:22.804 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:04:22.804 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST
+00:04:22.804 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:04:22.804 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST*
+00:04:22.804 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:04:22.804 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:04:22.806 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531725 Payment Network Record got and FRMS Mode = []
+00:04:22.806 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:04:22.806 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:Configuration_FRMSV2
+00:04:22.806 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531725 Could not find corresponding parameter for key = [V2FRMS]
+00:04:22.807 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531725 Attaching library ./lib/libtranslatorhostiso87.so
+00:04:22.807 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531725 Setting message format [hostiso87]
+00:04:22.808 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531725 Message Stamp = [20251030190051000210530319000210484838**********]
+00:04:22.808 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531725 DateTime = [20251030190051]
+00:04:22.808 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531725 Stan [000210]
+00:04:22.808 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531725 RRN [530319000210]
+00:04:22.808 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531725 STEP 1: Institution based customization done successfully
+00:04:22.809 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531725 STEP 2: Outgoing fields mapped successfully
+00:04:22.809 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531725 STEP 3: Transaction specific customization done successfully
+00:04:22.809 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531725 Build sub fields, for UAEPOS
+00:04:22.809 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531725 STEP 4: Subfields built successfully
+00:04:22.809 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531725 Start building message
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [18], Position = [2]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [18]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [24]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-4 AMOUNT_TRANSACTION [12][000000006200]Fixed Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [10], Position = [36]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-7 TRANSMISSION_DATE_TIME [10][1030190051]Fixed Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [46]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000210]Fixed Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [52]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-12 TIME_LOCAL_TRANSACTION [6][000052]Fixed Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [58]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [62]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [13], Position = [68]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [79]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530319000210]Fixed Encoded[ASCII]
+00:04:22.809 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [91]
+00:04:22.809 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-38 AUTH_ID_RESPONSE [6][009409]Fixed Encoded[ASCII]
+00:04:22.809 	ERROR 	translatoriso.cpp  	0552 	buildOutgoingM 	61751228531725 Failed validating mandatory fields
+00:04:22.809 	INFO 	translatoriso.cpp  	0553 	buildOutgoingM 	61751228531725 Reject Message received, inserting into DB
+00:04:22.809 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61751228531725 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+00:04:22.812 	INFO 	message.cpp        	1012 	insertRejectMe 	61751228531725 Reject log with id [61751228531725] inserted successfully
+00:04:22.812 	ERROR 	translatoriso.cpp  	0074 	buildMessage   	61751228531725 Failed building message fields
+00:04:22.812 	ERROR 	translator.cpp     	0503 	ProcessOutgoin 	61751228531725 Failed building outgoing raw message
+00:04:22.812 	ERROR 	translator.cpp     	0539 	ProcessOutgoin 	61751228531725 Failed processing outgoing message
+00:04:22.812 	ERROR 	translationmgr.cpp 	1204 	processOutgoin 	61751228531725 Unable to build message. Ignoring message
+00:04:22.812 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531725 THREADTIME 00:00:00.009340
+00:04:22.812 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:04:22.813 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:05:13.24 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531725 429
+00:05:13.24 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:05:13.24 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:05:13.25 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531725 Received message with priority [1]
+00:05:13.26 	CRITICAL 	logger.cpp         	0596 	setLogType     	61751228531725 null value received in logLevel
+00:05:13.26 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531725 Applying Outgoing Rules
+00:05:13.26 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:05:13.26 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST
+00:05:13.26 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:05:13.26 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST*
+00:05:13.27 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:05:13.27 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:05:13.28 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531725 Payment Network Record got and FRMS Mode = []
+00:05:13.28 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:05:13.28 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:Configuration_FRMSV2
+00:05:13.29 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531725 Could not find corresponding parameter for key = [V2FRMS]
+00:05:13.29 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531725 Attaching library ./lib/libtranslatorhostiso87.so
+00:05:13.29 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531725 Setting message format [hostiso87]
+00:05:13.29 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531725 Message Stamp = [20251030190051000210530319000210484838**********]
+00:05:13.29 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531725 DateTime = [20251030190051]
+00:05:13.29 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531725 Stan [000210]
+00:05:13.29 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531725 RRN [530319000210]
+00:05:13.29 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531725 STEP 1: Institution based customization done successfully
+00:05:13.30 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531725 STEP 2: Outgoing fields mapped successfully
+00:05:13.30 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531725 STEP 3: Transaction specific customization done successfully
+00:05:13.30 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531725 Build sub fields, for UAEPOS
+00:05:13.30 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531725 STEP 4: Subfields built successfully
+00:05:13.30 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531725 Start building message
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [18], Position = [2]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [18]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [24]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-4 AMOUNT_TRANSACTION [12][000000006200]Fixed Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [10], Position = [36]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-7 TRANSMISSION_DATE_TIME [10][1030190051]Fixed Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [46]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000210]Fixed Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [52]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-12 TIME_LOCAL_TRANSACTION [6][000052]Fixed Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [58]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [62]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [13], Position = [68]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [79]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530319000210]Fixed Encoded[ASCII]
+00:05:13.30 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [91]
+00:05:13.30 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-38 AUTH_ID_RESPONSE [6][009409]Fixed Encoded[ASCII]
+00:05:13.30 	ERROR 	translatoriso.cpp  	0552 	buildOutgoingM 	61751228531725 Failed validating mandatory fields
+00:05:13.30 	INFO 	translatoriso.cpp  	0553 	buildOutgoingM 	61751228531725 Reject Message received, inserting into DB
+00:05:13.30 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61751228531725 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+00:05:13.32 	INFO 	message.cpp        	1012 	insertRejectMe 	61751228531725 Reject log with id [61751228531725] inserted successfully
+00:05:13.32 	ERROR 	translatoriso.cpp  	0074 	buildMessage   	61751228531725 Failed building message fields
+00:05:13.32 	ERROR 	translator.cpp     	0503 	ProcessOutgoin 	61751228531725 Failed building outgoing raw message
+00:05:13.32 	ERROR 	translator.cpp     	0539 	ProcessOutgoin 	61751228531725 Failed processing outgoing message
+00:05:13.32 	ERROR 	translationmgr.cpp 	1204 	processOutgoin 	61751228531725 Unable to build message. Ignoring message
+00:05:13.32 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531725 THREADTIME 00:00:00.006610
+00:05:13.32 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:05:13.33 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:06:04.90 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531725 429
+00:06:04.90 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:06:04.90 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:06:04.91 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531725 Received message with priority [1]
+00:06:04.91 	CRITICAL 	logger.cpp         	0596 	setLogType     	61751228531725 null value received in logLevel
+00:06:04.91 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531725 Applying Outgoing Rules
+00:06:04.91 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:06:04.91 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST
+00:06:04.92 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:06:04.92 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST*
+00:06:04.92 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:06:04.92 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:06:04.94 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531725 Payment Network Record got and FRMS Mode = []
+00:06:04.94 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:06:04.94 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:Configuration_FRMSV2
+00:06:04.95 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531725 Could not find corresponding parameter for key = [V2FRMS]
+00:06:04.95 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531725 Attaching library ./lib/libtranslatorhostiso87.so
+00:06:04.95 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531725 Setting message format [hostiso87]
+00:06:04.95 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531725 Message Stamp = [20251030190051000210530319000210484838**********]
+00:06:04.96 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531725 DateTime = [20251030190051]
+00:06:04.96 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531725 Stan [000210]
+00:06:04.96 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531725 RRN [530319000210]
+00:06:04.96 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531725 STEP 1: Institution based customization done successfully
+00:06:04.96 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531725 STEP 2: Outgoing fields mapped successfully
+00:06:04.96 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531725 STEP 3: Transaction specific customization done successfully
+00:06:04.96 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531725 Build sub fields, for UAEPOS
+00:06:04.96 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531725 STEP 4: Subfields built successfully
+00:06:04.96 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531725 Start building message
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [18], Position = [2]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [18]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [24]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-4 AMOUNT_TRANSACTION [12][000000006200]Fixed Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [10], Position = [36]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-7 TRANSMISSION_DATE_TIME [10][1030190051]Fixed Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [46]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000210]Fixed Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [52]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-12 TIME_LOCAL_TRANSACTION [6][000052]Fixed Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [58]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [62]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [13], Position = [68]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [79]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530319000210]Fixed Encoded[ASCII]
+00:06:04.96 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [91]
+00:06:04.96 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-38 AUTH_ID_RESPONSE [6][009409]Fixed Encoded[ASCII]
+00:06:04.96 	ERROR 	translatoriso.cpp  	0552 	buildOutgoingM 	61751228531725 Failed validating mandatory fields
+00:06:04.96 	INFO 	translatoriso.cpp  	0553 	buildOutgoingM 	61751228531725 Reject Message received, inserting into DB
+00:06:04.96 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61751228531725 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+00:06:04.99 	INFO 	message.cpp        	1012 	insertRejectMe 	61751228531725 Reject log with id [61751228531725] inserted successfully
+00:06:04.99 	ERROR 	translatoriso.cpp  	0074 	buildMessage   	61751228531725 Failed building message fields
+00:06:04.99 	ERROR 	translator.cpp     	0503 	ProcessOutgoin 	61751228531725 Failed building outgoing raw message
+00:06:04.99 	ERROR 	translator.cpp     	0539 	ProcessOutgoin 	61751228531725 Failed processing outgoing message
+00:06:04.99 	ERROR 	translationmgr.cpp 	1204 	processOutgoin 	61751228531725 Unable to build message. Ignoring message
+00:06:04.99 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531725 THREADTIME 00:00:00.008170
+00:06:04.99 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:06:04.100 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:06:54.293 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531725 429
+00:06:54.294 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:06:54.294 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:06:54.295 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531725 Received message with priority [1]
+00:06:54.295 	CRITICAL 	logger.cpp         	0596 	setLogType     	61751228531725 null value received in logLevel
+00:06:54.295 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531725 Applying Outgoing Rules
+00:06:54.295 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:06:54.295 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST
+00:06:54.295 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:06:54.295 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:RULEENGINE_OUTGOING_HOST*
+00:06:54.296 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:06:54.296 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:06:54.297 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531725 Payment Network Record got and FRMS Mode = []
+00:06:54.298 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531725 No record found
+00:06:54.298 	ERROR 	rediscache.cpp     	0066 	find           	61751228531725 Unable to find key:Configuration_FRMSV2
+00:06:54.298 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531725 Could not find corresponding parameter for key = [V2FRMS]
+00:06:54.298 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531725 Attaching library ./lib/libtranslatorhostiso87.so
+00:06:54.298 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531725 Setting message format [hostiso87]
+00:06:54.298 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531725 Message Stamp = [20251030190051000210530319000210484838**********]
+00:06:54.298 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531725 DateTime = [20251030190051]
+00:06:54.298 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531725 Stan [000210]
+00:06:54.298 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531725 RRN [530319000210]
+00:06:54.298 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531725 STEP 1: Institution based customization done successfully
+00:06:54.298 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531725 STEP 2: Outgoing fields mapped successfully
+00:06:54.298 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531725 STEP 3: Transaction specific customization done successfully
+00:06:54.298 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531725 Build sub fields, for UAEPOS
+00:06:54.298 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531725 STEP 4: Subfields built successfully
+00:06:54.298 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531725 Start building message
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [18], Position = [2]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [18]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [24]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-4 AMOUNT_TRANSACTION [12][000000006200]Fixed Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [10], Position = [36]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-7 TRANSMISSION_DATE_TIME [10][1030190051]Fixed Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [46]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000210]Fixed Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [52]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-12 TIME_LOCAL_TRANSACTION [6][000052]Fixed Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [58]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [4], Position = [62]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 LLVariable  ->ASCII ->Length = [13], Position = [68]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [12], Position = [79]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530319000210]Fixed Encoded[ASCII]
+00:06:54.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531725 Fixed     ->ASCII ->Length = [6], Position = [91]
+00:06:54.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531725 DE-38 AUTH_ID_RESPONSE [6][009409]Fixed Encoded[ASCII]
+00:06:54.299 	ERROR 	translatoriso.cpp  	0552 	buildOutgoingM 	61751228531725 Failed validating mandatory fields
+00:06:54.299 	INFO 	translatoriso.cpp  	0553 	buildOutgoingM 	61751228531725 Reject Message received, inserting into DB
+00:06:54.299 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61751228531725 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+00:06:54.301 	INFO 	message.cpp        	1012 	insertRejectMe 	61751228531725 Reject log with id [61751228531725] inserted successfully
+00:06:54.301 	ERROR 	translatoriso.cpp  	0074 	buildMessage   	61751228531725 Failed building message fields
+00:06:54.301 	ERROR 	translator.cpp     	0503 	ProcessOutgoin 	61751228531725 Failed building outgoing raw message
+00:06:54.301 	ERROR 	translator.cpp     	0539 	ProcessOutgoin 	61751228531725 Failed processing outgoing message
+00:06:54.301 	ERROR 	translationmgr.cpp 	1204 	processOutgoin 	61751228531725 Unable to build message. Ignoring message
+00:06:54.302 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531725 THREADTIME 00:00:00.006801
+00:06:54.302 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:06:54.302 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:07:30.188 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531725 429
+00:07:30.189 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:07:30.189 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531725 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:07:30.190 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531727 Received message with priority [1]
+00:07:30.190 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531727 Applying Outgoing Rules
+00:07:30.191 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531727 No record found
+00:07:30.192 	ERROR 	rediscache.cpp     	0066 	find           	61751228531727 Unable to find key:RULEENGINE_OUTGOING_HOST
+00:07:30.193 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531727 No record found
+00:07:30.193 	ERROR 	rediscache.cpp     	0066 	find           	61751228531727 Unable to find key:RULEENGINE_OUTGOING_HOST*
+00:07:30.193 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531727 No record found
+00:07:30.193 	ERROR 	rediscache.cpp     	0066 	find           	61751228531727 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:07:30.196 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531727 Payment Network Record got and FRMS Mode = []
+00:07:30.196 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531727 No record found
+00:07:30.196 	ERROR 	rediscache.cpp     	0066 	find           	61751228531727 Unable to find key:Configuration_FRMSV2
+00:07:30.196 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531727 Could not find corresponding parameter for key = [V2FRMS]
+00:07:30.196 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531727 Attaching library ./lib/libtranslatorhostiso87.so
+00:07:30.197 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531727 Setting message format [hostiso87]
+00:07:30.197 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531727 Message Stamp = [20251030190452000211530319000211484838**********]
+00:07:30.197 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531727 DateTime = [20251030190452]
+00:07:30.197 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531727 Stan [000211]
+00:07:30.197 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531727 RRN [530319000211]
+00:07:30.197 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531727 STEP 1: Institution based customization done successfully
+00:07:30.197 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531727 STEP 2: Outgoing fields mapped successfully
+00:07:30.197 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531727 STEP 3: Transaction specific customization done successfully
+00:07:30.197 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531727 Build sub fields, for UAEPOS
+00:07:30.197 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531727 STEP 4: Subfields built successfully
+00:07:30.198 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531727 Start building message
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 LLVariable  ->ASCII ->Length = [18], Position = [2]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [6], Position = [18]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [12], Position = [24]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-4 AMOUNT_TRANSACTION [12][000000005600]Fixed Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [10], Position = [36]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-7 TRANSMISSION_DATE_TIME [10][1030190452]Fixed Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [6], Position = [46]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000211]Fixed Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [6], Position = [52]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-12 TIME_LOCAL_TRANSACTION [6][000452]Fixed Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [4], Position = [58]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [4], Position = [62]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-15 DATE_SETTLEMENT [4][1031]Fixed Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [4], Position = [66]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [3], Position = [70]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-22 POS_ENTRY_MODE [3][0100]Fixed Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 LLVariable  ->ASCII ->Length = [13], Position = [75]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [12], Position = [86]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530319000211]Fixed Encoded[ASCII]
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [3], Position = [98]
+00:07:30.198 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-49 CURRENCY_CODE_TRANSACTION [3][840]Fixed Encoded[ASCII]
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531727 Condition unmatched
+00:07:30.198 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61751228531727 Building bitmap
+00:07:30.198 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61751228531727 Bitmap [0111001000111110000001000000000100001000000000001000000000000000]
+00:07:30.198 	INFO 	translatoriso.cpp  	0087 	buildMessage   	61751228531727 Bitmap built successfully
+00:07:30.198 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [3], Position = [0]
+00:07:30.199 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-1 ApplMessageProtocol [3][ISO]Fixed Encoded[ASCII]
+00:07:30.199 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [2], Position = [3]
+00:07:30.199 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-2 Product [2][01]Fixed Encoded[ASCII]
+00:07:30.199 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [2], Position = [5]
+00:07:30.199 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-3 Version [2][10]Fixed Encoded[ASCII]
+00:07:30.199 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [3], Position = [7]
+00:07:30.199 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-4 FIELD_IN_ERROR [3][000]Fixed Encoded[ASCII]
+00:07:30.199 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [1], Position = [10]
+00:07:30.199 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-5 ACQUIRER_TYPE [1][0]Fixed Encoded[ASCII]
+00:07:30.199 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [1], Position = [11]
+00:07:30.199 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-6 ISSUER_TYPE [1][0]Fixed Encoded[ASCII]
+00:07:30.199 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531727 Fixed     ->ASCII ->Length = [4], Position = [12]
+00:07:30.199 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531727 DE-7 MESSAGE_TYPE [4][0200]Fixed Encoded[ASCII]
+00:07:30.199 	INFO 	translatoriso.cpp  	0118 	buildMessage   	61751228531727 Header built successfully
+00:07:30.199 	INFO 	translatoriso.cpp  	0120 	buildMessage   	61751228531727 Message built successfully
+00:07:30.199 	INFO 	translatoriso.cpp  	0127 	buildMessage   	61751228531727 Header Length is = [16]
+00:07:30.199 	INFO 	translatoriso.cpp  	0130 	buildMessage   	61751228531727 Message Fields Length is = [109]
+00:07:30.199 	INFO 	translatoriso.cpp  	0133 	buildMessage   	61751228531727 Message Length is = [125]
+00:07:30.199 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61751228531727 Message built successfully
+00:07:30.200 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531727 THREADTIME 00:00:00.009627
+00:07:30.202 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531727 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:07:30.202 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531727 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:07:30.205 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531727 401
+00:07:30.205 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531727 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:07:30.205 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531727 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:14:33.909 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531729 Received message with priority [1]
+00:14:33.909 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531729 Applying Outgoing Rules
+00:14:33.910 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531729 No record found
+00:14:33.910 	ERROR 	rediscache.cpp     	0066 	find           	61751228531729 Unable to find key:RULEENGINE_OUTGOING_HOST
+00:14:33.910 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531729 No record found
+00:14:33.910 	ERROR 	rediscache.cpp     	0066 	find           	61751228531729 Unable to find key:RULEENGINE_OUTGOING_HOST*
+00:14:33.910 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531729 No record found
+00:14:33.910 	ERROR 	rediscache.cpp     	0066 	find           	61751228531729 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:14:33.914 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531729 Payment Network Record got and FRMS Mode = []
+00:14:33.914 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531729 No record found
+00:14:33.914 	ERROR 	rediscache.cpp     	0066 	find           	61751228531729 Unable to find key:Configuration_FRMSV2
+00:14:33.914 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531729 Could not find corresponding parameter for key = [V2FRMS]
+00:14:33.914 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531729 Attaching library ./lib/libtranslatorhostiso87.so
+00:14:33.915 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531729 Setting message format [hostiso87]
+00:14:33.915 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531729 Message Stamp = [20251030191156000212530319000212484838**********]
+00:14:33.915 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531729 DateTime = [20251030191156]
+00:14:33.915 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531729 Stan [000212]
+00:14:33.915 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531729 RRN [530319000212]
+00:14:33.915 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531729 STEP 1: Institution based customization done successfully
+00:14:33.915 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531729 STEP 2: Outgoing fields mapped successfully
+00:14:33.915 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531729 STEP 3: Transaction specific customization done successfully
+00:14:33.915 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531729 Build sub fields, for UAEPOS
+00:14:33.915 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531729 STEP 4: Subfields built successfully
+00:14:33.915 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531729 Start building message
+00:14:33.915 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 LLVariable  ->ASCII ->Length = [18], Position = [2]
+00:14:33.915 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+00:14:33.915 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [6], Position = [18]
+00:14:33.915 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+00:14:33.915 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.915 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.915 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [12], Position = [24]
+00:14:33.915 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-4 AMOUNT_TRANSACTION [12][000000004000]Fixed Encoded[ASCII]
+00:14:33.915 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [10], Position = [36]
+00:14:33.915 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-7 TRANSMISSION_DATE_TIME [10][1030191156]Fixed Encoded[ASCII]
+00:14:33.915 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [6], Position = [46]
+00:14:33.915 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000212]Fixed Encoded[ASCII]
+00:14:33.915 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [6], Position = [52]
+00:14:33.915 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-12 TIME_LOCAL_TRANSACTION [6][001156]Fixed Encoded[ASCII]
+00:14:33.915 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [4], Position = [58]
+00:14:33.915 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+00:14:33.915 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [4], Position = [62]
+00:14:33.915 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-15 DATE_SETTLEMENT [4][1031]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [4], Position = [66]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [3], Position = [70]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-22 POS_ENTRY_MODE [3][0100]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 LLVariable  ->ASCII ->Length = [13], Position = [75]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [12], Position = [86]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530319000212]Fixed Encoded[ASCII]
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [3], Position = [98]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-49 CURRENCY_CODE_TRANSACTION [3][840]Fixed Encoded[ASCII]
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531729 Condition unmatched
+00:14:33.916 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61751228531729 Building bitmap
+00:14:33.916 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61751228531729 Bitmap [0111001000111110000001000000000100001000000000001000000000000000]
+00:14:33.916 	INFO 	translatoriso.cpp  	0087 	buildMessage   	61751228531729 Bitmap built successfully
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [3], Position = [0]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-1 ApplMessageProtocol [3][ISO]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [2], Position = [3]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-2 Product [2][01]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [2], Position = [5]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-3 Version [2][10]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [3], Position = [7]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-4 FIELD_IN_ERROR [3][000]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [1], Position = [10]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-5 ACQUIRER_TYPE [1][0]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [1], Position = [11]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-6 ISSUER_TYPE [1][0]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531729 Fixed     ->ASCII ->Length = [4], Position = [12]
+00:14:33.916 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531729 DE-7 MESSAGE_TYPE [4][0200]Fixed Encoded[ASCII]
+00:14:33.916 	INFO 	translatoriso.cpp  	0118 	buildMessage   	61751228531729 Header built successfully
+00:14:33.916 	INFO 	translatoriso.cpp  	0120 	buildMessage   	61751228531729 Message built successfully
+00:14:33.916 	INFO 	translatoriso.cpp  	0127 	buildMessage   	61751228531729 Header Length is = [16]
+00:14:33.916 	INFO 	translatoriso.cpp  	0130 	buildMessage   	61751228531729 Message Fields Length is = [109]
+00:14:33.916 	INFO 	translatoriso.cpp  	0133 	buildMessage   	61751228531729 Message Length is = [125]
+00:14:33.916 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61751228531729 Message built successfully
+00:14:33.917 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531729 THREADTIME 00:00:00.008394
+00:14:33.917 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531729 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:14:33.918 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531729 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:14:33.920 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531729 401
+00:14:33.921 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531729 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:14:33.921 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531729 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:57:54.712 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531739 Received message with priority [1]
+00:57:54.712 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531739 Applying Outgoing Rules
+00:57:54.713 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531739 No record found
+00:57:54.713 	ERROR 	rediscache.cpp     	0066 	find           	61751228531739 Unable to find key:RULEENGINE_OUTGOING_HOST
+00:57:54.713 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531739 No record found
+00:57:54.713 	ERROR 	rediscache.cpp     	0066 	find           	61751228531739 Unable to find key:RULEENGINE_OUTGOING_HOST*
+00:57:54.713 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531739 No record found
+00:57:54.713 	ERROR 	rediscache.cpp     	0066 	find           	61751228531739 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:57:54.716 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531739 Payment Network Record got and FRMS Mode = []
+00:57:54.716 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531739 No record found
+00:57:54.716 	ERROR 	rediscache.cpp     	0066 	find           	61751228531739 Unable to find key:Configuration_FRMSV2
+00:57:54.716 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531739 Could not find corresponding parameter for key = [V2FRMS]
+00:57:54.717 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531739 Attaching library ./lib/libtranslatorhostiso87.so
+00:57:54.717 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531739 Setting message format [hostiso87]
+00:57:54.718 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531739 Message Stamp = [20251030195516000221530319000221484838**********]
+00:57:54.718 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531739 DateTime = [20251030195516]
+00:57:54.718 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531739 Stan [000221]
+00:57:54.718 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531739 RRN [530319000221]
+00:57:54.718 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531739 STEP 1: Institution based customization done successfully
+00:57:54.718 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531739 STEP 2: Outgoing fields mapped successfully
+00:57:54.718 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531739 STEP 3: Transaction specific customization done successfully
+00:57:54.718 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531739 Build sub fields, for UAEPOS
+00:57:54.718 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531739 STEP 4: Subfields built successfully
+00:57:54.718 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531739 Start building message
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 LLVariable  ->ASCII ->Length = [18], Position = [2]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [6], Position = [18]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+00:57:54.718 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.718 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [12], Position = [24]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-4 AMOUNT_TRANSACTION [12][000000004200]Fixed Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [10], Position = [36]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-7 TRANSMISSION_DATE_TIME [10][1030195516]Fixed Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [6], Position = [46]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000221]Fixed Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [6], Position = [52]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-12 TIME_LOCAL_TRANSACTION [6][005516]Fixed Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [4], Position = [58]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [4], Position = [62]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-15 DATE_SETTLEMENT [4][1031]Fixed Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [4], Position = [66]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [3], Position = [70]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-22 POS_ENTRY_MODE [3][0100]Fixed Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 LLVariable  ->ASCII ->Length = [13], Position = [75]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+00:57:54.718 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [12], Position = [86]
+00:57:54.718 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530319000221]Fixed Encoded[ASCII]
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [3], Position = [98]
+00:57:54.719 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-49 CURRENCY_CODE_TRANSACTION [3][840]Fixed Encoded[ASCII]
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531739 Condition unmatched
+00:57:54.719 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61751228531739 Building bitmap
+00:57:54.719 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61751228531739 Bitmap [0111001000111110000001000000000100001000000000001000000000000000]
+00:57:54.719 	INFO 	translatoriso.cpp  	0087 	buildMessage   	61751228531739 Bitmap built successfully
+00:57:54.719 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [3], Position = [0]
+00:57:54.719 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-1 ApplMessageProtocol [3][ISO]Fixed Encoded[ASCII]
+00:57:54.719 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [2], Position = [3]
+00:57:54.719 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-2 Product [2][01]Fixed Encoded[ASCII]
+00:57:54.719 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [2], Position = [5]
+00:57:54.719 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-3 Version [2][10]Fixed Encoded[ASCII]
+00:57:54.719 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [3], Position = [7]
+00:57:54.719 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-4 FIELD_IN_ERROR [3][000]Fixed Encoded[ASCII]
+00:57:54.719 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [1], Position = [10]
+00:57:54.719 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-5 ACQUIRER_TYPE [1][0]Fixed Encoded[ASCII]
+00:57:54.719 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [1], Position = [11]
+00:57:54.719 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-6 ISSUER_TYPE [1][0]Fixed Encoded[ASCII]
+00:57:54.719 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531739 Fixed     ->ASCII ->Length = [4], Position = [12]
+00:57:54.719 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531739 DE-7 MESSAGE_TYPE [4][0200]Fixed Encoded[ASCII]
+00:57:54.719 	INFO 	translatoriso.cpp  	0118 	buildMessage   	61751228531739 Header built successfully
+00:57:54.719 	INFO 	translatoriso.cpp  	0120 	buildMessage   	61751228531739 Message built successfully
+00:57:54.719 	INFO 	translatoriso.cpp  	0127 	buildMessage   	61751228531739 Header Length is = [16]
+00:57:54.719 	INFO 	translatoriso.cpp  	0130 	buildMessage   	61751228531739 Message Fields Length is = [109]
+00:57:54.719 	INFO 	translatoriso.cpp  	0133 	buildMessage   	61751228531739 Message Length is = [125]
+00:57:54.719 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61751228531739 Message built successfully
+00:57:54.720 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531739 THREADTIME 00:00:00.007864
+00:57:54.720 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531739 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:57:54.721 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531739 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:57:54.732 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531739 401
+00:57:54.733 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531739 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+00:57:54.733 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531739 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+01:08:01.515 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531742 Received message with priority [1]
+01:08:01.516 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531742 Applying Outgoing Rules
+01:08:01.517 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531742 No record found
+01:08:01.517 	ERROR 	rediscache.cpp     	0066 	find           	61751228531742 Unable to find key:RULEENGINE_OUTGOING_HOST
+01:08:01.517 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531742 No record found
+01:08:01.517 	ERROR 	rediscache.cpp     	0066 	find           	61751228531742 Unable to find key:RULEENGINE_OUTGOING_HOST*
+01:08:01.517 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531742 No record found
+01:08:01.517 	ERROR 	rediscache.cpp     	0066 	find           	61751228531742 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+01:08:01.521 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531742 Payment Network Record got and FRMS Mode = []
+01:08:01.521 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531742 No record found
+01:08:01.521 	ERROR 	rediscache.cpp     	0066 	find           	61751228531742 Unable to find key:Configuration_FRMSV2
+01:08:01.521 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531742 Could not find corresponding parameter for key = [V2FRMS]
+01:08:01.522 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531742 Attaching library ./lib/libtranslatorhostiso87.so
+01:08:01.522 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531742 Setting message format [hostiso87]
+01:08:01.522 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531742 Message Stamp = [20251030200523000223530320000223484838**********]
+01:08:01.522 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531742 DateTime = [20251030200523]
+01:08:01.522 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531742 Stan [000223]
+01:08:01.522 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531742 RRN [530320000223]
+01:08:01.523 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531742 STEP 1: Institution based customization done successfully
+01:08:01.523 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531742 STEP 2: Outgoing fields mapped successfully
+01:08:01.523 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531742 STEP 3: Transaction specific customization done successfully
+01:08:01.523 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531742 Build sub fields, for UAEPOS
+01:08:01.523 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531742 STEP 4: Subfields built successfully
+01:08:01.523 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531742 Start building message
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 LLVariable  ->ASCII ->Length = [18], Position = [2]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [6], Position = [18]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+01:08:01.523 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.523 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [12], Position = [24]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-4 AMOUNT_TRANSACTION [12][000000004200]Fixed Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [10], Position = [36]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-7 TRANSMISSION_DATE_TIME [10][1030200523]Fixed Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [6], Position = [46]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000223]Fixed Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [6], Position = [52]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-12 TIME_LOCAL_TRANSACTION [6][010523]Fixed Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [4], Position = [58]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [4], Position = [62]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-15 DATE_SETTLEMENT [4][1031]Fixed Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [4], Position = [66]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [3], Position = [70]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-22 POS_ENTRY_MODE [3][0100]Fixed Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 LLVariable  ->ASCII ->Length = [13], Position = [75]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+01:08:01.523 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [12], Position = [86]
+01:08:01.523 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530320000223]Fixed Encoded[ASCII]
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [3], Position = [98]
+01:08:01.524 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-49 CURRENCY_CODE_TRANSACTION [3][840]Fixed Encoded[ASCII]
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531742 Condition unmatched
+01:08:01.524 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61751228531742 Building bitmap
+01:08:01.524 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61751228531742 Bitmap [0111001000111110000001000000000100001000000000001000000000000000]
+01:08:01.524 	INFO 	translatoriso.cpp  	0087 	buildMessage   	61751228531742 Bitmap built successfully
+01:08:01.524 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [3], Position = [0]
+01:08:01.524 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-1 ApplMessageProtocol [3][ISO]Fixed Encoded[ASCII]
+01:08:01.524 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [2], Position = [3]
+01:08:01.524 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-2 Product [2][01]Fixed Encoded[ASCII]
+01:08:01.524 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [2], Position = [5]
+01:08:01.524 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-3 Version [2][10]Fixed Encoded[ASCII]
+01:08:01.524 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [3], Position = [7]
+01:08:01.524 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-4 FIELD_IN_ERROR [3][000]Fixed Encoded[ASCII]
+01:08:01.524 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [1], Position = [10]
+01:08:01.524 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-5 ACQUIRER_TYPE [1][0]Fixed Encoded[ASCII]
+01:08:01.524 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [1], Position = [11]
+01:08:01.524 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-6 ISSUER_TYPE [1][0]Fixed Encoded[ASCII]
+01:08:01.524 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531742 Fixed     ->ASCII ->Length = [4], Position = [12]
+01:08:01.524 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531742 DE-7 MESSAGE_TYPE [4][0200]Fixed Encoded[ASCII]
+01:08:01.524 	INFO 	translatoriso.cpp  	0118 	buildMessage   	61751228531742 Header built successfully
+01:08:01.524 	INFO 	translatoriso.cpp  	0120 	buildMessage   	61751228531742 Message built successfully
+01:08:01.524 	INFO 	translatoriso.cpp  	0127 	buildMessage   	61751228531742 Header Length is = [16]
+01:08:01.524 	INFO 	translatoriso.cpp  	0130 	buildMessage   	61751228531742 Message Fields Length is = [109]
+01:08:01.524 	INFO 	translatoriso.cpp  	0133 	buildMessage   	61751228531742 Message Length is = [125]
+01:08:01.524 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61751228531742 Message built successfully
+01:08:01.525 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531742 THREADTIME 00:00:00.009443
+01:08:01.525 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531742 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+01:08:01.525 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531742 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+01:08:01.528 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531742 401
+01:08:01.528 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531742 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+01:08:01.528 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531742 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+01:26:58.995 	INFO 	transactionprocess 	1061 	startBuildingM 	61751228531747 Received message with priority [1]
+01:26:58.995 	INFO 	transaction.cpp    	1628 	applyOutgoingR 	61751228531747 Applying Outgoing Rules
+01:26:58.996 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531747 No record found
+01:26:58.996 	ERROR 	rediscache.cpp     	0066 	find           	61751228531747 Unable to find key:RULEENGINE_OUTGOING_HOST
+01:26:58.996 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531747 No record found
+01:26:58.996 	ERROR 	rediscache.cpp     	0066 	find           	61751228531747 Unable to find key:RULEENGINE_OUTGOING_HOST*
+01:26:58.996 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531747 No record found
+01:26:58.996 	ERROR 	rediscache.cpp     	0066 	find           	61751228531747 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+01:26:58.999 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61751228531747 Payment Network Record got and FRMS Mode = []
+01:26:59.0 	ERROR 	redisconnectionmgr 	0864 	getValue       	61751228531747 No record found
+01:26:59.0 	ERROR 	rediscache.cpp     	0066 	find           	61751228531747 Unable to find key:Configuration_FRMSV2
+01:26:59.0 	ERROR 	configuration.cpp  	0201 	getParamValue  	61751228531747 Could not find corresponding parameter for key = [V2FRMS]
+01:26:59.0 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61751228531747 Attaching library ./lib/libtranslatorhostiso87.so
+01:26:59.1 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61751228531747 Setting message format [hostiso87]
+01:26:59.1 	INFO 	message.cpp        	1675 	printMessageSt 	61751228531747 Message Stamp = [20251030202421000227530320000227484838**********]
+01:26:59.1 	INFO 	message.cpp        	1676 	printMessageSt 	61751228531747 DateTime = [20251030202421]
+01:26:59.1 	INFO 	message.cpp        	1677 	printMessageSt 	61751228531747 Stan [000227]
+01:26:59.1 	INFO 	message.cpp        	1678 	printMessageSt 	61751228531747 RRN [530320000227]
+01:26:59.1 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61751228531747 STEP 1: Institution based customization done successfully
+01:26:59.1 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61751228531747 STEP 2: Outgoing fields mapped successfully
+01:26:59.1 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61751228531747 STEP 3: Transaction specific customization done successfully
+01:26:59.1 	INFO 	translatorhostiso8 	0094 	buildSubFields 	61751228531747 Build sub fields, for UAEPOS
+01:26:59.1 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61751228531747 STEP 4: Subfields built successfully
+01:26:59.1 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61751228531747 Start building message
+01:26:59.1 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 LLVariable  ->ASCII ->Length = [18], Position = [2]
+01:26:59.1 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+01:26:59.1 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [6], Position = [18]
+01:26:59.1 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-3 PROCESSING_CODE [6][000000]Fixed Encoded[ASCII]
+01:26:59.1 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.1 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [12], Position = [24]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-4 AMOUNT_TRANSACTION [12][000000004600]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [10], Position = [36]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-7 TRANSMISSION_DATE_TIME [10][1030202421]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [6], Position = [46]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][000227]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [6], Position = [52]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-12 TIME_LOCAL_TRANSACTION [6][012421]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [4], Position = [58]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-13 DATE_LOCAL_TRANSACTION [4][1031]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [4], Position = [62]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-15 DATE_SETTLEMENT [4][1031]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [4], Position = [66]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [3], Position = [70]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-22 POS_ENTRY_MODE [3][0100]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 LLVariable  ->ASCII ->Length = [13], Position = [75]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-32 ACQ_INSTITUTION_ID_CODE [13][12345678901]LLVariable Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [12], Position = [86]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530320000227]Fixed Encoded[ASCII]
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [3], Position = [98]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-49 CURRENCY_CODE_TRANSACTION [3][840]Fixed Encoded[ASCII]
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61751228531747 Condition unmatched
+01:26:59.2 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61751228531747 Building bitmap
+01:26:59.2 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61751228531747 Bitmap [0111001000111110000001000000000100001000000000001000000000000000]
+01:26:59.2 	INFO 	translatoriso.cpp  	0087 	buildMessage   	61751228531747 Bitmap built successfully
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [3], Position = [0]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-1 ApplMessageProtocol [3][ISO]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [2], Position = [3]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-2 Product [2][01]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [2], Position = [5]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-3 Version [2][10]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [3], Position = [7]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-4 FIELD_IN_ERROR [3][000]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [1], Position = [10]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-5 ACQUIRER_TYPE [1][0]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [1], Position = [11]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-6 ISSUER_TYPE [1][0]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	1251 	buildField     	61751228531747 Fixed     ->ASCII ->Length = [4], Position = [12]
+01:26:59.2 	INFO 	translatoriso.cpp  	1264 	buildField     	61751228531747 DE-7 MESSAGE_TYPE [4][0200]Fixed Encoded[ASCII]
+01:26:59.2 	INFO 	translatoriso.cpp  	0118 	buildMessage   	61751228531747 Header built successfully
+01:26:59.2 	INFO 	translatoriso.cpp  	0120 	buildMessage   	61751228531747 Message built successfully
+01:26:59.2 	INFO 	translatoriso.cpp  	0127 	buildMessage   	61751228531747 Header Length is = [16]
+01:26:59.2 	INFO 	translatoriso.cpp  	0130 	buildMessage   	61751228531747 Message Fields Length is = [109]
+01:26:59.2 	INFO 	translatoriso.cpp  	0133 	buildMessage   	61751228531747 Message Length is = [125]
+01:26:59.2 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61751228531747 Message built successfully
+01:26:59.4 	INFO 	transactionprocess 	1112 	startBuildingM 	61751228531747 THREADTIME 00:00:00.008136
+01:26:59.4 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531747 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+01:26:59.4 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531747 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+01:26:59.7 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61751228531747 401
+01:26:59.7 	INFO 	transactionprocess 	1122 	checkUpdate    	61751228531747 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]
+01:26:59.7 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61751228531747 Updated datetime in shared memory is [20251029201927], transactions were loaded at [20251029201927]

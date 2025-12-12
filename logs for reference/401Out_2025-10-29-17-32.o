@@ -1,0 +1,736 @@
+17:32:25.135 	INFO 	transactionprocess 	1061 	startBuildingM 	61741144869001 Received message with priority [1]
+17:32:25.135 	INFO 	imd.cpp            	0327 	getIMD         	61741144869001 Bin Max Range is 11
+17:32:25.135 	INFO 	imd.cpp            	0333 	getIMD         	61741144869001 Bin Min Range is 6
+17:32:25.135 	INFO 	imd.cpp            	0351 	getIMD         	61741144869001 BIN [484838]
+17:32:25.135 	INFO 	imd.cpp            	0353 	getIMD         	61741144869001 IMD Found
+17:32:25.136 	INFO 	transactionmgr.cpp 	0688 	processMessage 	61741144869001 Message type received = [0210]
+17:32:25.136 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.136 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:Configuration_CUSTOMRC_HOST
+17:32:25.136 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869001 Could not find corresponding parameter for key = [RC_HOSTCUSTOM]
+17:32:25.136 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869001 Message Stamp = [202510291229440003605302120003604848389911000003]
+17:32:25.136 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869001 DateTime = [20251029122944]
+17:32:25.136 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869001 Stan [000360]
+17:32:25.136 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869001 RRN [530212000360]
+17:32:25.136 	INFO 	transactionmgr.cpp 	0725 	processMessage 	61741144869001 Source Channel Key [484838991100000320251029122944000360]
+17:32:25.136 	INFO 	transaction.cpp    	1602 	getRequestMess 	61741144869001 Checking if original transaction exists in in-memory database
+17:32:25.137 	INFO 	transaction.cpp    	1615 	getRequestMess 	61741144869001 Original transaction found successfully
+17:32:25.137 	INFO 	transactionmgr.cpp 	1481 	processRespons 	61741144869001 ISLOCAL [Y]
+17:32:25.137 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.137 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:Configuration_CUSTOMRC_BASE1
+17:32:25.137 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869001 Could not find corresponding parameter for key = [RC_BASE1CUSTOM]
+17:32:25.137 	INFO 	transactionmgr.cpp 	1319 	getLibrary     	61741144869001 Library selected [libtxnvisatransactionaft.so] location [./lib/libtxnvisatransactionaft.so]
+17:32:25.137 	INFO 	visaiss.cpp        	0059 	processRespons 	61741144869001 Processing response message...
+17:32:25.137 	INFO 	transaction.cpp    	3684 	getSourceStatu 	61741144869001 Get Network processing status
+17:32:25.138 	INFO 	visaissfinancial.c 	0232 	processRespons 	61741144869001 Process response message
+17:32:25.138 	INFO 	visaiss.cpp        	0205 	processRespons 	61741144869001 Processing response message
+17:32:25.139 	INFO 	dbconnmgr.cpp      	1605 	~DBTransaction 	61741144869001 Connection released
+17:32:25.139 	INFO 	dbconnmgr.cpp      	1605 	~DBTransaction 	61741144869001 Connection released
+17:32:25.140 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869001 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.UPDATETRAN
+17:32:25.144 	INFO 	transaction.cpp    	0536 	updateTransact 	61741144869001 Transaction trxlogid = [948] updated successfully.
+17:32:25.144 	INFO 	transaction.cpp    	2691 	sendToAcquirer 	61741144869001 ResponseCode = [000]
+17:32:25.145 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.145 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+17:32:25.146 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61741144869001 Payment Network Record got and FRMS Mode = []
+17:32:25.146 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.146 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:Configuration_FRMSV2
+17:32:25.146 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869001 Could not find corresponding parameter for key = [V2FRMS]
+17:32:25.147 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869001 Attaching library ./lib/libtranslatorvisabase1.so
+17:32:25.147 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61741144869001 Setting message format [visabase1]
+17:32:25.147 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869001 Message Stamp = [20251029122944000360530212000360484838**********]
+17:32:25.147 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869001 DateTime = [20251029122944]
+17:32:25.147 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869001 Stan [000360]
+17:32:25.147 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869001 RRN [530212000360]
+17:32:25.147 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61741144869001 STEP 1: Institution based customization done successfully
+17:32:25.148 	INFO 	translator.cpp     	1586 	mapField       	61741144869001 Mapping found successfully for [RESPONSE_CODE] value = [000], mapped value = [00]
+17:32:25.148 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61741144869001 STEP 2: Outgoing fields mapped successfully
+17:32:25.148 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.148 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:Configuration_CUSTOMVISA_STATION_ID
+17:32:25.148 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869001 Could not find corresponding parameter for key = [VISA_STATION_IDCUSTOM]
+17:32:25.148 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61741144869001 STEP 3: Transaction specific customization done successfully
+17:32:25.148 	INFO 	translatorvisa.cpp 	0401 	buildSubFields 	61741144869001 Build sub fields
+17:32:25.148 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61741144869001 STEP 4: Subfields built successfully
+17:32:25.148 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 LVariable  ->BCD   ->Length = [9], Position = [1]
+17:32:25.148 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-2 PAN [9][484838**********]LVariable Encoded[BCD]
+17:32:25.148 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [3], Position = [9]
+17:32:25.148 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-3 PROCESSING_CODE [3][100000]Fixed Encoded[BCD]
+17:32:25.148 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [6], Position = [12]
+17:32:25.148 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-4 AMOUNT_TRANSACTION [6][000000010000]Fixed Encoded[BCD]
+17:32:25.148 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [5], Position = [18]
+17:32:25.148 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-7 TRANSMISSION_DATE_TIME [5][1029122944]Fixed Encoded[BCD]
+17:32:25.148 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [3], Position = [23]
+17:32:25.148 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [3][000360]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [2], Position = [26]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-15 DATE_SETTLEMENT [2][1004]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [2], Position = [28]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-19 ACQ_INSTITUTION_COUNTRY_CODE [2][0772]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [1], Position = [30]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-25 POS_CONDITION_CODE [1][59]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 LVariable  ->BCD   ->Length = [7], Position = [32]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-32 ACQ_INSTITUTION_ID_CODE [7][012345678901]LVariable Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->Length = [12], Position = [38]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530212000360]Fixed Encoded[EBCDIC]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->Length = [6], Position = [50]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-38 AUTH_ID_RESPONSE [6][009182]Fixed Encoded[EBCDIC]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->Length = [2], Position = [56]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-39 RESPONSE_CODE [2][00]Fixed Encoded[EBCDIC]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->Length = [8], Position = [58]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-41 CARD_ACCEPTOR_TERMINAL_ID [8][TERMID01]Fixed Encoded[EBCDIC]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->Length = [15], Position = [66]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-42 CARD_ACCEPTOR_ID_CODE [15][CARD ACCEPTOR  ]Fixed Encoded[EBCDIC]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [2], Position = [81]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-49 CURRENCY_CODE_TRANSACTION [2][0840]Fixed Encoded[BCD]
+17:32:25.149 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61741144869001 Condition unmatched
+17:32:25.149 	INFO 	translatoriso.cpp  	1845 	buildSubFieldB 	61741144869001 subfieldBitmap [ DE-62] [CustomPaymentServiceFieldsBitMap]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [8], Position = [0]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-62.2 VISA_TRANSACTION_ID [8][0000000000000000]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [5], Position = [8]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-62.20 MerchangeVerificationValue [5][0123456789]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1845 	buildSubFieldB 	61741144869001 subfieldBitmap [ DE-63] [SMSPrivate-UseFields]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [2], Position = [0]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-63.1 VISA_NETWORK_ID [2][0002]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->Length = [7], Position = [2]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-63.6 ChargeBackReduction [7][   5   ]Fixed Encoded[EBCDIC]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 LVariable  ->BCD   ->Length = [7], Position = [119]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-104 TRAN_DESC [7][5700040102PP]LVariable Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61741144869001 Building bitmap
+17:32:25.149 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61741144869001 Bitmap [11110010001000100010000010000001000011101100000010000000000001100000000000000000000000000000000000000001000000000000000000000000]
+17:32:25.149 	INFO 	translatorvisa.cpp 	0116 	buildMessage   	61741144869001 Bitmap built successfully
+17:32:25.149 	INFO 	translatorvisa.cpp 	0177 	buildHeader    	61741144869001 Building Header
+17:32:25.149 	INFO 	translatorvisa.cpp 	0187 	buildHeader    	61741144869001 NORMAL MESSAGE
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [1], Position = [0]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-1 HHeaderLength [1][16]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [1], Position = [1]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-2 HHeaderFlag [1][01]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [1], Position = [2]
+17:32:25.149 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-3 HTextFormat [1][02]Fixed Encoded[BCD]
+17:32:25.149 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [2], Position = [3]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-4 HTotalMsgLength [2][0041]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [3], Position = [5]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-5 HDestStationID [3][000000]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [3], Position = [8]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-6 HSourceStationID [3][000000]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [1], Position = [11]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-7 HRoundTripControl [1][00]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [2], Position = [12]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-8 HBASE1Flags [2][0000]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [3], Position = [14]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-9 HMsgStatusFlag [3][000000]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [1], Position = [17]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-10 HBatchNumber [1][00]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [3], Position = [18]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-11 HReserved [3][000000]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [1], Position = [21]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-12 HUserInfo [1][00]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatorvisa.cpp 	0195 	buildHeader    	61741144869001 NORMAL MESSAGE
+17:32:25.150 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869001 Fixed     ->BCD   ->Length = [2], Position = [22]
+17:32:25.150 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869001 DE-15 MESSAGE_TYPE [2][0210]Fixed Encoded[BCD]
+17:32:25.150 	INFO 	translatorvisa.cpp 	0150 	buildMessage   	61741144869001 Header Length = [24]
+17:32:25.150 	INFO 	translatorvisa.cpp 	0158 	buildMessage   	61741144869001 Message Length = [165]
+17:32:25.150 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61741144869001 Message built successfully
+17:32:25.152 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.152 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:RECONCILIATION_419
+17:32:25.152 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.152 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:CHANNEL_MGR_
+17:32:25.152 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61741144869001 Initializing channel []
+17:32:25.152 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869001 Start execute
+17:32:25.154 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869001 End executed
+17:32:25.155 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869001 Start execute
+17:32:25.156 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869001 End executed
+17:32:25.157 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.157 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:RECONCILIATION_401
+17:32:25.157 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.157 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:CHANNEL_MGR_
+17:32:25.157 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61741144869001 Initializing channel []
+17:32:25.158 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869001 Start execute
+17:32:25.158 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869001 End executed
+17:32:25.160 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869001 Start execute
+17:32:25.161 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869001 End executed
+17:32:25.161 	INFO 	visaiss.cpp        	3422 	sendToAcquirer 	61741144869001 Removing transaction from in-memory database
+17:32:25.162 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.162 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:ProAlert_000275V3CUSTOMERen
+17:32:25.162 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869001 Loading Product Alerts
+17:32:25.162 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869001 Start execute
+17:32:25.163 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869001 End executed
+17:32:25.164 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869001 No rows returned
+17:32:25.164 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61741144869001 Alerts Record not found for Key [Key =000275V3CUSTOMER]
+17:32:25.164 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.164 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:ProAlert_000275V3CUSTOMER
+17:32:25.164 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869001 Loading Product Alerts
+17:32:25.164 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869001 Start execute
+17:32:25.165 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869001 End executed
+17:32:25.166 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869001 No rows returned
+17:32:25.166 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61741144869001 Alerts Record not found for Key [Key =000275V3CUSTOMER]
+17:32:25.166 	INFO 	transactionmgr.cpp 	1381 	sendAlert      	61741144869001 Customer Alerts not configured for Product ID[275]
+17:32:25.166 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.166 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:ProAlert_000V3BENEFICIARYen
+17:32:25.166 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869001 Loading Product Alerts
+17:32:25.166 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869001 Start execute
+17:32:25.167 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869001 End executed
+17:32:25.167 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869001 No rows returned
+17:32:25.167 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61741144869001 Alerts Record not found for Key [Key =000V3BENEFICIARY]
+17:32:25.168 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869001 No record found
+17:32:25.168 	ERROR 	rediscache.cpp     	0066 	find           	61741144869001 Unable to find key:ProAlert_000V3BENEFICIARY
+17:32:25.168 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869001 Loading Product Alerts
+17:32:25.168 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869001 Start execute
+17:32:25.169 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869001 End executed
+17:32:25.169 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869001 No rows returned
+17:32:25.169 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61741144869001 Alerts Record not found for Key [Key =000V3BENEFICIARY]
+17:32:25.169 	INFO 	transactionmgr.cpp 	1397 	sendAlert      	61741144869001 Beneficiary Alerts not configured for Product ID[]
+17:32:25.169 	INFO 	transactionprocess 	1112 	startBuildingM 	61741144869001 THREADTIME 00:00:00.034341
+17:32:25.170 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869001 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:25.170 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869001 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:57.827 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869001 419
+17:32:57.827 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869001 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:57.827 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869001 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:57.946 	INFO 	transactionprocess 	1061 	startBuildingM 	61741144869003 Received message with priority [1]
+17:32:57.946 	INFO 	imd.cpp            	0327 	getIMD         	61741144869003 Bin Max Range is 11
+17:32:57.947 	INFO 	imd.cpp            	0333 	getIMD         	61741144869003 Bin Min Range is 6
+17:32:57.947 	INFO 	imd.cpp            	0351 	getIMD         	61741144869003 BIN [484838]
+17:32:57.947 	INFO 	imd.cpp            	0353 	getIMD         	61741144869003 IMD Found
+17:32:57.947 	INFO 	transactionmgr.cpp 	0688 	processMessage 	61741144869003 Message type received = [0210]
+17:32:57.947 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.947 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:Configuration_CUSTOMRC_HOST
+17:32:57.947 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869003 Could not find corresponding parameter for key = [RC_HOSTCUSTOM]
+17:32:57.947 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869003 Message Stamp = [202510291230170003615302120003614848389911000003]
+17:32:57.947 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869003 DateTime = [20251029123017]
+17:32:57.947 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869003 Stan [000361]
+17:32:57.947 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869003 RRN [530212000361]
+17:32:57.947 	INFO 	transactionmgr.cpp 	0725 	processMessage 	61741144869003 Source Channel Key [484838991100000320251029123017000361]
+17:32:57.947 	INFO 	transaction.cpp    	1602 	getRequestMess 	61741144869003 Checking if original transaction exists in in-memory database
+17:32:57.948 	INFO 	transaction.cpp    	1615 	getRequestMess 	61741144869003 Original transaction found successfully
+17:32:57.948 	INFO 	transactionmgr.cpp 	1481 	processRespons 	61741144869003 ISLOCAL [Y]
+17:32:57.949 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.949 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:Configuration_CUSTOMRC_BASE1
+17:32:57.949 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869003 Could not find corresponding parameter for key = [RC_BASE1CUSTOM]
+17:32:57.949 	INFO 	transactionmgr.cpp 	1319 	getLibrary     	61741144869003 Library selected [libtxnvisatransactionaft.so] location [./lib/libtxnvisatransactionaft.so]
+17:32:57.949 	INFO 	visaiss.cpp        	0059 	processRespons 	61741144869003 Processing response message...
+17:32:57.949 	INFO 	transaction.cpp    	3684 	getSourceStatu 	61741144869003 Get Network processing status
+17:32:57.950 	INFO 	visaissfinancial.c 	0232 	processRespons 	61741144869003 Process response message
+17:32:57.950 	INFO 	visaiss.cpp        	0205 	processRespons 	61741144869003 Processing response message
+17:32:57.950 	INFO 	dbconnmgr.cpp      	1605 	~DBTransaction 	61741144869003 Connection released
+17:32:57.950 	INFO 	dbconnmgr.cpp      	1605 	~DBTransaction 	61741144869003 Connection released
+17:32:57.951 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869003 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.UPDATETRAN
+17:32:57.955 	INFO 	transaction.cpp    	0536 	updateTransact 	61741144869003 Transaction trxlogid = [949] updated successfully.
+17:32:57.955 	INFO 	transaction.cpp    	2691 	sendToAcquirer 	61741144869003 ResponseCode = [000]
+17:32:57.956 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.956 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+17:32:57.957 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61741144869003 Payment Network Record got and FRMS Mode = []
+17:32:57.958 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.958 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:Configuration_FRMSV2
+17:32:57.958 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869003 Could not find corresponding parameter for key = [V2FRMS]
+17:32:57.958 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869003 Attaching library ./lib/libtranslatorvisabase1.so
+17:32:57.958 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61741144869003 Setting message format [visabase1]
+17:32:57.958 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869003 Message Stamp = [20251029123017000361530212000361484838**********]
+17:32:57.958 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869003 DateTime = [20251029123017]
+17:32:57.958 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869003 Stan [000361]
+17:32:57.958 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869003 RRN [530212000361]
+17:32:57.958 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61741144869003 STEP 1: Institution based customization done successfully
+17:32:57.958 	INFO 	translator.cpp     	1586 	mapField       	61741144869003 Mapping found successfully for [RESPONSE_CODE] value = [000], mapped value = [00]
+17:32:57.958 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61741144869003 STEP 2: Outgoing fields mapped successfully
+17:32:57.959 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.959 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:Configuration_CUSTOMVISA_STATION_ID
+17:32:57.959 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869003 Could not find corresponding parameter for key = [VISA_STATION_IDCUSTOM]
+17:32:57.959 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61741144869003 STEP 3: Transaction specific customization done successfully
+17:32:57.959 	INFO 	translatorvisa.cpp 	0401 	buildSubFields 	61741144869003 Build sub fields
+17:32:57.959 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61741144869003 STEP 4: Subfields built successfully
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 LVariable  ->BCD   ->Length = [9], Position = [1]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-2 PAN [9][484838**********]LVariable Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [3], Position = [9]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-3 PROCESSING_CODE [3][100000]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [6], Position = [12]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-4 AMOUNT_TRANSACTION [6][000000012000]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [5], Position = [18]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-7 TRANSMISSION_DATE_TIME [5][1029123017]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [3], Position = [23]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [3][000361]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [2], Position = [26]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-15 DATE_SETTLEMENT [2][1004]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [2], Position = [28]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-19 ACQ_INSTITUTION_COUNTRY_CODE [2][0772]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [1], Position = [30]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-25 POS_CONDITION_CODE [1][59]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 LVariable  ->BCD   ->Length = [7], Position = [32]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-32 ACQ_INSTITUTION_ID_CODE [7][012345678901]LVariable Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->Length = [12], Position = [38]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530212000361]Fixed Encoded[EBCDIC]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->Length = [6], Position = [50]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-38 AUTH_ID_RESPONSE [6][009183]Fixed Encoded[EBCDIC]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->Length = [2], Position = [56]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-39 RESPONSE_CODE [2][00]Fixed Encoded[EBCDIC]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->Length = [8], Position = [58]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-41 CARD_ACCEPTOR_TERMINAL_ID [8][TERMID01]Fixed Encoded[EBCDIC]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->Length = [15], Position = [66]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-42 CARD_ACCEPTOR_ID_CODE [15][CARD ACCEPTOR  ]Fixed Encoded[EBCDIC]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [2], Position = [81]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-49 CURRENCY_CODE_TRANSACTION [2][0840]Fixed Encoded[BCD]
+17:32:57.959 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61741144869003 Condition unmatched
+17:32:57.959 	INFO 	translatoriso.cpp  	1845 	buildSubFieldB 	61741144869003 subfieldBitmap [ DE-62] [CustomPaymentServiceFieldsBitMap]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [8], Position = [0]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-62.2 VISA_TRANSACTION_ID [8][0000000000000000]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [5], Position = [8]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-62.20 MerchangeVerificationValue [5][0123456789]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1845 	buildSubFieldB 	61741144869003 subfieldBitmap [ DE-63] [SMSPrivate-UseFields]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [2], Position = [0]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-63.1 VISA_NETWORK_ID [2][0002]Fixed Encoded[BCD]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->Length = [7], Position = [2]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-63.6 ChargeBackReduction [7][   7   ]Fixed Encoded[EBCDIC]
+17:32:57.959 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 LVariable  ->BCD   ->Length = [7], Position = [119]
+17:32:57.959 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-104 TRAN_DESC [7][5700040102WT]LVariable Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61741144869003 Building bitmap
+17:32:57.960 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61741144869003 Bitmap [11110010001000100010000010000001000011101100000010000000000001100000000000000000000000000000000000000001000000000000000000000000]
+17:32:57.960 	INFO 	translatorvisa.cpp 	0116 	buildMessage   	61741144869003 Bitmap built successfully
+17:32:57.960 	INFO 	translatorvisa.cpp 	0177 	buildHeader    	61741144869003 Building Header
+17:32:57.960 	INFO 	translatorvisa.cpp 	0187 	buildHeader    	61741144869003 NORMAL MESSAGE
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [1], Position = [0]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-1 HHeaderLength [1][16]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [1], Position = [1]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-2 HHeaderFlag [1][01]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [1], Position = [2]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-3 HTextFormat [1][02]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [2], Position = [3]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-4 HTotalMsgLength [2][0041]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [3], Position = [5]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-5 HDestStationID [3][000000]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [3], Position = [8]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-6 HSourceStationID [3][000000]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [1], Position = [11]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-7 HRoundTripControl [1][00]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [2], Position = [12]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-8 HBASE1Flags [2][0000]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [3], Position = [14]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-9 HMsgStatusFlag [3][000000]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [1], Position = [17]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-10 HBatchNumber [1][00]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [3], Position = [18]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-11 HReserved [3][000000]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [1], Position = [21]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-12 HUserInfo [1][00]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatorvisa.cpp 	0195 	buildHeader    	61741144869003 NORMAL MESSAGE
+17:32:57.960 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869003 Fixed     ->BCD   ->Length = [2], Position = [22]
+17:32:57.960 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869003 DE-15 MESSAGE_TYPE [2][0210]Fixed Encoded[BCD]
+17:32:57.960 	INFO 	translatorvisa.cpp 	0150 	buildMessage   	61741144869003 Header Length = [24]
+17:32:57.960 	INFO 	translatorvisa.cpp 	0158 	buildMessage   	61741144869003 Message Length = [165]
+17:32:57.960 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61741144869003 Message built successfully
+17:32:57.961 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.961 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:RECONCILIATION_419
+17:32:57.961 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.961 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:CHANNEL_MGR_
+17:32:57.961 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61741144869003 Initializing channel []
+17:32:57.961 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869003 Start execute
+17:32:57.963 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869003 End executed
+17:32:57.964 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869003 Start execute
+17:32:57.964 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869003 End executed
+17:32:57.965 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.965 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:RECONCILIATION_401
+17:32:57.965 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.965 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:CHANNEL_MGR_
+17:32:57.965 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61741144869003 Initializing channel []
+17:32:57.965 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869003 Start execute
+17:32:57.966 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869003 End executed
+17:32:57.967 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869003 Start execute
+17:32:57.967 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869003 End executed
+17:32:57.968 	INFO 	visaiss.cpp        	3422 	sendToAcquirer 	61741144869003 Removing transaction from in-memory database
+17:32:57.968 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.968 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:ProAlert_000275V3CUSTOMERen
+17:32:57.968 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869003 Loading Product Alerts
+17:32:57.968 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869003 Start execute
+17:32:57.970 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869003 End executed
+17:32:57.970 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869003 No rows returned
+17:32:57.970 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61741144869003 Alerts Record not found for Key [Key =000275V3CUSTOMER]
+17:32:57.970 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.970 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:ProAlert_000275V3CUSTOMER
+17:32:57.970 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869003 Loading Product Alerts
+17:32:57.970 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869003 Start execute
+17:32:57.971 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869003 End executed
+17:32:57.972 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869003 No rows returned
+17:32:57.972 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61741144869003 Alerts Record not found for Key [Key =000275V3CUSTOMER]
+17:32:57.972 	INFO 	transactionmgr.cpp 	1381 	sendAlert      	61741144869003 Customer Alerts not configured for Product ID[275]
+17:32:57.972 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.972 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:ProAlert_000V3BENEFICIARYen
+17:32:57.972 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869003 Loading Product Alerts
+17:32:57.972 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869003 Start execute
+17:32:57.973 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869003 End executed
+17:32:57.973 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869003 No rows returned
+17:32:57.973 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61741144869003 Alerts Record not found for Key [Key =000V3BENEFICIARY]
+17:32:57.974 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869003 No record found
+17:32:57.974 	ERROR 	rediscache.cpp     	0066 	find           	61741144869003 Unable to find key:ProAlert_000V3BENEFICIARY
+17:32:57.974 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869003 Loading Product Alerts
+17:32:57.974 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869003 Start execute
+17:32:57.974 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869003 End executed
+17:32:57.975 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869003 No rows returned
+17:32:57.975 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61741144869003 Alerts Record not found for Key [Key =000V3BENEFICIARY]
+17:32:57.975 	INFO 	transactionmgr.cpp 	1397 	sendAlert      	61741144869003 Beneficiary Alerts not configured for Product ID[]
+17:32:57.975 	INFO 	transactionprocess 	1112 	startBuildingM 	61741144869003 THREADTIME 00:00:00.029024
+17:32:57.975 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869003 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:57.975 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869003 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:34:14.844 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869003 419
+17:34:14.844 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869003 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:34:14.844 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869003 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:34:14.962 	INFO 	transactionprocess 	1061 	startBuildingM 	61741144869005 Received message with priority [1]
+17:34:14.963 	INFO 	imd.cpp            	0327 	getIMD         	61741144869005 Bin Max Range is 11
+17:34:14.963 	INFO 	imd.cpp            	0333 	getIMD         	61741144869005 Bin Min Range is 6
+17:34:14.963 	INFO 	imd.cpp            	0351 	getIMD         	61741144869005 BIN [484838]
+17:34:14.963 	INFO 	imd.cpp            	0353 	getIMD         	61741144869005 IMD Found
+17:34:14.963 	INFO 	transactionmgr.cpp 	0688 	processMessage 	61741144869005 Message type received = [0210]
+17:34:14.963 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.963 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:Configuration_CUSTOMRC_HOST
+17:34:14.963 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869005 Could not find corresponding parameter for key = [RC_HOSTCUSTOM]
+17:34:14.963 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869005 Message Stamp = [202510291231340003625302120003624848389911000003]
+17:34:14.963 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869005 DateTime = [20251029123134]
+17:34:14.963 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869005 Stan [000362]
+17:34:14.963 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869005 RRN [530212000362]
+17:34:14.964 	INFO 	transactionmgr.cpp 	0725 	processMessage 	61741144869005 Source Channel Key [484838991100000320251029123134000362]
+17:34:14.964 	INFO 	transaction.cpp    	1602 	getRequestMess 	61741144869005 Checking if original transaction exists in in-memory database
+17:34:14.965 	INFO 	transaction.cpp    	1615 	getRequestMess 	61741144869005 Original transaction found successfully
+17:34:14.965 	INFO 	transactionmgr.cpp 	1481 	processRespons 	61741144869005 ISLOCAL [Y]
+17:34:14.965 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.965 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:Configuration_CUSTOMRC_BASE1
+17:34:14.965 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869005 Could not find corresponding parameter for key = [RC_BASE1CUSTOM]
+17:34:14.966 	INFO 	transactionmgr.cpp 	1319 	getLibrary     	61741144869005 Library selected [libtxnvisatransactionaft.so] location [./lib/libtxnvisatransactionaft.so]
+17:34:14.966 	INFO 	visaiss.cpp        	0059 	processRespons 	61741144869005 Processing response message...
+17:34:14.966 	INFO 	transaction.cpp    	3684 	getSourceStatu 	61741144869005 Get Network processing status
+17:34:14.967 	INFO 	visaissfinancial.c 	0232 	processRespons 	61741144869005 Process response message
+17:34:14.967 	INFO 	visaiss.cpp        	0205 	processRespons 	61741144869005 Processing response message
+17:34:14.968 	INFO 	dbconnmgr.cpp      	1605 	~DBTransaction 	61741144869005 Connection released
+17:34:14.968 	INFO 	dbconnmgr.cpp      	1605 	~DBTransaction 	61741144869005 Connection released
+17:34:14.968 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869005 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.UPDATETRAN
+17:34:14.974 	INFO 	transaction.cpp    	0536 	updateTransact 	61741144869005 Transaction trxlogid = [950] updated successfully.
+17:34:14.974 	INFO 	transaction.cpp    	2691 	sendToAcquirer 	61741144869005 ResponseCode = [000]
+17:34:14.975 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.975 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+17:34:14.977 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61741144869005 Payment Network Record got and FRMS Mode = []
+17:34:14.977 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.977 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:Configuration_FRMSV2
+17:34:14.977 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869005 Could not find corresponding parameter for key = [V2FRMS]
+17:34:14.977 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869005 Attaching library ./lib/libtranslatorvisabase1.so
+17:34:14.977 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61741144869005 Setting message format [visabase1]
+17:34:14.978 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869005 Message Stamp = [20251029123134000362530212000362484838**********]
+17:34:14.978 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869005 DateTime = [20251029123134]
+17:34:14.978 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869005 Stan [000362]
+17:34:14.978 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869005 RRN [530212000362]
+17:34:14.978 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61741144869005 STEP 1: Institution based customization done successfully
+17:34:14.978 	INFO 	translator.cpp     	1586 	mapField       	61741144869005 Mapping found successfully for [RESPONSE_CODE] value = [000], mapped value = [00]
+17:34:14.978 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61741144869005 STEP 2: Outgoing fields mapped successfully
+17:34:14.979 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.979 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:Configuration_CUSTOMVISA_STATION_ID
+17:34:14.979 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869005 Could not find corresponding parameter for key = [VISA_STATION_IDCUSTOM]
+17:34:14.979 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61741144869005 STEP 3: Transaction specific customization done successfully
+17:34:14.979 	INFO 	translatorvisa.cpp 	0401 	buildSubFields 	61741144869005 Build sub fields
+17:34:14.979 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61741144869005 STEP 4: Subfields built successfully
+17:34:14.979 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 LVariable  ->BCD   ->Length = [9], Position = [1]
+17:34:14.979 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-2 PAN [9][484838**********]LVariable Encoded[BCD]
+17:34:14.979 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [3], Position = [9]
+17:34:14.979 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-3 PROCESSING_CODE [3][100000]Fixed Encoded[BCD]
+17:34:14.979 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [6], Position = [12]
+17:34:14.979 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-4 AMOUNT_TRANSACTION [6][000000010000]Fixed Encoded[BCD]
+17:34:14.979 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [5], Position = [18]
+17:34:14.979 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-7 TRANSMISSION_DATE_TIME [5][1029123134]Fixed Encoded[BCD]
+17:34:14.979 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [3], Position = [23]
+17:34:14.979 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [3][000362]Fixed Encoded[BCD]
+17:34:14.979 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [2], Position = [26]
+17:34:14.979 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-15 DATE_SETTLEMENT [2][1004]Fixed Encoded[BCD]
+17:34:14.979 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [2], Position = [28]
+17:34:14.979 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-19 ACQ_INSTITUTION_COUNTRY_CODE [2][0772]Fixed Encoded[BCD]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [1], Position = [30]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-25 POS_CONDITION_CODE [1][59]Fixed Encoded[BCD]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 LVariable  ->BCD   ->Length = [7], Position = [32]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-32 ACQ_INSTITUTION_ID_CODE [7][012345678901]LVariable Encoded[BCD]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->Length = [12], Position = [38]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530212000362]Fixed Encoded[EBCDIC]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->Length = [6], Position = [50]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-38 AUTH_ID_RESPONSE [6][009184]Fixed Encoded[EBCDIC]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->Length = [2], Position = [56]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-39 RESPONSE_CODE [2][00]Fixed Encoded[EBCDIC]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->Length = [8], Position = [58]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-41 CARD_ACCEPTOR_TERMINAL_ID [8][TERMID01]Fixed Encoded[EBCDIC]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->Length = [15], Position = [66]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-42 CARD_ACCEPTOR_ID_CODE [15][CARD ACCEPTOR  ]Fixed Encoded[EBCDIC]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [2], Position = [81]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-49 CURRENCY_CODE_TRANSACTION [2][0840]Fixed Encoded[BCD]
+17:34:14.980 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61741144869005 Condition unmatched
+17:34:14.980 	INFO 	translatoriso.cpp  	1845 	buildSubFieldB 	61741144869005 subfieldBitmap [ DE-62] [CustomPaymentServiceFieldsBitMap]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [8], Position = [0]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-62.2 VISA_TRANSACTION_ID [8][0000000000000000]Fixed Encoded[BCD]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [5], Position = [8]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-62.20 MerchangeVerificationValue [5][0123456789]Fixed Encoded[BCD]
+17:34:14.980 	INFO 	translatoriso.cpp  	1845 	buildSubFieldB 	61741144869005 subfieldBitmap [ DE-63] [SMSPrivate-UseFields]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [2], Position = [0]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-63.1 VISA_NETWORK_ID [2][0002]Fixed Encoded[BCD]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->Length = [7], Position = [2]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-63.6 ChargeBackReduction [7][   5   ]Fixed Encoded[EBCDIC]
+17:34:14.980 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 LVariable  ->BCD   ->Length = [7], Position = [119]
+17:34:14.980 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-104 TRAN_DESC [7][5700040102PP]LVariable Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61741144869005 Building bitmap
+17:34:14.981 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61741144869005 Bitmap [11110010001000100010000010000001000011101100000010000000000001100000000000000000000000000000000000000001000000000000000000000000]
+17:34:14.981 	INFO 	translatorvisa.cpp 	0116 	buildMessage   	61741144869005 Bitmap built successfully
+17:34:14.981 	INFO 	translatorvisa.cpp 	0177 	buildHeader    	61741144869005 Building Header
+17:34:14.981 	INFO 	translatorvisa.cpp 	0187 	buildHeader    	61741144869005 NORMAL MESSAGE
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [1], Position = [0]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-1 HHeaderLength [1][16]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [1], Position = [1]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-2 HHeaderFlag [1][01]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [1], Position = [2]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-3 HTextFormat [1][02]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [2], Position = [3]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-4 HTotalMsgLength [2][0041]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [3], Position = [5]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-5 HDestStationID [3][000000]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [3], Position = [8]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-6 HSourceStationID [3][000000]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [1], Position = [11]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-7 HRoundTripControl [1][00]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [2], Position = [12]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-8 HBASE1Flags [2][0000]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [3], Position = [14]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-9 HMsgStatusFlag [3][000000]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [1], Position = [17]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-10 HBatchNumber [1][00]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [3], Position = [18]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-11 HReserved [3][000000]Fixed Encoded[BCD]
+17:34:14.981 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [1], Position = [21]
+17:34:14.981 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-12 HUserInfo [1][00]Fixed Encoded[BCD]
+17:34:14.982 	INFO 	translatorvisa.cpp 	0195 	buildHeader    	61741144869005 NORMAL MESSAGE
+17:34:14.982 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869005 Fixed     ->BCD   ->Length = [2], Position = [22]
+17:34:14.982 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869005 DE-15 MESSAGE_TYPE [2][0210]Fixed Encoded[BCD]
+17:34:14.982 	INFO 	translatorvisa.cpp 	0150 	buildMessage   	61741144869005 Header Length = [24]
+17:34:14.982 	INFO 	translatorvisa.cpp 	0158 	buildMessage   	61741144869005 Message Length = [165]
+17:34:14.982 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61741144869005 Message built successfully
+17:34:14.983 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.983 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:RECONCILIATION_419
+17:34:14.984 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.984 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:CHANNEL_MGR_
+17:34:14.984 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61741144869005 Initializing channel []
+17:34:14.984 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869005 Start execute
+17:34:14.985 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869005 End executed
+17:34:14.987 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869005 Start execute
+17:34:14.988 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869005 End executed
+17:34:14.989 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.989 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:RECONCILIATION_401
+17:34:14.989 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.989 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:CHANNEL_MGR_
+17:34:14.989 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61741144869005 Initializing channel []
+17:34:14.989 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869005 Start execute
+17:34:14.990 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869005 End executed
+17:34:14.992 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869005 Start execute
+17:34:14.992 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869005 End executed
+17:34:14.993 	INFO 	visaiss.cpp        	3422 	sendToAcquirer 	61741144869005 Removing transaction from in-memory database
+17:34:14.994 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.994 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:ProAlert_000275V3CUSTOMERen
+17:34:14.994 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869005 Loading Product Alerts
+17:34:14.994 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869005 Start execute
+17:34:14.995 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869005 End executed
+17:34:14.997 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869005 No rows returned
+17:34:14.997 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61741144869005 Alerts Record not found for Key [Key =000275V3CUSTOMER]
+17:34:14.997 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.997 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:ProAlert_000275V3CUSTOMER
+17:34:14.997 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869005 Loading Product Alerts
+17:34:14.997 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869005 Start execute
+17:34:14.998 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869005 End executed
+17:34:14.999 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869005 No rows returned
+17:34:14.999 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61741144869005 Alerts Record not found for Key [Key =000275V3CUSTOMER]
+17:34:14.999 	INFO 	transactionmgr.cpp 	1381 	sendAlert      	61741144869005 Customer Alerts not configured for Product ID[275]
+17:34:14.999 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:14.999 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:ProAlert_000V3BENEFICIARYen
+17:34:14.999 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869005 Loading Product Alerts
+17:34:14.999 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869005 Start execute
+17:34:15.0 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869005 End executed
+17:34:15.1 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869005 No rows returned
+17:34:15.1 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61741144869005 Alerts Record not found for Key [Key =000V3BENEFICIARY]
+17:34:15.1 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869005 No record found
+17:34:15.1 	ERROR 	rediscache.cpp     	0066 	find           	61741144869005 Unable to find key:ProAlert_000V3BENEFICIARY
+17:34:15.1 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869005 Loading Product Alerts
+17:34:15.1 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869005 Start execute
+17:34:15.2 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869005 End executed
+17:34:15.2 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869005 No rows returned
+17:34:15.2 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61741144869005 Alerts Record not found for Key [Key =000V3BENEFICIARY]
+17:34:15.2 	INFO 	transactionmgr.cpp 	1397 	sendAlert      	61741144869005 Beneficiary Alerts not configured for Product ID[]
+17:34:15.3 	INFO 	transactionprocess 	1112 	startBuildingM 	61741144869005 THREADTIME 00:00:00.040374
+17:34:15.3 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869005 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:34:15.3 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869005 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:35:47.128 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869005 419
+17:35:47.129 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869005 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:35:47.129 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869005 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:45:57.602 	INFO 	transactionprocess 	1061 	startBuildingM 	61741144869016 Received message with priority [1]
+17:45:57.602 	INFO 	imd.cpp            	0327 	getIMD         	61741144869016 Bin Max Range is 11
+17:45:57.603 	INFO 	imd.cpp            	0333 	getIMD         	61741144869016 Bin Min Range is 6
+17:45:57.603 	INFO 	imd.cpp            	0351 	getIMD         	61741144869016 BIN [484838]
+17:45:57.603 	INFO 	imd.cpp            	0353 	getIMD         	61741144869016 IMD Found
+17:45:57.603 	INFO 	transactionmgr.cpp 	0688 	processMessage 	61741144869016 Message type received = [0210]
+17:45:57.603 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.603 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:Configuration_CUSTOMRC_HOST
+17:45:57.603 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869016 Could not find corresponding parameter for key = [RC_HOSTCUSTOM]
+17:45:57.603 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869016 Message Stamp = [202510291243170003725302120003724848389911000003]
+17:45:57.603 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869016 DateTime = [20251029124317]
+17:45:57.603 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869016 Stan [000372]
+17:45:57.603 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869016 RRN [530212000372]
+17:45:57.603 	INFO 	transactionmgr.cpp 	0725 	processMessage 	61741144869016 Source Channel Key [484838991100000320251029124317000372]
+17:45:57.603 	INFO 	transaction.cpp    	1602 	getRequestMess 	61741144869016 Checking if original transaction exists in in-memory database
+17:45:57.607 	INFO 	transaction.cpp    	1615 	getRequestMess 	61741144869016 Original transaction found successfully
+17:45:57.607 	INFO 	transactionmgr.cpp 	1481 	processRespons 	61741144869016 ISLOCAL [Y]
+17:45:57.607 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.607 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:Configuration_CUSTOMRC_BASE1
+17:45:57.607 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869016 Could not find corresponding parameter for key = [RC_BASE1CUSTOM]
+17:45:57.608 	INFO 	transactionmgr.cpp 	1319 	getLibrary     	61741144869016 Library selected [libtxnvisatransactionaft.so] location [./lib/libtxnvisatransactionaft.so]
+17:45:57.608 	INFO 	visaiss.cpp        	0059 	processRespons 	61741144869016 Processing response message...
+17:45:57.608 	INFO 	transaction.cpp    	3684 	getSourceStatu 	61741144869016 Get Network processing status
+17:45:57.610 	INFO 	visaissfinancial.c 	0232 	processRespons 	61741144869016 Process response message
+17:45:57.610 	INFO 	visaiss.cpp        	0205 	processRespons 	61741144869016 Processing response message
+17:45:57.611 	INFO 	dbconnmgr.cpp      	1605 	~DBTransaction 	61741144869016 Connection released
+17:45:57.611 	INFO 	dbconnmgr.cpp      	1605 	~DBTransaction 	61741144869016 Connection released
+17:45:57.611 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869016 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.UPDATETRAN
+17:45:57.616 	INFO 	transaction.cpp    	0536 	updateTransact 	61741144869016 Transaction trxlogid = [960] updated successfully.
+17:45:57.616 	INFO 	transaction.cpp    	2691 	sendToAcquirer 	61741144869016 ResponseCode = [000]
+17:45:57.618 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.618 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+17:45:57.619 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61741144869016 Payment Network Record got and FRMS Mode = []
+17:45:57.619 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.619 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:Configuration_FRMSV2
+17:45:57.619 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869016 Could not find corresponding parameter for key = [V2FRMS]
+17:45:57.619 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869016 Attaching library ./lib/libtranslatorvisabase1.so
+17:45:57.619 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61741144869016 Setting message format [visabase1]
+17:45:57.620 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869016 Message Stamp = [20251029124317000372530212000372484838**********]
+17:45:57.620 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869016 DateTime = [20251029124317]
+17:45:57.620 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869016 Stan [000372]
+17:45:57.620 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869016 RRN [530212000372]
+17:45:57.620 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61741144869016 STEP 1: Institution based customization done successfully
+17:45:57.620 	INFO 	translator.cpp     	1586 	mapField       	61741144869016 Mapping found successfully for [RESPONSE_CODE] value = [000], mapped value = [00]
+17:45:57.620 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61741144869016 STEP 2: Outgoing fields mapped successfully
+17:45:57.620 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.620 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:Configuration_CUSTOMVISA_STATION_ID
+17:45:57.620 	ERROR 	configuration.cpp  	0201 	getParamValue  	61741144869016 Could not find corresponding parameter for key = [VISA_STATION_IDCUSTOM]
+17:45:57.620 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61741144869016 STEP 3: Transaction specific customization done successfully
+17:45:57.620 	INFO 	translatorvisa.cpp 	0401 	buildSubFields 	61741144869016 Build sub fields
+17:45:57.620 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61741144869016 STEP 4: Subfields built successfully
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 LVariable  ->BCD   ->Length = [9], Position = [1]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-2 PAN [9][484838**********]LVariable Encoded[BCD]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [3], Position = [9]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-3 PROCESSING_CODE [3][100000]Fixed Encoded[BCD]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [6], Position = [12]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-4 AMOUNT_TRANSACTION [6][000000012000]Fixed Encoded[BCD]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [5], Position = [18]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-7 TRANSMISSION_DATE_TIME [5][1029124317]Fixed Encoded[BCD]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [3], Position = [23]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [3][000372]Fixed Encoded[BCD]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [2], Position = [26]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-15 DATE_SETTLEMENT [2][1004]Fixed Encoded[BCD]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [2], Position = [28]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-19 ACQ_INSTITUTION_COUNTRY_CODE [2][0772]Fixed Encoded[BCD]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [1], Position = [30]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-25 POS_CONDITION_CODE [1][59]Fixed Encoded[BCD]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 LVariable  ->BCD   ->Length = [7], Position = [32]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-32 ACQ_INSTITUTION_ID_CODE [7][012345678901]LVariable Encoded[BCD]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->Length = [12], Position = [38]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][530212000372]Fixed Encoded[EBCDIC]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->Length = [6], Position = [50]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-38 AUTH_ID_RESPONSE [6][009185]Fixed Encoded[EBCDIC]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->Length = [2], Position = [56]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-39 RESPONSE_CODE [2][00]Fixed Encoded[EBCDIC]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->Length = [8], Position = [58]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-41 CARD_ACCEPTOR_TERMINAL_ID [8][TERMID01]Fixed Encoded[EBCDIC]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->Length = [15], Position = [66]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-42 CARD_ACCEPTOR_ID_CODE [15][CARD ACCEPTOR  ]Fixed Encoded[EBCDIC]
+17:45:57.620 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [2], Position = [81]
+17:45:57.620 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-49 CURRENCY_CODE_TRANSACTION [2][0840]Fixed Encoded[BCD]
+17:45:57.621 	ERROR 	translatoriso.cpp  	0437 	buildOutgoingM 	61741144869016 Condition unmatched
+17:45:57.621 	INFO 	translatoriso.cpp  	1845 	buildSubFieldB 	61741144869016 subfieldBitmap [ DE-62] [CustomPaymentServiceFieldsBitMap]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [8], Position = [0]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-62.2 VISA_TRANSACTION_ID [8][0000000000000000]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [5], Position = [8]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-62.20 MerchangeVerificationValue [5][0123456789]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1845 	buildSubFieldB 	61741144869016 subfieldBitmap [ DE-63] [SMSPrivate-UseFields]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [2], Position = [0]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-63.1 VISA_NETWORK_ID [2][0002]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->Length = [7], Position = [2]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-63.6 ChargeBackReduction [7][   7   ]Fixed Encoded[EBCDIC]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 LVariable  ->BCD   ->Length = [7], Position = [119]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-104 TRAN_DESC [7][5700040102FT]LVariable Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1357 	buildOutgoingB 	61741144869016 Building bitmap
+17:45:57.621 	INFO 	translatoriso.cpp  	1391 	buildOutgoingB 	61741144869016 Bitmap [11110010001000100010000010000001000011101100000010000000000001100000000000000000000000000000000000000001000000000000000000000000]
+17:45:57.621 	INFO 	translatorvisa.cpp 	0116 	buildMessage   	61741144869016 Bitmap built successfully
+17:45:57.621 	INFO 	translatorvisa.cpp 	0177 	buildHeader    	61741144869016 Building Header
+17:45:57.621 	INFO 	translatorvisa.cpp 	0187 	buildHeader    	61741144869016 NORMAL MESSAGE
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [1], Position = [0]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-1 HHeaderLength [1][16]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [1], Position = [1]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-2 HHeaderFlag [1][01]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [1], Position = [2]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-3 HTextFormat [1][02]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [2], Position = [3]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-4 HTotalMsgLength [2][0041]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [3], Position = [5]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-5 HDestStationID [3][000000]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [3], Position = [8]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-6 HSourceStationID [3][000000]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [1], Position = [11]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-7 HRoundTripControl [1][00]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [2], Position = [12]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-8 HBASE1Flags [2][0000]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [3], Position = [14]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-9 HMsgStatusFlag [3][000000]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [1], Position = [17]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-10 HBatchNumber [1][00]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [3], Position = [18]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-11 HReserved [3][000000]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [1], Position = [21]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-12 HUserInfo [1][00]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatorvisa.cpp 	0195 	buildHeader    	61741144869016 NORMAL MESSAGE
+17:45:57.621 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869016 Fixed     ->BCD   ->Length = [2], Position = [22]
+17:45:57.621 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869016 DE-15 MESSAGE_TYPE [2][0210]Fixed Encoded[BCD]
+17:45:57.621 	INFO 	translatorvisa.cpp 	0150 	buildMessage   	61741144869016 Header Length = [24]
+17:45:57.621 	INFO 	translatorvisa.cpp 	0158 	buildMessage   	61741144869016 Message Length = [165]
+17:45:57.621 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61741144869016 Message built successfully
+17:45:57.623 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.623 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:RECONCILIATION_419
+17:45:57.623 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.623 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:CHANNEL_MGR_
+17:45:57.623 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61741144869016 Initializing channel []
+17:45:57.623 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869016 Start execute
+17:45:57.624 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869016 End executed
+17:45:57.625 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869016 Start execute
+17:45:57.626 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869016 End executed
+17:45:57.626 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.626 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:RECONCILIATION_401
+17:45:57.627 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.627 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:CHANNEL_MGR_
+17:45:57.627 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61741144869016 Initializing channel []
+17:45:57.627 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869016 Start execute
+17:45:57.627 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869016 End executed
+17:45:57.628 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869016 Start execute
+17:45:57.628 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869016 End executed
+17:45:57.629 	INFO 	visaiss.cpp        	3422 	sendToAcquirer 	61741144869016 Removing transaction from in-memory database
+17:45:57.629 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.629 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:ProAlert_000275V3CUSTOMERen
+17:45:57.629 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869016 Loading Product Alerts
+17:45:57.629 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869016 Start execute
+17:45:57.630 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869016 End executed
+17:45:57.631 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869016 No rows returned
+17:45:57.631 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61741144869016 Alerts Record not found for Key [Key =000275V3CUSTOMER]
+17:45:57.632 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.632 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:ProAlert_000275V3CUSTOMER
+17:45:57.632 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869016 Loading Product Alerts
+17:45:57.632 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869016 Start execute
+17:45:57.632 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869016 End executed
+17:45:57.633 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869016 No rows returned
+17:45:57.633 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61741144869016 Alerts Record not found for Key [Key =000275V3CUSTOMER]
+17:45:57.633 	INFO 	transactionmgr.cpp 	1381 	sendAlert      	61741144869016 Customer Alerts not configured for Product ID[275]
+17:45:57.633 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.633 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:ProAlert_000V3BENEFICIARYen
+17:45:57.633 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869016 Loading Product Alerts
+17:45:57.633 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869016 Start execute
+17:45:57.634 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869016 End executed
+17:45:57.634 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869016 No rows returned
+17:45:57.634 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61741144869016 Alerts Record not found for Key [Key =000V3BENEFICIARY]
+17:45:57.634 	ERROR 	redisconnectionmgr 	0864 	getValue       	61741144869016 No record found
+17:45:57.634 	ERROR 	rediscache.cpp     	0066 	find           	61741144869016 Unable to find key:ProAlert_000V3BENEFICIARY
+17:45:57.634 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61741144869016 Loading Product Alerts
+17:45:57.634 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61741144869016 Start execute
+17:45:57.635 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61741144869016 End executed
+17:45:57.635 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61741144869016 No rows returned
+17:45:57.635 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61741144869016 Alerts Record not found for Key [Key =000V3BENEFICIARY]
+17:45:57.635 	INFO 	transactionmgr.cpp 	1397 	sendAlert      	61741144869016 Beneficiary Alerts not configured for Product ID[]
+17:45:57.635 	INFO 	transactionprocess 	1112 	startBuildingM 	61741144869016 THREADTIME 00:00:00.033144
+17:45:57.635 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869016 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:45:57.636 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869016 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:47:58.739 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869016 419
+17:47:58.739 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869016 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:47:58.740 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869016 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]

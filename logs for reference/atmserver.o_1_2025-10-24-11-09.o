@@ -1,0 +1,5 @@
+11:09:30.958 	INFO 	atmserver_main.cpp 	0273 	connectCallbac 	 Redis Connected
+11:09:30.959 	INFO 	atmserver_main.cpp 	0241 	onMessage      	 Event received on subscribed channel
+11:09:30.962 	INFO 	atmserver_main.cpp 	0072 	processCommand 	 Endpoint Received is empty
+11:09:30.962 	INFO 	atmserver_main.cpp 	0072 	processCommand 	 Endpoint Received is empty
+11:09:30.962 	INFO 	atmserver_main.cpp 	0072 	processCommand 	 Endpoint Received is empty

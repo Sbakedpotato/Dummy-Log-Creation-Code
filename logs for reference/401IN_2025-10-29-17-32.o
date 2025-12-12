@@ -1,0 +1,934 @@
+17:32:25.129 	INFO 	transactionprocess 	0970 	startParsing   	61741144869001 Received message with priority [0]
+17:32:25.129 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869001 Attaching library ./lib/libtranslatorhostiso87.so
+17:32:25.129 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869001 Setting message format [hostiso87]
+17:32:25.129 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869001 Parsing Header
+17:32:25.130 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869001 Header parsed successfully
+17:32:25.130 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869001 Parsing message fields
+17:32:25.130 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869001 Bitmap set successfully
+17:32:25.130 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869001 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+17:32:25.130 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869001 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+17:32:25.130 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61741144869001 Fields parsed successfully
+17:32:25.130 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61741144869001 STEP1: Message fields parsed successfully
+17:32:25.130 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61741144869001 STEP 2: Mandatory fields validated successfully
+17:32:25.130 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61741144869001 STEP 3: Subfields parsed successfully
+17:32:25.131 	INFO 	translator.cpp     	1586 	mapField       	61741144869001 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+17:32:25.131 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61741144869001 STEP 4: Incoming fields mapped successfully
+17:32:25.131 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61741144869001 STEP 5: Transaction specific fields parsed successfully
+17:32:25.131 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61741144869001 STEP 7: Institution based customization done successfully
+17:32:25.131 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61741144869001 Masking Message Fields
+17:32:25.131 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869001 Message Stamp = [20251029122944000360530212000360484838**********]
+17:32:25.131 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869001 DateTime = [20251029122944]
+17:32:25.131 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869001 Stan [000360]
+17:32:25.131 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869001 RRN [530212000360]
+17:32:25.131 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61741144869001 Message fields parsed successfully
+17:32:25.131 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61741144869001 Setting message format [HOSTISO87]
+17:32:25.132 	INFO 	transaction.cpp    	1602 	getRequestMess 	61741144869001 Checking if original transaction exists in in-memory database
+17:32:25.133 	INFO 	transaction.cpp    	1615 	getRequestMess 	61741144869001 Original transaction found successfully
+17:32:25.134 	INFO 	transactionprocess 	1020 	startParsing   	61741144869001 THREADTIME 00:00:00.004807
+17:32:25.134 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869001 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:25.135 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869001 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:57.928 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869001 419
+17:32:57.929 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869001 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:57.929 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869001 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:57.942 	INFO 	transactionprocess 	0970 	startParsing   	61741144869003 Received message with priority [0]
+17:32:57.942 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869003 Attaching library ./lib/libtranslatorhostiso87.so
+17:32:57.942 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869003 Setting message format [hostiso87]
+17:32:57.942 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869003 Parsing Header
+17:32:57.942 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869003 Header parsed successfully
+17:32:57.942 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869003 Parsing message fields
+17:32:57.942 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869003 Bitmap set successfully
+17:32:57.942 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869003 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+17:32:57.942 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869003 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+17:32:57.943 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61741144869003 Fields parsed successfully
+17:32:57.943 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61741144869003 STEP1: Message fields parsed successfully
+17:32:57.943 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61741144869003 STEP 2: Mandatory fields validated successfully
+17:32:57.943 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61741144869003 STEP 3: Subfields parsed successfully
+17:32:57.943 	INFO 	translator.cpp     	1586 	mapField       	61741144869003 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+17:32:57.943 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61741144869003 STEP 4: Incoming fields mapped successfully
+17:32:57.943 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61741144869003 STEP 5: Transaction specific fields parsed successfully
+17:32:57.943 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61741144869003 STEP 7: Institution based customization done successfully
+17:32:57.943 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61741144869003 Masking Message Fields
+17:32:57.943 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869003 Message Stamp = [20251029123017000361530212000361484838**********]
+17:32:57.943 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869003 DateTime = [20251029123017]
+17:32:57.943 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869003 Stan [000361]
+17:32:57.943 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869003 RRN [530212000361]
+17:32:57.943 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61741144869003 Message fields parsed successfully
+17:32:57.944 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61741144869003 Setting message format [HOSTISO87]
+17:32:57.944 	INFO 	transaction.cpp    	1602 	getRequestMess 	61741144869003 Checking if original transaction exists in in-memory database
+17:32:57.945 	INFO 	transaction.cpp    	1615 	getRequestMess 	61741144869003 Original transaction found successfully
+17:32:57.947 	INFO 	transactionprocess 	1020 	startParsing   	61741144869003 THREADTIME 00:00:00.005215
+17:32:57.947 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869003 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:32:57.948 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869003 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:34:14.939 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869003 419
+17:34:14.940 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869003 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:34:14.940 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869003 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:34:14.955 	INFO 	transactionprocess 	0970 	startParsing   	61741144869005 Received message with priority [0]
+17:34:14.955 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869005 Attaching library ./lib/libtranslatorhostiso87.so
+17:34:14.956 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869005 Setting message format [hostiso87]
+17:34:14.956 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869005 Parsing Header
+17:34:14.956 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869005 Header parsed successfully
+17:34:14.956 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869005 Parsing message fields
+17:34:14.956 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869005 Bitmap set successfully
+17:34:14.956 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869005 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+17:34:14.956 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869005 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+17:34:14.957 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61741144869005 Fields parsed successfully
+17:34:14.957 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61741144869005 STEP1: Message fields parsed successfully
+17:34:14.957 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61741144869005 STEP 2: Mandatory fields validated successfully
+17:34:14.957 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61741144869005 STEP 3: Subfields parsed successfully
+17:34:14.958 	INFO 	translator.cpp     	1586 	mapField       	61741144869005 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+17:34:14.958 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61741144869005 STEP 4: Incoming fields mapped successfully
+17:34:14.958 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61741144869005 STEP 5: Transaction specific fields parsed successfully
+17:34:14.958 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61741144869005 STEP 7: Institution based customization done successfully
+17:34:14.958 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61741144869005 Masking Message Fields
+17:34:14.958 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869005 Message Stamp = [20251029123134000362530212000362484838**********]
+17:34:14.958 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869005 DateTime = [20251029123134]
+17:34:14.958 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869005 Stan [000362]
+17:34:14.958 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869005 RRN [530212000362]
+17:34:14.958 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61741144869005 Message fields parsed successfully
+17:34:14.958 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61741144869005 Setting message format [HOSTISO87]
+17:34:14.958 	INFO 	transaction.cpp    	1602 	getRequestMess 	61741144869005 Checking if original transaction exists in in-memory database
+17:34:14.960 	INFO 	transaction.cpp    	1615 	getRequestMess 	61741144869005 Original transaction found successfully
+17:34:14.961 	INFO 	transactionprocess 	1020 	startParsing   	61741144869005 THREADTIME 00:00:00.005701
+17:34:14.961 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869005 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:34:14.962 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869005 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:45:57.584 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869005 419
+17:45:57.584 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869005 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:45:57.584 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869005 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:45:57.597 	INFO 	transactionprocess 	0970 	startParsing   	61741144869016 Received message with priority [0]
+17:45:57.597 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869016 Attaching library ./lib/libtranslatorhostiso87.so
+17:45:57.598 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869016 Setting message format [hostiso87]
+17:45:57.598 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869016 Parsing Header
+17:45:57.598 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869016 Header parsed successfully
+17:45:57.598 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869016 Parsing message fields
+17:45:57.598 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869016 Bitmap set successfully
+17:45:57.598 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869016 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+17:45:57.598 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869016 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+17:45:57.598 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61741144869016 Fields parsed successfully
+17:45:57.598 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61741144869016 STEP1: Message fields parsed successfully
+17:45:57.598 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61741144869016 STEP 2: Mandatory fields validated successfully
+17:45:57.598 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61741144869016 STEP 3: Subfields parsed successfully
+17:45:57.599 	INFO 	translator.cpp     	1586 	mapField       	61741144869016 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+17:45:57.599 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61741144869016 STEP 4: Incoming fields mapped successfully
+17:45:57.599 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61741144869016 STEP 5: Transaction specific fields parsed successfully
+17:45:57.599 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61741144869016 STEP 7: Institution based customization done successfully
+17:45:57.599 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61741144869016 Masking Message Fields
+17:45:57.599 	INFO 	message.cpp        	1675 	printMessageSt 	61741144869016 Message Stamp = [20251029124317000372530212000372484838**********]
+17:45:57.599 	INFO 	message.cpp        	1676 	printMessageSt 	61741144869016 DateTime = [20251029124317]
+17:45:57.599 	INFO 	message.cpp        	1677 	printMessageSt 	61741144869016 Stan [000372]
+17:45:57.599 	INFO 	message.cpp        	1678 	printMessageSt 	61741144869016 RRN [530212000372]
+17:45:57.599 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61741144869016 Message fields parsed successfully
+17:45:57.599 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61741144869016 Setting message format [HOSTISO87]
+17:45:57.599 	INFO 	transaction.cpp    	1602 	getRequestMess 	61741144869016 Checking if original transaction exists in in-memory database
+17:45:57.600 	INFO 	transaction.cpp    	1615 	getRequestMess 	61741144869016 Original transaction found successfully
+17:45:57.601 	INFO 	transactionprocess 	1020 	startParsing   	61741144869016 THREADTIME 00:00:00.003373
+17:45:57.601 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869016 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:45:57.601 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869016 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:47:58.843 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869016 419
+17:47:58.844 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869016 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:47:58.844 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869016 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:47:58.856 	INFO 	transactionprocess 	0970 	startParsing   	61741144869018 Received message with priority [0]
+17:47:58.856 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869018 Attaching library ./lib/libtranslatorhostiso87.so
+17:47:58.856 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869018 Setting message format [hostiso87]
+17:47:58.856 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869018 Parsing Header
+17:47:58.856 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869018 Header parsed successfully
+17:47:58.856 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869018 Parsing message fields
+17:47:58.856 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869018 Bitmap set successfully
+17:47:58.856 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869018 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+17:47:58.856 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869018 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+17:47:58.857 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869018 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+17:47:58.857 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869018 Failed parsing message fields
+17:47:58.857 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869018 Parse message failed
+17:47:58.857 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869018 Failed processing incoming message
+17:47:58.857 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869018 Fixed     ->ASCII ->Length = [4], Position = [0]
+17:47:58.857 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869018 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+17:47:58.857 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869018 Fixed     ->ASCII ->Length = [3], Position = [4]
+17:47:58.857 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869018 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+17:47:58.857 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869018 tempField = [Invalid length received, length validation failed]
+17:47:58.857 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869018 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+17:47:58.857 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869018 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+17:47:58.857 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869018 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+17:47:58.863 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869018 Reject log with id [61741144869018] inserted successfully
+17:47:58.863 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869018 Unable to parse message, handling rejection if required
+17:47:58.863 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869018 Failed translating incoming message
+17:47:58.864 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869018 Failed to translate message
+17:47:58.864 	INFO 	transactionprocess 	1020 	startParsing   	61741144869018 THREADTIME 00:00:00.007715
+17:47:58.864 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869018 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+17:47:58.864 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869018 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:02:58.520 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869018 419
+18:02:58.520 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869018 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:02:58.520 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869018 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:02:58.537 	INFO 	transactionprocess 	0970 	startParsing   	61741144869023 Received message with priority [0]
+18:02:58.537 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869023 Attaching library ./lib/libtranslatorhostiso87.so
+18:02:58.537 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869023 Setting message format [hostiso87]
+18:02:58.537 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869023 Parsing Header
+18:02:58.537 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869023 Header parsed successfully
+18:02:58.537 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869023 Parsing message fields
+18:02:58.537 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869023 Bitmap set successfully
+18:02:58.537 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869023 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:02:58.537 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869023 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:02:58.538 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869023 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:02:58.538 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869023 Failed parsing message fields
+18:02:58.538 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869023 Parse message failed
+18:02:58.538 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869023 Failed processing incoming message
+18:02:58.538 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869023 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:02:58.538 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869023 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:02:58.538 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869023 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:02:58.538 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869023 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:02:58.538 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869023 tempField = [Invalid length received, length validation failed]
+18:02:58.538 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869023 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:02:58.538 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869023 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:02:58.539 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869023 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:02:58.542 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869023 Reject log with id [61741144869023] inserted successfully
+18:02:58.542 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869023 Unable to parse message, handling rejection if required
+18:02:58.542 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869023 Failed translating incoming message
+18:02:58.542 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869023 Failed to translate message
+18:02:58.542 	INFO 	transactionprocess 	1020 	startParsing   	61741144869023 THREADTIME 00:00:00.005558
+18:02:58.543 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869023 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:02:58.543 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869023 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:04:59.985 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869023 419
+18:04:59.985 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869023 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:04:59.986 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869023 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:04:59.999 	INFO 	transactionprocess 	0970 	startParsing   	61741144869026 Received message with priority [0]
+18:04:59.999 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869026 Attaching library ./lib/libtranslatorhostiso87.so
+18:04:59.999 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869026 Setting message format [hostiso87]
+18:04:59.999 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869026 Parsing Header
+18:04:59.999 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869026 Header parsed successfully
+18:04:59.999 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869026 Parsing message fields
+18:04:59.999 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869026 Bitmap set successfully
+18:04:59.999 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869026 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:04:59.999 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869026 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:05:00.0 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869026 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:05:00.0 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869026 Failed parsing message fields
+18:05:00.0 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869026 Parse message failed
+18:05:00.0 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869026 Failed processing incoming message
+18:05:00.0 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869026 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:05:00.0 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869026 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:05:00.0 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869026 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:05:00.0 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869026 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:05:00.0 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869026 tempField = [Invalid length received, length validation failed]
+18:05:00.0 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869026 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:05:00.0 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869026 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:05:00.0 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869026 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:05:00.3 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869026 Reject log with id [61741144869026] inserted successfully
+18:05:00.3 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869026 Unable to parse message, handling rejection if required
+18:05:00.3 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869026 Failed translating incoming message
+18:05:00.3 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869026 Failed to translate message
+18:05:00.3 	INFO 	transactionprocess 	1020 	startParsing   	61741144869026 THREADTIME 00:00:00.004659
+18:05:00.3 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869026 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:05:00.4 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869026 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:11:02.440 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869026 419
+18:11:02.440 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869026 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:11:02.440 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869026 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:11:02.502 	INFO 	transactionprocess 	0970 	startParsing   	61741144869032 Received message with priority [0]
+18:11:02.502 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869032 Attaching library ./lib/libtranslatorhostiso87.so
+18:11:02.502 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869032 Setting message format [hostiso87]
+18:11:02.502 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869032 Parsing Header
+18:11:02.503 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869032 Header parsed successfully
+18:11:02.503 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869032 Parsing message fields
+18:11:02.503 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869032 Bitmap set successfully
+18:11:02.503 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869032 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:11:02.503 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869032 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:11:02.503 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869032 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:11:02.503 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869032 Failed parsing message fields
+18:11:02.503 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869032 Parse message failed
+18:11:02.503 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869032 Failed processing incoming message
+18:11:02.503 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869032 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:11:02.503 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869032 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:11:02.503 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869032 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:11:02.503 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869032 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:11:02.503 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869032 tempField = [Invalid length received, length validation failed]
+18:11:02.503 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869032 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:11:02.503 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869032 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:11:02.503 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869032 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:11:02.506 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869032 Reject log with id [61741144869032] inserted successfully
+18:11:02.506 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869032 Unable to parse message, handling rejection if required
+18:11:02.506 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869032 Failed translating incoming message
+18:11:02.506 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869032 Failed to translate message
+18:11:02.506 	INFO 	transactionprocess 	1020 	startParsing   	61741144869032 THREADTIME 00:00:00.004836
+18:11:02.507 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869032 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:11:02.507 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869032 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:11:48.61 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869032 419
+18:11:48.61 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869032 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:11:48.61 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869032 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:11:48.73 	INFO 	transactionprocess 	0970 	startParsing   	61741144869034 Received message with priority [0]
+18:11:48.73 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869034 Attaching library ./lib/libtranslatorhostiso87.so
+18:11:48.74 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869034 Setting message format [hostiso87]
+18:11:48.74 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869034 Parsing Header
+18:11:48.74 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869034 Header parsed successfully
+18:11:48.74 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869034 Parsing message fields
+18:11:48.74 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869034 Bitmap set successfully
+18:11:48.74 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869034 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:11:48.74 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869034 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:11:48.74 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869034 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:11:48.74 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869034 Failed parsing message fields
+18:11:48.74 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869034 Parse message failed
+18:11:48.74 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869034 Failed processing incoming message
+18:11:48.74 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869034 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:11:48.74 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869034 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:11:48.74 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869034 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:11:48.74 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869034 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:11:48.74 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869034 tempField = [Invalid length received, length validation failed]
+18:11:48.74 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869034 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:11:48.74 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869034 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:11:48.75 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869034 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:11:48.77 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869034 Reject log with id [61741144869034] inserted successfully
+18:11:48.77 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869034 Unable to parse message, handling rejection if required
+18:11:48.77 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869034 Failed translating incoming message
+18:11:48.77 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869034 Failed to translate message
+18:11:48.78 	INFO 	transactionprocess 	1020 	startParsing   	61741144869034 THREADTIME 00:00:00.004138
+18:11:48.78 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869034 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:11:48.78 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869034 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:13:41.665 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869034 419
+18:13:41.665 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869034 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:13:41.665 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869034 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:13:41.678 	INFO 	transactionprocess 	0970 	startParsing   	61741144869036 Received message with priority [0]
+18:13:41.678 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869036 Attaching library ./lib/libtranslatorhostiso87.so
+18:13:41.678 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869036 Setting message format [hostiso87]
+18:13:41.678 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869036 Parsing Header
+18:13:41.678 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869036 Header parsed successfully
+18:13:41.678 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869036 Parsing message fields
+18:13:41.678 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869036 Bitmap set successfully
+18:13:41.678 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869036 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:13:41.678 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869036 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:13:41.679 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869036 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:13:41.679 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869036 Failed parsing message fields
+18:13:41.679 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869036 Parse message failed
+18:13:41.679 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869036 Failed processing incoming message
+18:13:41.679 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869036 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:13:41.679 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869036 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:13:41.679 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869036 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:13:41.679 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869036 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:13:41.679 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869036 tempField = [Invalid length received, length validation failed]
+18:13:41.679 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869036 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:13:41.679 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869036 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:13:41.679 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869036 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:13:41.683 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869036 Reject log with id [61741144869036] inserted successfully
+18:13:41.683 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869036 Unable to parse message, handling rejection if required
+18:13:41.683 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869036 Failed translating incoming message
+18:13:41.683 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869036 Failed to translate message
+18:13:41.683 	INFO 	transactionprocess 	1020 	startParsing   	61741144869036 THREADTIME 00:00:00.005252
+18:13:41.683 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869036 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:13:41.683 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869036 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:14:27.297 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869036 419
+18:14:27.297 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869036 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:14:27.298 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869036 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:14:27.315 	INFO 	transactionprocess 	0970 	startParsing   	61741144869038 Received message with priority [0]
+18:14:27.315 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869038 Attaching library ./lib/libtranslatorhostiso87.so
+18:14:27.315 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869038 Setting message format [hostiso87]
+18:14:27.316 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869038 Parsing Header
+18:14:27.316 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869038 Header parsed successfully
+18:14:27.316 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869038 Parsing message fields
+18:14:27.316 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869038 Bitmap set successfully
+18:14:27.316 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869038 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:14:27.316 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869038 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:14:27.316 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869038 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:14:27.316 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869038 Failed parsing message fields
+18:14:27.316 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869038 Parse message failed
+18:14:27.316 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869038 Failed processing incoming message
+18:14:27.316 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869038 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:14:27.316 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869038 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:14:27.316 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869038 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:14:27.316 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869038 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:14:27.316 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869038 tempField = [Invalid length received, length validation failed]
+18:14:27.316 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869038 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:14:27.316 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869038 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:14:27.316 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869038 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:14:27.320 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869038 Reject log with id [61741144869038] inserted successfully
+18:14:27.320 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869038 Unable to parse message, handling rejection if required
+18:14:27.320 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869038 Failed translating incoming message
+18:14:27.320 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869038 Failed to translate message
+18:14:27.320 	INFO 	transactionprocess 	1020 	startParsing   	61741144869038 THREADTIME 00:00:00.005676
+18:14:27.321 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869038 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:14:27.321 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869038 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:46:39.192 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869038 419
+18:46:39.192 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869038 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:46:39.193 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869038 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:46:39.214 	INFO 	transactionprocess 	0970 	startParsing   	61741144869040 Received message with priority [0]
+18:46:39.214 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869040 Attaching library ./lib/libtranslatorhostiso87.so
+18:46:39.214 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869040 Setting message format [hostiso87]
+18:46:39.214 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869040 Parsing Header
+18:46:39.214 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869040 Header parsed successfully
+18:46:39.214 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869040 Parsing message fields
+18:46:39.214 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869040 Bitmap set successfully
+18:46:39.214 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869040 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:46:39.214 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869040 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:46:39.215 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869040 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:46:39.215 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869040 Failed parsing message fields
+18:46:39.215 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869040 Parse message failed
+18:46:39.215 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869040 Failed processing incoming message
+18:46:39.215 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869040 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:46:39.215 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869040 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:46:39.215 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869040 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:46:39.215 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869040 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:46:39.215 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869040 tempField = [Invalid length received, length validation failed]
+18:46:39.215 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869040 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:46:39.215 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869040 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:46:39.215 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869040 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:46:39.219 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869040 Reject log with id [61741144869040] inserted successfully
+18:46:39.219 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869040 Unable to parse message, handling rejection if required
+18:46:39.219 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869040 Failed translating incoming message
+18:46:39.219 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869040 Failed to translate message
+18:46:39.219 	INFO 	transactionprocess 	1020 	startParsing   	61741144869040 THREADTIME 00:00:00.005239
+18:46:39.219 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869040 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:46:39.219 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869040 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:47:24.875 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869040 419
+18:47:24.875 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869040 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:47:24.876 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869040 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:47:24.893 	INFO 	transactionprocess 	0970 	startParsing   	61741144869042 Received message with priority [0]
+18:47:24.893 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869042 Attaching library ./lib/libtranslatorhostiso87.so
+18:47:24.894 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869042 Setting message format [hostiso87]
+18:47:24.894 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869042 Parsing Header
+18:47:24.894 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869042 Header parsed successfully
+18:47:24.894 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869042 Parsing message fields
+18:47:24.894 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869042 Bitmap set successfully
+18:47:24.894 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869042 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:47:24.894 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869042 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:47:24.894 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869042 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:47:24.894 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869042 Failed parsing message fields
+18:47:24.894 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869042 Parse message failed
+18:47:24.894 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869042 Failed processing incoming message
+18:47:24.894 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869042 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:47:24.894 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869042 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:47:24.895 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869042 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:47:24.895 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869042 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:47:24.895 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869042 tempField = [Invalid length received, length validation failed]
+18:47:24.895 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869042 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:47:24.895 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869042 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:47:24.895 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869042 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:47:24.901 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869042 Reject log with id [61741144869042] inserted successfully
+18:47:24.901 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869042 Unable to parse message, handling rejection if required
+18:47:24.901 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869042 Failed translating incoming message
+18:47:24.901 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869042 Failed to translate message
+18:47:24.901 	INFO 	transactionprocess 	1020 	startParsing   	61741144869042 THREADTIME 00:00:00.008133
+18:47:24.902 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869042 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:47:24.902 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869042 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:51:32.81 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869042 419
+18:51:32.81 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869042 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:51:32.81 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869042 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:51:32.97 	INFO 	transactionprocess 	0970 	startParsing   	61741144869044 Received message with priority [0]
+18:51:32.97 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869044 Attaching library ./lib/libtranslatorhostiso87.so
+18:51:32.97 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869044 Setting message format [hostiso87]
+18:51:32.98 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869044 Parsing Header
+18:51:32.98 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869044 Header parsed successfully
+18:51:32.98 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869044 Parsing message fields
+18:51:32.98 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869044 Bitmap set successfully
+18:51:32.98 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869044 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:51:32.98 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869044 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:51:32.98 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869044 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:51:32.98 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869044 Failed parsing message fields
+18:51:32.98 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869044 Parse message failed
+18:51:32.98 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869044 Failed processing incoming message
+18:51:32.98 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869044 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:51:32.98 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869044 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:51:32.98 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869044 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:51:32.98 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869044 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:51:32.99 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869044 tempField = [Invalid length received, length validation failed]
+18:51:32.99 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869044 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:51:32.99 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869044 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:51:32.99 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869044 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:51:32.103 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869044 Reject log with id [61741144869044] inserted successfully
+18:51:32.103 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869044 Unable to parse message, handling rejection if required
+18:51:32.103 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869044 Failed translating incoming message
+18:51:32.103 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869044 Failed to translate message
+18:51:32.103 	INFO 	transactionprocess 	1020 	startParsing   	61741144869044 THREADTIME 00:00:00.005827
+18:51:32.103 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869044 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:51:32.104 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869044 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:51:47.311 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869044 419
+18:51:47.312 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869044 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:51:47.312 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869044 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:51:47.330 	INFO 	transactionprocess 	0970 	startParsing   	61741144869046 Received message with priority [0]
+18:51:47.330 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869046 Attaching library ./lib/libtranslatorhostiso87.so
+18:51:47.330 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869046 Setting message format [hostiso87]
+18:51:47.330 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869046 Parsing Header
+18:51:47.330 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869046 Header parsed successfully
+18:51:47.330 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869046 Parsing message fields
+18:51:47.331 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869046 Bitmap set successfully
+18:51:47.331 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869046 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:51:47.331 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869046 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:51:47.331 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869046 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:51:47.331 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869046 Failed parsing message fields
+18:51:47.331 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869046 Parse message failed
+18:51:47.331 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869046 Failed processing incoming message
+18:51:47.331 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869046 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:51:47.331 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869046 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:51:47.331 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869046 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:51:47.331 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869046 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:51:47.331 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869046 tempField = [Invalid length received, length validation failed]
+18:51:47.331 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869046 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:51:47.331 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869046 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:51:47.332 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869046 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:51:47.336 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869046 Reject log with id [61741144869046] inserted successfully
+18:51:47.336 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869046 Unable to parse message, handling rejection if required
+18:51:47.336 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869046 Failed translating incoming message
+18:51:47.336 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869046 Failed to translate message
+18:51:47.336 	INFO 	transactionprocess 	1020 	startParsing   	61741144869046 THREADTIME 00:00:00.006631
+18:51:47.337 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869046 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:51:47.337 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869046 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:52:18.265 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869046 419
+18:52:18.265 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869046 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:52:18.266 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869046 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:52:18.283 	INFO 	transactionprocess 	0970 	startParsing   	61741144869048 Received message with priority [0]
+18:52:18.283 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869048 Attaching library ./lib/libtranslatorhostiso87.so
+18:52:18.283 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869048 Setting message format [hostiso87]
+18:52:18.284 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869048 Parsing Header
+18:52:18.284 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869048 Header parsed successfully
+18:52:18.284 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869048 Parsing message fields
+18:52:18.284 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869048 Bitmap set successfully
+18:52:18.284 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869048 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:52:18.284 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869048 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:52:18.284 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869048 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:52:18.284 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869048 Failed parsing message fields
+18:52:18.284 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869048 Parse message failed
+18:52:18.284 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869048 Failed processing incoming message
+18:52:18.285 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869048 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:52:18.285 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869048 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:52:18.285 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869048 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:52:18.285 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869048 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:52:18.285 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869048 tempField = [Invalid length received, length validation failed]
+18:52:18.285 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869048 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:52:18.285 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869048 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:52:18.285 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869048 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:52:18.288 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869048 Reject log with id [61741144869048] inserted successfully
+18:52:18.289 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869048 Unable to parse message, handling rejection if required
+18:52:18.289 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869048 Failed translating incoming message
+18:52:18.289 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869048 Failed to translate message
+18:52:18.289 	INFO 	transactionprocess 	1020 	startParsing   	61741144869048 THREADTIME 00:00:00.005896
+18:52:18.290 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869048 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:52:18.290 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869048 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:54:21.473 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869048 419
+18:54:21.473 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869048 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:54:21.473 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869048 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:54:21.493 	INFO 	transactionprocess 	0970 	startParsing   	61741144869050 Received message with priority [0]
+18:54:21.493 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869050 Attaching library ./lib/libtranslatorhostiso87.so
+18:54:21.493 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869050 Setting message format [hostiso87]
+18:54:21.494 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869050 Parsing Header
+18:54:21.494 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869050 Header parsed successfully
+18:54:21.494 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869050 Parsing message fields
+18:54:21.494 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869050 Bitmap set successfully
+18:54:21.494 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869050 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:54:21.494 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869050 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:54:21.494 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869050 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:54:21.494 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869050 Failed parsing message fields
+18:54:21.494 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869050 Parse message failed
+18:54:21.494 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869050 Failed processing incoming message
+18:54:21.494 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869050 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:54:21.494 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869050 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:54:21.494 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869050 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:54:21.494 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869050 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:54:21.494 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869050 tempField = [Invalid length received, length validation failed]
+18:54:21.494 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869050 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:54:21.494 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869050 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:54:21.494 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869050 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:54:21.498 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869050 Reject log with id [61741144869050] inserted successfully
+18:54:21.498 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869050 Unable to parse message, handling rejection if required
+18:54:21.498 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869050 Failed translating incoming message
+18:54:21.498 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869050 Failed to translate message
+18:54:21.498 	INFO 	transactionprocess 	1020 	startParsing   	61741144869050 THREADTIME 00:00:00.005257
+18:54:21.499 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869050 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:54:21.499 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869050 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:55:07.497 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869050 419
+18:55:07.497 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869050 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:55:07.497 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869050 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:55:07.512 	INFO 	transactionprocess 	0970 	startParsing   	61741144869052 Received message with priority [0]
+18:55:07.512 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869052 Attaching library ./lib/libtranslatorhostiso87.so
+18:55:07.512 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869052 Setting message format [hostiso87]
+18:55:07.513 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869052 Parsing Header
+18:55:07.513 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869052 Header parsed successfully
+18:55:07.513 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869052 Parsing message fields
+18:55:07.513 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869052 Bitmap set successfully
+18:55:07.513 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869052 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+18:55:07.513 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869052 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+18:55:07.514 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869052 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+18:55:07.514 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869052 Failed parsing message fields
+18:55:07.514 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869052 Parse message failed
+18:55:07.514 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869052 Failed processing incoming message
+18:55:07.514 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869052 Fixed     ->ASCII ->Length = [4], Position = [0]
+18:55:07.514 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869052 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+18:55:07.514 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869052 Fixed     ->ASCII ->Length = [3], Position = [4]
+18:55:07.514 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869052 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+18:55:07.514 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869052 tempField = [Invalid length received, length validation failed]
+18:55:07.514 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869052 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+18:55:07.514 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869052 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+18:55:07.514 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869052 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+18:55:07.517 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869052 Reject log with id [61741144869052] inserted successfully
+18:55:07.517 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869052 Unable to parse message, handling rejection if required
+18:55:07.518 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869052 Failed translating incoming message
+18:55:07.518 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869052 Failed to translate message
+18:55:07.518 	INFO 	transactionprocess 	1020 	startParsing   	61741144869052 THREADTIME 00:00:00.005764
+18:55:07.518 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869052 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+18:55:07.518 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869052 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:06:50.822 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869052 419
+19:06:50.823 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869052 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:06:50.823 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869052 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:06:50.857 	INFO 	transactionprocess 	0970 	startParsing   	61741144869054 Received message with priority [0]
+19:06:50.857 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869054 Attaching library ./lib/libtranslatorhostiso87.so
+19:06:50.857 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869054 Setting message format [hostiso87]
+19:06:50.858 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869054 Parsing Header
+19:06:50.858 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869054 Header parsed successfully
+19:06:50.858 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869054 Parsing message fields
+19:06:50.858 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869054 Bitmap set successfully
+19:06:50.858 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869054 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:06:50.858 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869054 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:06:50.858 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869054 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:06:50.858 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869054 Failed parsing message fields
+19:06:50.858 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869054 Parse message failed
+19:06:50.858 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869054 Failed processing incoming message
+19:06:50.858 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869054 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:06:50.858 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869054 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:06:50.858 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869054 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:06:50.858 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869054 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:06:50.858 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869054 tempField = [Invalid length received, length validation failed]
+19:06:50.858 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869054 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:06:50.858 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869054 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:06:50.858 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869054 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:06:50.862 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869054 Reject log with id [61741144869054] inserted successfully
+19:06:50.862 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869054 Unable to parse message, handling rejection if required
+19:06:50.863 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869054 Failed translating incoming message
+19:06:50.863 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869054 Failed to translate message
+19:06:50.863 	INFO 	transactionprocess 	1020 	startParsing   	61741144869054 THREADTIME 00:00:00.005514
+19:06:50.863 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869054 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:06:50.863 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869054 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:07:36.489 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869054 419
+19:07:36.490 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869054 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:07:36.490 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869054 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:07:36.506 	INFO 	transactionprocess 	0970 	startParsing   	61741144869056 Received message with priority [0]
+19:07:36.507 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869056 Attaching library ./lib/libtranslatorhostiso87.so
+19:07:36.507 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869056 Setting message format [hostiso87]
+19:07:36.507 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869056 Parsing Header
+19:07:36.507 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869056 Header parsed successfully
+19:07:36.507 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869056 Parsing message fields
+19:07:36.507 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869056 Bitmap set successfully
+19:07:36.507 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869056 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:07:36.508 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869056 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:07:36.508 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869056 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:07:36.508 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869056 Failed parsing message fields
+19:07:36.508 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869056 Parse message failed
+19:07:36.508 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869056 Failed processing incoming message
+19:07:36.509 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869056 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:07:36.509 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869056 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:07:36.509 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869056 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:07:36.509 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869056 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:07:36.509 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869056 tempField = [Invalid length received, length validation failed]
+19:07:36.509 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869056 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:07:36.509 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869056 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:07:36.509 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869056 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:07:36.513 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869056 Reject log with id [61741144869056] inserted successfully
+19:07:36.513 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869056 Unable to parse message, handling rejection if required
+19:07:36.513 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869056 Failed translating incoming message
+19:07:36.513 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869056 Failed to translate message
+19:07:36.513 	INFO 	transactionprocess 	1020 	startParsing   	61741144869056 THREADTIME 00:00:00.006826
+19:07:36.514 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869056 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:07:36.514 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869056 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:11:07.994 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869056 419
+19:11:07.995 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869056 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:11:07.995 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869056 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:11:08.10 	INFO 	transactionprocess 	0970 	startParsing   	61741144869058 Received message with priority [0]
+19:11:08.10 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869058 Attaching library ./lib/libtranslatorhostiso87.so
+19:11:08.10 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869058 Setting message format [hostiso87]
+19:11:08.10 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869058 Parsing Header
+19:11:08.10 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869058 Header parsed successfully
+19:11:08.10 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869058 Parsing message fields
+19:11:08.10 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869058 Bitmap set successfully
+19:11:08.10 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869058 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:11:08.10 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869058 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:11:08.11 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869058 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:11:08.11 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869058 Failed parsing message fields
+19:11:08.11 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869058 Parse message failed
+19:11:08.11 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869058 Failed processing incoming message
+19:11:08.11 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869058 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:11:08.11 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869058 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:11:08.11 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869058 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:11:08.11 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869058 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:11:08.11 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869058 tempField = [Invalid length received, length validation failed]
+19:11:08.11 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869058 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:11:08.11 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869058 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:11:08.11 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869058 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:11:08.15 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869058 Reject log with id [61741144869058] inserted successfully
+19:11:08.15 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869058 Unable to parse message, handling rejection if required
+19:11:08.15 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869058 Failed translating incoming message
+19:11:08.15 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869058 Failed to translate message
+19:11:08.15 	INFO 	transactionprocess 	1020 	startParsing   	61741144869058 THREADTIME 00:00:00.005782
+19:11:08.16 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869058 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:11:08.16 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869058 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:11:52.722 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869058 419
+19:11:52.723 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869058 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:11:52.723 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869058 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:11:52.735 	INFO 	transactionprocess 	0970 	startParsing   	61741144869060 Received message with priority [0]
+19:11:52.735 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869060 Attaching library ./lib/libtranslatorhostiso87.so
+19:11:52.736 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869060 Setting message format [hostiso87]
+19:11:52.736 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869060 Parsing Header
+19:11:52.736 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869060 Header parsed successfully
+19:11:52.736 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869060 Parsing message fields
+19:11:52.736 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869060 Bitmap set successfully
+19:11:52.736 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869060 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:11:52.736 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869060 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:11:52.737 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869060 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:11:52.737 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869060 Failed parsing message fields
+19:11:52.737 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869060 Parse message failed
+19:11:52.737 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869060 Failed processing incoming message
+19:11:52.737 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869060 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:11:52.737 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869060 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:11:52.737 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869060 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:11:52.737 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869060 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:11:52.737 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869060 tempField = [Invalid length received, length validation failed]
+19:11:52.737 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869060 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:11:52.737 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869060 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:11:52.737 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869060 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:11:52.741 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869060 Reject log with id [61741144869060] inserted successfully
+19:11:52.741 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869060 Unable to parse message, handling rejection if required
+19:11:52.741 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869060 Failed translating incoming message
+19:11:52.741 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869060 Failed to translate message
+19:11:52.741 	INFO 	transactionprocess 	1020 	startParsing   	61741144869060 THREADTIME 00:00:00.006009
+19:11:52.742 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869060 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:11:52.742 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869060 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:12:59.266 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869060 419
+19:12:59.266 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869060 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:12:59.266 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869060 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:12:59.281 	INFO 	transactionprocess 	0970 	startParsing   	61741144869062 Received message with priority [0]
+19:12:59.281 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869062 Attaching library ./lib/libtranslatorhostiso87.so
+19:12:59.281 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869062 Setting message format [hostiso87]
+19:12:59.281 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869062 Parsing Header
+19:12:59.282 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869062 Header parsed successfully
+19:12:59.282 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869062 Parsing message fields
+19:12:59.282 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869062 Bitmap set successfully
+19:12:59.282 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869062 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:12:59.282 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869062 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:12:59.282 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869062 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:12:59.282 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869062 Failed parsing message fields
+19:12:59.282 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869062 Parse message failed
+19:12:59.282 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869062 Failed processing incoming message
+19:12:59.282 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869062 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:12:59.282 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869062 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:12:59.282 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869062 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:12:59.282 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869062 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:12:59.282 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869062 tempField = [Invalid length received, length validation failed]
+19:12:59.282 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869062 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:12:59.282 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869062 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:12:59.282 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869062 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:12:59.285 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869062 Reject log with id [61741144869062] inserted successfully
+19:12:59.285 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869062 Unable to parse message, handling rejection if required
+19:12:59.285 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869062 Failed translating incoming message
+19:12:59.286 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869062 Failed to translate message
+19:12:59.286 	INFO 	transactionprocess 	1020 	startParsing   	61741144869062 THREADTIME 00:00:00.004632
+19:12:59.286 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869062 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:12:59.286 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869062 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:13:44.929 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869062 419
+19:13:44.930 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869062 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:13:44.930 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869062 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:13:44.948 	INFO 	transactionprocess 	0970 	startParsing   	61741144869064 Received message with priority [0]
+19:13:44.948 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869064 Attaching library ./lib/libtranslatorhostiso87.so
+19:13:44.948 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869064 Setting message format [hostiso87]
+19:13:44.949 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869064 Parsing Header
+19:13:44.949 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869064 Header parsed successfully
+19:13:44.949 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869064 Parsing message fields
+19:13:44.949 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869064 Bitmap set successfully
+19:13:44.949 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869064 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:13:44.949 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869064 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:13:44.950 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869064 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:13:44.950 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869064 Failed parsing message fields
+19:13:44.950 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869064 Parse message failed
+19:13:44.950 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869064 Failed processing incoming message
+19:13:44.950 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869064 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:13:44.950 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869064 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:13:44.950 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869064 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:13:44.950 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869064 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:13:44.950 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869064 tempField = [Invalid length received, length validation failed]
+19:13:44.950 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869064 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:13:44.950 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869064 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:13:44.950 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869064 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:13:44.956 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869064 Reject log with id [61741144869064] inserted successfully
+19:13:44.956 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869064 Unable to parse message, handling rejection if required
+19:13:44.956 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869064 Failed translating incoming message
+19:13:44.957 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869064 Failed to translate message
+19:13:44.957 	INFO 	transactionprocess 	1020 	startParsing   	61741144869064 THREADTIME 00:00:00.008960
+19:13:44.957 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869064 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:13:44.958 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869064 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:14:29.397 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869064 419
+19:14:29.397 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869064 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:14:29.397 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869064 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:14:29.415 	INFO 	transactionprocess 	0970 	startParsing   	61741144869066 Received message with priority [0]
+19:14:29.415 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869066 Attaching library ./lib/libtranslatorhostiso87.so
+19:14:29.416 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869066 Setting message format [hostiso87]
+19:14:29.416 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869066 Parsing Header
+19:14:29.416 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869066 Header parsed successfully
+19:14:29.416 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869066 Parsing message fields
+19:14:29.417 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869066 Bitmap set successfully
+19:14:29.417 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869066 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:14:29.417 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869066 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:14:29.417 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869066 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:14:29.417 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869066 Failed parsing message fields
+19:14:29.417 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869066 Parse message failed
+19:14:29.417 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869066 Failed processing incoming message
+19:14:29.418 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869066 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:14:29.418 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869066 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:14:29.418 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869066 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:14:29.418 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869066 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:14:29.418 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869066 tempField = [Invalid length received, length validation failed]
+19:14:29.418 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869066 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:14:29.418 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869066 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:14:29.418 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869066 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:14:29.422 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869066 Reject log with id [61741144869066] inserted successfully
+19:14:29.422 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869066 Unable to parse message, handling rejection if required
+19:14:29.422 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869066 Failed translating incoming message
+19:14:29.422 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869066 Failed to translate message
+19:14:29.422 	INFO 	transactionprocess 	1020 	startParsing   	61741144869066 THREADTIME 00:00:00.006610
+19:14:29.422 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869066 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:14:29.423 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869066 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:15:21.114 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869066 419
+19:15:21.114 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869066 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:15:21.114 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869066 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:15:21.127 	INFO 	transactionprocess 	0970 	startParsing   	61741144869068 Received message with priority [0]
+19:15:21.127 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869068 Attaching library ./lib/libtranslatorhostiso87.so
+19:15:21.127 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869068 Setting message format [hostiso87]
+19:15:21.127 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869068 Parsing Header
+19:15:21.128 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869068 Header parsed successfully
+19:15:21.128 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869068 Parsing message fields
+19:15:21.128 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869068 Bitmap set successfully
+19:15:21.128 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869068 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:15:21.128 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869068 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:15:21.128 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869068 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:15:21.128 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869068 Failed parsing message fields
+19:15:21.128 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869068 Parse message failed
+19:15:21.128 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869068 Failed processing incoming message
+19:15:21.128 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869068 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:15:21.128 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869068 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:15:21.128 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869068 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:15:21.128 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869068 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:15:21.128 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869068 tempField = [Invalid length received, length validation failed]
+19:15:21.128 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869068 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:15:21.128 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869068 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:15:21.128 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869068 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:15:21.132 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869068 Reject log with id [61741144869068] inserted successfully
+19:15:21.132 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869068 Unable to parse message, handling rejection if required
+19:15:21.132 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869068 Failed translating incoming message
+19:15:21.132 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869068 Failed to translate message
+19:15:21.132 	INFO 	transactionprocess 	1020 	startParsing   	61741144869068 THREADTIME 00:00:00.004999
+19:15:21.132 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869068 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:15:21.132 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869068 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:16:07.28 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869068 419
+19:16:07.29 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869068 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:16:07.29 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869068 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:16:07.46 	INFO 	transactionprocess 	0970 	startParsing   	61741144869070 Received message with priority [0]
+19:16:07.47 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869070 Attaching library ./lib/libtranslatorhostiso87.so
+19:16:07.47 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869070 Setting message format [hostiso87]
+19:16:07.47 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869070 Parsing Header
+19:16:07.48 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869070 Header parsed successfully
+19:16:07.48 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869070 Parsing message fields
+19:16:07.48 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869070 Bitmap set successfully
+19:16:07.48 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869070 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:16:07.48 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869070 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:16:07.49 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869070 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:16:07.49 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869070 Failed parsing message fields
+19:16:07.49 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869070 Parse message failed
+19:16:07.49 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869070 Failed processing incoming message
+19:16:07.49 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869070 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:16:07.49 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869070 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:16:07.49 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869070 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:16:07.49 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869070 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:16:07.49 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869070 tempField = [Invalid length received, length validation failed]
+19:16:07.49 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869070 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:16:07.49 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869070 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:16:07.49 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869070 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:16:07.52 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869070 Reject log with id [61741144869070] inserted successfully
+19:16:07.53 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869070 Unable to parse message, handling rejection if required
+19:16:07.53 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869070 Failed translating incoming message
+19:16:07.53 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869070 Failed to translate message
+19:16:07.53 	INFO 	transactionprocess 	1020 	startParsing   	61741144869070 THREADTIME 00:00:00.006251
+19:16:07.53 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869070 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:16:07.53 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869070 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:27:25.467 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869070 419
+19:27:25.467 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869070 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:27:25.468 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869070 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:27:27.297 	INFO 	transactionprocess 	0970 	startParsing   	61741144869072 Received message with priority [0]
+19:27:27.297 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869072 Attaching library ./lib/libtranslatorhostiso87.so
+19:27:27.298 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869072 Setting message format [hostiso87]
+19:27:27.298 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869072 Parsing Header
+19:27:27.298 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869072 Header parsed successfully
+19:27:27.298 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869072 Parsing message fields
+19:27:27.298 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869072 Bitmap set successfully
+19:27:27.298 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869072 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:27:27.298 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869072 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:27:27.299 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869072 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:27:27.299 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869072 Failed parsing message fields
+19:27:27.299 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869072 Parse message failed
+19:27:27.299 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869072 Failed processing incoming message
+19:27:27.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869072 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:27:27.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869072 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:27:27.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869072 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:27:27.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869072 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:27:27.299 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869072 tempField = [Invalid length received, length validation failed]
+19:27:27.299 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869072 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:27:27.299 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869072 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:27:27.299 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869072 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:27:27.304 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869072 Reject log with id [61741144869072] inserted successfully
+19:27:27.304 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869072 Unable to parse message, handling rejection if required
+19:27:27.304 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869072 Failed translating incoming message
+19:27:27.304 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869072 Failed to translate message
+19:27:27.304 	INFO 	transactionprocess 	1020 	startParsing   	61741144869072 THREADTIME 00:00:00.007213
+19:27:27.305 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869072 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:27:27.305 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869072 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:28:10.956 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869072 419
+19:28:10.957 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869072 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:28:10.957 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869072 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:29:10.535 	INFO 	transactionprocess 	0970 	startParsing   	61741144869075 Received message with priority [0]
+19:29:10.535 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869075 Attaching library ./lib/libtranslatorhostiso87.so
+19:29:10.537 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869075 Setting message format [hostiso87]
+19:29:10.538 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869075 Parsing Header
+19:29:10.539 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869075 Header parsed successfully
+19:29:10.539 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869075 Parsing message fields
+19:29:10.539 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869075 Bitmap set successfully
+19:29:10.539 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869075 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:29:10.539 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869075 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:29:10.540 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869075 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:29:10.540 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869075 Failed parsing message fields
+19:29:10.540 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869075 Parse message failed
+19:29:10.540 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869075 Failed processing incoming message
+19:29:10.540 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869075 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:29:10.540 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869075 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:29:10.541 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869075 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:29:10.541 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869075 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:29:10.541 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869075 tempField = [Invalid length received, length validation failed]
+19:29:10.541 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869075 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:29:10.541 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869075 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:29:10.541 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869075 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:29:10.571 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869075 Reject log with id [61741144869075] inserted successfully
+19:29:10.571 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869075 Unable to parse message, handling rejection if required
+19:29:10.573 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869075 Failed translating incoming message
+19:29:10.573 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869075 Failed to translate message
+19:29:10.573 	INFO 	transactionprocess 	1020 	startParsing   	61741144869075 THREADTIME 00:00:00.038517
+19:29:10.575 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869075 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:29:10.576 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869075 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:29:54.119 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869075 419
+19:29:54.119 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869075 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:29:54.120 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869075 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:48:38.657 	INFO 	transactionprocess 	0970 	startParsing   	61741144869078 Received message with priority [0]
+19:48:38.657 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61741144869078 Attaching library ./lib/libtranslatorhostiso87.so
+19:48:38.658 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61741144869078 Setting message format [hostiso87]
+19:48:38.658 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61741144869078 Parsing Header
+19:48:38.658 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61741144869078 Header parsed successfully
+19:48:38.658 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61741144869078 Parsing message fields
+19:48:38.658 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61741144869078 Bitmap set successfully
+19:48:38.658 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61741144869078 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+19:48:38.658 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61741144869078 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+19:48:38.659 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61741144869078 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+19:48:38.659 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61741144869078 Failed parsing message fields
+19:48:38.659 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61741144869078 Parse message failed
+19:48:38.659 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61741144869078 Failed processing incoming message
+19:48:38.659 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869078 Fixed     ->ASCII ->Length = [4], Position = [0]
+19:48:38.659 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869078 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+19:48:38.659 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869078 Fixed     ->ASCII ->Length = [3], Position = [4]
+19:48:38.659 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869078 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+19:48:38.659 	INFO 	translatoriso.cpp  	1052 	buildField     	61741144869078 tempField = [Invalid length received, length validation failed]
+19:48:38.659 	INFO 	translatoriso.cpp  	1251 	buildField     	61741144869078 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+19:48:38.659 	INFO 	translatoriso.cpp  	1264 	buildField     	61741144869078 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+19:48:38.659 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61741144869078 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+19:48:38.664 	INFO 	message.cpp        	1012 	insertRejectMe 	61741144869078 Reject log with id [61741144869078] inserted successfully
+19:48:38.664 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61741144869078 Unable to parse message, handling rejection if required
+19:48:38.664 	ERROR 	transactionprocess 	0774 	translateMessa 	61741144869078 Failed translating incoming message
+19:48:38.664 	ERROR 	transactionprocess 	1015 	startParsing   	61741144869078 Failed to translate message
+19:48:38.664 	INFO 	transactionprocess 	1020 	startParsing   	61741144869078 THREADTIME 00:00:00.006547
+19:48:38.664 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869078 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:48:38.664 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869078 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:49:21.704 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61741144869078 419
+19:49:21.705 	INFO 	transactionprocess 	1122 	checkUpdate    	61741144869078 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]
+19:49:21.705 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61741144869078 Updated datetime in shared memory is [20251029173124], transactions were loaded at [20251029173124]

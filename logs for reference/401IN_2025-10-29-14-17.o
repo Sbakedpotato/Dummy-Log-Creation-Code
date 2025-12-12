@@ -1,0 +1,444 @@
+14:17:52.241 	INFO 	transactionprocess 	0970 	startParsing   	61728941346006 Received message with priority [0]
+14:17:52.241 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346006 Attaching library ./lib/libtranslatorhostiso87.so
+14:17:52.241 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346006 Setting message format [hostiso87]
+14:17:52.242 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346006 Parsing Header
+14:17:52.242 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346006 Header parsed successfully
+14:17:52.242 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346006 Parsing message fields
+14:17:52.242 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346006 Bitmap set successfully
+14:17:52.242 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346006 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+14:17:52.242 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346006 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+14:17:52.243 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346006 Fields parsed successfully
+14:17:52.243 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346006 STEP1: Message fields parsed successfully
+14:17:52.243 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346006 STEP 2: Mandatory fields validated successfully
+14:17:52.243 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346006 STEP 3: Subfields parsed successfully
+14:17:52.243 	INFO 	translator.cpp     	1586 	mapField       	61728941346006 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+14:17:52.243 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346006 STEP 4: Incoming fields mapped successfully
+14:17:52.243 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346006 STEP 5: Transaction specific fields parsed successfully
+14:17:52.243 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346006 STEP 7: Institution based customization done successfully
+14:17:52.243 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346006 Masking Message Fields
+14:17:52.244 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346006 Message Stamp = [20251029091511000338530209000338484838**********]
+14:17:52.244 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346006 DateTime = [20251029091511]
+14:17:52.244 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346006 Stan [000338]
+14:17:52.244 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346006 RRN [530209000338]
+14:17:52.244 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346006 Message fields parsed successfully
+14:17:52.244 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346006 Setting message format [HOSTISO87]
+14:17:52.244 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346006 Checking if original transaction exists in in-memory database
+14:17:52.245 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346006 Original transaction found successfully
+14:17:52.246 	INFO 	transactionprocess 	1020 	startParsing   	61728941346006 THREADTIME 00:00:00.004765
+14:17:52.246 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346006 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:17:52.246 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346006 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:18:03.814 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346006 419
+14:18:03.814 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346006 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:18:03.814 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346006 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:18:03.831 	INFO 	transactionprocess 	0970 	startParsing   	61728941346008 Received message with priority [0]
+14:18:03.831 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346008 Attaching library ./lib/libtranslatorhostiso87.so
+14:18:03.831 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346008 Setting message format [hostiso87]
+14:18:03.831 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346008 Parsing Header
+14:18:03.832 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346008 Header parsed successfully
+14:18:03.832 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346008 Parsing message fields
+14:18:03.832 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346008 Bitmap set successfully
+14:18:03.832 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346008 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+14:18:03.832 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346008 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+14:18:03.832 	ERROR 	translatoriso.cpp  	0284 	parseFields    	61728941346008 Length [20] greater than maximum length [0] for DE-55[EMV_TAG_DATA]
+14:18:03.832 	ERROR 	translatoriso.cpp  	0046 	parseMessage   	61728941346008 Failed parsing message fields
+14:18:03.832 	ERROR 	translator.cpp     	0077 	ProcessIncomin 	61728941346008 Parse message failed
+14:18:03.832 	ERROR 	translator.cpp     	0400 	ProcessIncomin 	61728941346008 Failed processing incoming message
+14:18:03.832 	INFO 	translatoriso.cpp  	1251 	buildField     	61728941346008 Fixed     ->ASCII ->Length = [4], Position = [0]
+14:18:03.832 	INFO 	translatoriso.cpp  	1264 	buildField     	61728941346008 DE-1 MESSAGE_TYPE [4][9000]Fixed Encoded[ASCII]
+14:18:03.832 	INFO 	translatoriso.cpp  	1251 	buildField     	61728941346008 Fixed     ->ASCII ->Length = [3], Position = [4]
+14:18:03.832 	INFO 	translatoriso.cpp  	1264 	buildField     	61728941346008 DE-2 REJECT_FIELD [3][055]Fixed Encoded[ASCII]
+14:18:03.832 	INFO 	translatoriso.cpp  	1052 	buildField     	61728941346008 tempField = [Invalid length received, length validation failed]
+14:18:03.832 	INFO 	translatoriso.cpp  	1251 	buildField     	61728941346008 LLLVariable  ->ASCII ->Length = [52], Position = [10]
+14:18:03.832 	INFO 	translatoriso.cpp  	1264 	buildField     	61728941346008 DE-3 REJECT_REASON [52][Invalid length received, length validation failed]LLLVariable Encoded[ASCII]
+14:18:03.832 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61728941346008 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTREJECTMESSAGE
+14:18:03.854 	INFO 	message.cpp        	1012 	insertRejectMe 	61728941346008 Reject log with id [61728941346008] inserted successfully
+14:18:03.854 	ERROR 	translationmgr.cpp 	0724 	processIncomin 	61728941346008 Unable to parse message, handling rejection if required
+14:18:03.854 	ERROR 	transactionprocess 	0774 	translateMessa 	61728941346008 Failed translating incoming message
+14:18:03.854 	ERROR 	transactionprocess 	1015 	startParsing   	61728941346008 Failed to translate message
+14:18:03.854 	INFO 	transactionprocess 	1020 	startParsing   	61728941346008 THREADTIME 00:00:00.023382
+14:18:03.855 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346008 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:18:03.855 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346008 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:34:11.22 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346008 419
+14:34:11.23 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346008 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:34:11.23 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346008 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:34:11.49 	INFO 	transactionprocess 	0970 	startParsing   	61728941346011 Received message with priority [0]
+14:34:11.49 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346011 Attaching library ./lib/libtranslatorhostiso87.so
+14:34:11.49 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346011 Setting message format [hostiso87]
+14:34:11.50 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346011 Parsing Header
+14:34:11.50 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346011 Header parsed successfully
+14:34:11.50 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346011 Parsing message fields
+14:34:11.50 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346011 Bitmap set successfully
+14:34:11.50 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346011 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+14:34:11.50 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346011 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+14:34:11.50 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346011 Fields parsed successfully
+14:34:11.50 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346011 STEP1: Message fields parsed successfully
+14:34:11.50 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346011 STEP 2: Mandatory fields validated successfully
+14:34:11.51 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346011 STEP 3: Subfields parsed successfully
+14:34:11.51 	INFO 	translator.cpp     	1586 	mapField       	61728941346011 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+14:34:11.51 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346011 STEP 4: Incoming fields mapped successfully
+14:34:11.51 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346011 STEP 5: Transaction specific fields parsed successfully
+14:34:11.51 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346011 STEP 7: Institution based customization done successfully
+14:34:11.51 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346011 Masking Message Fields
+14:34:11.51 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346011 Message Stamp = [20251029093130000341530209000341484838**********]
+14:34:11.51 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346011 DateTime = [20251029093130]
+14:34:11.51 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346011 Stan [000341]
+14:34:11.51 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346011 RRN [530209000341]
+14:34:11.51 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346011 Message fields parsed successfully
+14:34:11.51 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346011 Setting message format [HOSTISO87]
+14:34:11.52 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346011 Checking if original transaction exists in in-memory database
+14:34:11.53 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346011 Original transaction found successfully
+14:34:11.54 	INFO 	transactionprocess 	1020 	startParsing   	61728941346011 THREADTIME 00:00:00.004694
+14:34:11.54 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346011 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:34:11.54 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346011 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:38:18.918 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346011 419
+14:38:18.919 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346011 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:38:18.919 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346011 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:38:18.932 	INFO 	transactionprocess 	0970 	startParsing   	61728941346013 Received message with priority [0]
+14:38:18.932 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346013 Attaching library ./lib/libtranslatorhostiso87.so
+14:38:18.933 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346013 Setting message format [hostiso87]
+14:38:18.933 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346013 Parsing Header
+14:38:18.933 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346013 Header parsed successfully
+14:38:18.933 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346013 Parsing message fields
+14:38:18.933 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346013 Bitmap set successfully
+14:38:18.933 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346013 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+14:38:18.933 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346013 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+14:38:18.934 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346013 Fields parsed successfully
+14:38:18.934 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346013 STEP1: Message fields parsed successfully
+14:38:18.934 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346013 STEP 2: Mandatory fields validated successfully
+14:38:18.934 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346013 STEP 3: Subfields parsed successfully
+14:38:18.934 	INFO 	translator.cpp     	1586 	mapField       	61728941346013 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+14:38:18.934 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346013 STEP 4: Incoming fields mapped successfully
+14:38:18.934 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346013 STEP 5: Transaction specific fields parsed successfully
+14:38:18.934 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346013 STEP 7: Institution based customization done successfully
+14:38:18.934 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346013 Masking Message Fields
+14:38:18.934 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346013 Message Stamp = [20251029093538000342530209000342484838**********]
+14:38:18.934 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346013 DateTime = [20251029093538]
+14:38:18.934 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346013 Stan [000342]
+14:38:18.934 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346013 RRN [530209000342]
+14:38:18.935 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346013 Message fields parsed successfully
+14:38:18.935 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346013 Setting message format [HOSTISO87]
+14:38:18.935 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346013 Checking if original transaction exists in in-memory database
+14:38:18.936 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346013 Original transaction found successfully
+14:38:18.937 	INFO 	transactionprocess 	1020 	startParsing   	61728941346013 THREADTIME 00:00:00.004350
+14:38:18.937 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346013 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:38:18.938 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346013 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:42:08.739 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346013 419
+14:42:08.740 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346013 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:42:08.740 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346013 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:42:08.763 	INFO 	transactionprocess 	0970 	startParsing   	61728941346015 Received message with priority [0]
+14:42:08.763 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346015 Attaching library ./lib/libtranslatorhostiso87.so
+14:42:08.763 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346015 Setting message format [hostiso87]
+14:42:08.763 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346015 Parsing Header
+14:42:08.763 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346015 Header parsed successfully
+14:42:08.763 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346015 Parsing message fields
+14:42:08.763 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346015 Bitmap set successfully
+14:42:08.763 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346015 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+14:42:08.763 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346015 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+14:42:08.764 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346015 Fields parsed successfully
+14:42:08.764 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346015 STEP1: Message fields parsed successfully
+14:42:08.764 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346015 STEP 2: Mandatory fields validated successfully
+14:42:08.764 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346015 STEP 3: Subfields parsed successfully
+14:42:08.764 	INFO 	translator.cpp     	1586 	mapField       	61728941346015 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+14:42:08.764 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346015 STEP 4: Incoming fields mapped successfully
+14:42:08.764 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346015 STEP 5: Transaction specific fields parsed successfully
+14:42:08.764 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346015 STEP 7: Institution based customization done successfully
+14:42:08.764 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346015 Masking Message Fields
+14:42:08.764 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346015 Message Stamp = [20251029093928000343530209000343484838**********]
+14:42:08.764 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346015 DateTime = [20251029093928]
+14:42:08.764 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346015 Stan [000343]
+14:42:08.764 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346015 RRN [530209000343]
+14:42:08.765 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346015 Message fields parsed successfully
+14:42:08.765 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346015 Setting message format [HOSTISO87]
+14:42:08.765 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346015 Checking if original transaction exists in in-memory database
+14:42:08.766 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346015 Original transaction found successfully
+14:42:08.767 	INFO 	transactionprocess 	1020 	startParsing   	61728941346015 THREADTIME 00:00:00.003750
+14:42:08.767 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346015 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:42:08.767 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346015 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:46:14.979 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346015 419
+14:46:14.979 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346015 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:46:14.979 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346015 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:46:14.992 	INFO 	transactionprocess 	0970 	startParsing   	61728941346017 Received message with priority [0]
+14:46:14.992 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346017 Attaching library ./lib/libtranslatorhostiso87.so
+14:46:14.992 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346017 Setting message format [hostiso87]
+14:46:14.992 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346017 Parsing Header
+14:46:14.992 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346017 Header parsed successfully
+14:46:14.992 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346017 Parsing message fields
+14:46:14.992 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346017 Bitmap set successfully
+14:46:14.992 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346017 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+14:46:14.992 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346017 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+14:46:14.993 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346017 Fields parsed successfully
+14:46:14.993 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346017 STEP1: Message fields parsed successfully
+14:46:14.993 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346017 STEP 2: Mandatory fields validated successfully
+14:46:14.993 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346017 STEP 3: Subfields parsed successfully
+14:46:14.994 	INFO 	translator.cpp     	1586 	mapField       	61728941346017 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+14:46:14.994 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346017 STEP 4: Incoming fields mapped successfully
+14:46:14.994 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346017 STEP 5: Transaction specific fields parsed successfully
+14:46:14.994 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346017 STEP 7: Institution based customization done successfully
+14:46:14.994 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346017 Masking Message Fields
+14:46:14.994 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346017 Message Stamp = [20251029094334000344530209000344484838**********]
+14:46:14.994 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346017 DateTime = [20251029094334]
+14:46:14.994 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346017 Stan [000344]
+14:46:14.994 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346017 RRN [530209000344]
+14:46:14.994 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346017 Message fields parsed successfully
+14:46:14.994 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346017 Setting message format [HOSTISO87]
+14:46:14.994 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346017 Checking if original transaction exists in in-memory database
+14:46:14.995 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346017 Original transaction found successfully
+14:46:14.996 	INFO 	transactionprocess 	1020 	startParsing   	61728941346017 THREADTIME 00:00:00.004164
+14:46:14.996 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346017 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+14:46:14.996 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346017 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:20:27.745 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346017 419
+15:20:27.746 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346017 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:20:27.746 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346017 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:20:27.762 	INFO 	transactionprocess 	0970 	startParsing   	61728941346029 Received message with priority [0]
+15:20:27.762 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346029 Attaching library ./lib/libtranslatorhostiso87.so
+15:20:27.763 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346029 Setting message format [hostiso87]
+15:20:27.763 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346029 Parsing Header
+15:20:27.763 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346029 Header parsed successfully
+15:20:27.763 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346029 Parsing message fields
+15:20:27.763 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346029 Bitmap set successfully
+15:20:27.763 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346029 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+15:20:27.763 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346029 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+15:20:27.763 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346029 Fields parsed successfully
+15:20:27.763 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346029 STEP1: Message fields parsed successfully
+15:20:27.763 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346029 STEP 2: Mandatory fields validated successfully
+15:20:27.764 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346029 STEP 3: Subfields parsed successfully
+15:20:27.764 	INFO 	translator.cpp     	1586 	mapField       	61728941346029 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+15:20:27.764 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346029 STEP 4: Incoming fields mapped successfully
+15:20:27.764 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346029 STEP 5: Transaction specific fields parsed successfully
+15:20:27.764 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346029 STEP 7: Institution based customization done successfully
+15:20:27.764 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346029 Masking Message Fields
+15:20:27.764 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346029 Message Stamp = [20251029101747000354530210000354484838**********]
+15:20:27.764 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346029 DateTime = [20251029101747]
+15:20:27.764 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346029 Stan [000354]
+15:20:27.764 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346029 RRN [530210000354]
+15:20:27.765 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346029 Message fields parsed successfully
+15:20:27.765 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346029 Setting message format [HOSTISO87]
+15:20:27.765 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346029 Checking if original transaction exists in in-memory database
+15:20:27.766 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346029 Original transaction found successfully
+15:20:27.767 	INFO 	transactionprocess 	1020 	startParsing   	61728941346029 THREADTIME 00:00:00.004910
+15:20:27.767 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346029 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:20:27.767 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346029 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:22:50.790 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346029 419
+15:22:50.791 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346029 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:22:50.791 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346029 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:22:50.806 	INFO 	transactionprocess 	0970 	startParsing   	61728941346031 Received message with priority [0]
+15:22:50.806 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346031 Attaching library ./lib/libtranslatorhostiso87.so
+15:22:50.806 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346031 Setting message format [hostiso87]
+15:22:50.807 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346031 Parsing Header
+15:22:50.807 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346031 Header parsed successfully
+15:22:50.807 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346031 Parsing message fields
+15:22:50.807 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346031 Bitmap set successfully
+15:22:50.807 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346031 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+15:22:50.807 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346031 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+15:22:50.807 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346031 Fields parsed successfully
+15:22:50.807 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346031 STEP1: Message fields parsed successfully
+15:22:50.807 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346031 STEP 2: Mandatory fields validated successfully
+15:22:50.808 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346031 STEP 3: Subfields parsed successfully
+15:22:50.808 	INFO 	translator.cpp     	1586 	mapField       	61728941346031 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+15:22:50.808 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346031 STEP 4: Incoming fields mapped successfully
+15:22:50.808 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346031 STEP 5: Transaction specific fields parsed successfully
+15:22:50.808 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346031 STEP 7: Institution based customization done successfully
+15:22:50.808 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346031 Masking Message Fields
+15:22:50.808 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346031 Message Stamp = [20251029102010000355530210000355484838**********]
+15:22:50.808 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346031 DateTime = [20251029102010]
+15:22:50.808 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346031 Stan [000355]
+15:22:50.808 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346031 RRN [530210000355]
+15:22:50.809 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346031 Message fields parsed successfully
+15:22:50.809 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346031 Setting message format [HOSTISO87]
+15:22:50.809 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346031 Checking if original transaction exists in in-memory database
+15:22:50.810 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346031 Original transaction found successfully
+15:22:50.811 	INFO 	transactionprocess 	1020 	startParsing   	61728941346031 THREADTIME 00:00:00.004710
+15:22:50.811 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346031 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:22:50.811 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346031 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:23:21.228 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346031 419
+15:23:21.229 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346031 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:23:21.229 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346031 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:23:21.243 	INFO 	transactionprocess 	0970 	startParsing   	61728941346033 Received message with priority [0]
+15:23:21.243 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346033 Attaching library ./lib/libtranslatorhostiso87.so
+15:23:21.243 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346033 Setting message format [hostiso87]
+15:23:21.244 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346033 Parsing Header
+15:23:21.244 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346033 Header parsed successfully
+15:23:21.244 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346033 Parsing message fields
+15:23:21.244 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346033 Bitmap set successfully
+15:23:21.244 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346033 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+15:23:21.244 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346033 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+15:23:21.244 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346033 Fields parsed successfully
+15:23:21.244 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346033 STEP1: Message fields parsed successfully
+15:23:21.244 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346033 STEP 2: Mandatory fields validated successfully
+15:23:21.244 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346033 STEP 3: Subfields parsed successfully
+15:23:21.245 	INFO 	translator.cpp     	1586 	mapField       	61728941346033 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+15:23:21.245 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346033 STEP 4: Incoming fields mapped successfully
+15:23:21.245 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346033 STEP 5: Transaction specific fields parsed successfully
+15:23:21.245 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346033 STEP 7: Institution based customization done successfully
+15:23:21.245 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346033 Masking Message Fields
+15:23:21.245 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346033 Message Stamp = [20251029102040100101530210100101484838**********]
+15:23:21.245 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346033 DateTime = [20251029102040]
+15:23:21.245 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346033 Stan [100101]
+15:23:21.245 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346033 RRN [530210100101]
+15:23:21.245 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346033 Message fields parsed successfully
+15:23:21.245 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346033 Setting message format [HOSTISO87]
+15:23:21.245 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346033 Checking if original transaction exists in in-memory database
+15:23:21.247 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346033 Original transaction found successfully
+15:23:21.247 	INFO 	transactionprocess 	1020 	startParsing   	61728941346033 THREADTIME 00:00:00.004318
+15:23:21.248 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346033 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:23:21.248 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346033 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:26:19.173 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346033 419
+15:26:19.173 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346033 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:26:19.173 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346033 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:26:19.186 	INFO 	transactionprocess 	0970 	startParsing   	61728941346036 Received message with priority [0]
+15:26:19.186 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346036 Attaching library ./lib/libtranslatorhostiso87.so
+15:26:19.186 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346036 Setting message format [hostiso87]
+15:26:19.186 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346036 Parsing Header
+15:26:19.186 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346036 Header parsed successfully
+15:26:19.186 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346036 Parsing message fields
+15:26:19.186 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346036 Bitmap set successfully
+15:26:19.186 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346036 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+15:26:19.186 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346036 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+15:26:19.187 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346036 Fields parsed successfully
+15:26:19.187 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346036 STEP1: Message fields parsed successfully
+15:26:19.187 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346036 STEP 2: Mandatory fields validated successfully
+15:26:19.187 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346036 STEP 3: Subfields parsed successfully
+15:26:19.188 	INFO 	translator.cpp     	1586 	mapField       	61728941346036 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+15:26:19.188 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346036 STEP 4: Incoming fields mapped successfully
+15:26:19.188 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346036 STEP 5: Transaction specific fields parsed successfully
+15:26:19.188 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346036 STEP 7: Institution based customization done successfully
+15:26:19.188 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346036 Masking Message Fields
+15:26:19.188 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346036 Message Stamp = [20251029102338000356530210000356484838**********]
+15:26:19.188 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346036 DateTime = [20251029102338]
+15:26:19.188 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346036 Stan [000356]
+15:26:19.188 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346036 RRN [530210000356]
+15:26:19.188 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346036 Message fields parsed successfully
+15:26:19.188 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346036 Setting message format [HOSTISO87]
+15:26:19.188 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346036 Checking if original transaction exists in in-memory database
+15:26:19.189 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346036 Original transaction found successfully
+15:26:19.190 	INFO 	transactionprocess 	1020 	startParsing   	61728941346036 THREADTIME 00:00:00.004558
+15:26:19.191 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346036 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:26:19.191 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346036 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:30:39.802 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346036 419
+15:30:39.803 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346036 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:30:39.803 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346036 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:30:39.816 	INFO 	transactionprocess 	0970 	startParsing   	61728941346038 Received message with priority [0]
+15:30:39.816 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346038 Attaching library ./lib/libtranslatorhostiso87.so
+15:30:39.817 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346038 Setting message format [hostiso87]
+15:30:39.817 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346038 Parsing Header
+15:30:39.817 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346038 Header parsed successfully
+15:30:39.817 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346038 Parsing message fields
+15:30:39.817 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346038 Bitmap set successfully
+15:30:39.817 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346038 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+15:30:39.817 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346038 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+15:30:39.817 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346038 Fields parsed successfully
+15:30:39.817 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346038 STEP1: Message fields parsed successfully
+15:30:39.817 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346038 STEP 2: Mandatory fields validated successfully
+15:30:39.817 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346038 STEP 3: Subfields parsed successfully
+15:30:39.818 	INFO 	translator.cpp     	1586 	mapField       	61728941346038 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+15:30:39.818 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346038 STEP 4: Incoming fields mapped successfully
+15:30:39.818 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346038 STEP 5: Transaction specific fields parsed successfully
+15:30:39.818 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346038 STEP 7: Institution based customization done successfully
+15:30:39.818 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346038 Masking Message Fields
+15:30:39.818 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346038 Message Stamp = [20251029102759000357530210000357484838**********]
+15:30:39.818 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346038 DateTime = [20251029102759]
+15:30:39.818 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346038 Stan [000357]
+15:30:39.818 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346038 RRN [530210000357]
+15:30:39.818 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346038 Message fields parsed successfully
+15:30:39.818 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346038 Setting message format [HOSTISO87]
+15:30:39.818 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346038 Checking if original transaction exists in in-memory database
+15:30:39.819 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346038 Original transaction found successfully
+15:30:39.820 	INFO 	transactionprocess 	1020 	startParsing   	61728941346038 THREADTIME 00:00:00.003658
+15:30:39.820 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346038 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:30:39.820 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346038 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:31:10.290 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346038 419
+15:31:10.290 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346038 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:31:10.290 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346038 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:31:10.301 	INFO 	transactionprocess 	0970 	startParsing   	61728941346040 Received message with priority [0]
+15:31:10.302 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346040 Attaching library ./lib/libtranslatorhostiso87.so
+15:31:10.302 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346040 Setting message format [hostiso87]
+15:31:10.302 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346040 Parsing Header
+15:31:10.302 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346040 Header parsed successfully
+15:31:10.302 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346040 Parsing message fields
+15:31:10.302 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346040 Bitmap set successfully
+15:31:10.302 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346040 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+15:31:10.302 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346040 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+15:31:10.303 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346040 Fields parsed successfully
+15:31:10.303 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346040 STEP1: Message fields parsed successfully
+15:31:10.303 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346040 STEP 2: Mandatory fields validated successfully
+15:31:10.303 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346040 STEP 3: Subfields parsed successfully
+15:31:10.304 	INFO 	translator.cpp     	1586 	mapField       	61728941346040 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+15:31:10.304 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346040 STEP 4: Incoming fields mapped successfully
+15:31:10.304 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346040 STEP 5: Transaction specific fields parsed successfully
+15:31:10.304 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346040 STEP 7: Institution based customization done successfully
+15:31:10.304 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346040 Masking Message Fields
+15:31:10.304 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346040 Message Stamp = [20251029102759100102530210100102484838**********]
+15:31:10.304 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346040 DateTime = [20251029102759]
+15:31:10.304 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346040 Stan [100102]
+15:31:10.304 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346040 RRN [530210100102]
+15:31:10.304 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346040 Message fields parsed successfully
+15:31:10.304 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346040 Setting message format [HOSTISO87]
+15:31:10.304 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346040 Checking if original transaction exists in in-memory database
+15:31:10.306 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346040 Original transaction found successfully
+15:31:10.306 	INFO 	transactionprocess 	1020 	startParsing   	61728941346040 THREADTIME 00:00:00.004732
+15:31:10.307 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346040 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:31:10.307 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346040 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:31:25.685 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346040 419
+15:31:25.686 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346040 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:31:25.686 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346040 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:31:25.702 	INFO 	transactionprocess 	0970 	startParsing   	61728941346042 Received message with priority [0]
+15:31:25.702 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346042 Attaching library ./lib/libtranslatorhostiso87.so
+15:31:25.703 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346042 Setting message format [hostiso87]
+15:31:25.703 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346042 Parsing Header
+15:31:25.703 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346042 Header parsed successfully
+15:31:25.703 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346042 Parsing message fields
+15:31:25.703 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346042 Bitmap set successfully
+15:31:25.703 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346042 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+15:31:25.703 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346042 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+15:31:25.703 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346042 Fields parsed successfully
+15:31:25.703 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346042 STEP1: Message fields parsed successfully
+15:31:25.704 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346042 STEP 2: Mandatory fields validated successfully
+15:31:25.704 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346042 STEP 3: Subfields parsed successfully
+15:31:25.704 	INFO 	translator.cpp     	1586 	mapField       	61728941346042 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+15:31:25.704 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346042 STEP 4: Incoming fields mapped successfully
+15:31:25.704 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346042 STEP 5: Transaction specific fields parsed successfully
+15:31:25.704 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346042 STEP 7: Institution based customization done successfully
+15:31:25.704 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346042 Masking Message Fields
+15:31:25.704 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346042 Message Stamp = [20251029102759100103530210100103484838**********]
+15:31:25.704 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346042 DateTime = [20251029102759]
+15:31:25.704 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346042 Stan [100103]
+15:31:25.704 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346042 RRN [530210100103]
+15:31:25.704 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346042 Message fields parsed successfully
+15:31:25.704 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346042 Setting message format [HOSTISO87]
+15:31:25.705 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346042 Checking if original transaction exists in in-memory database
+15:31:25.706 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346042 Original transaction found successfully
+15:31:25.707 	INFO 	transactionprocess 	1020 	startParsing   	61728941346042 THREADTIME 00:00:00.004878
+15:31:25.707 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346042 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:31:25.709 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346042 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:35:43.431 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61728941346042 419
+15:35:43.432 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346042 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:35:43.432 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346042 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:35:43.447 	INFO 	transactionprocess 	0970 	startParsing   	61728941346045 Received message with priority [0]
+15:35:43.447 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61728941346045 Attaching library ./lib/libtranslatorhostiso87.so
+15:35:43.448 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61728941346045 Setting message format [hostiso87]
+15:35:43.448 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61728941346045 Parsing Header
+15:35:43.448 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61728941346045 Header parsed successfully
+15:35:43.448 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61728941346045 Parsing message fields
+15:35:43.448 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61728941346045 Bitmap set successfully
+15:35:43.448 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61728941346045 Bitmap = [11110010001110100100010100000001100011101000000010000010000000000000000000000000000000000000000000000000000000000000000000000000]
+15:35:43.448 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61728941346045 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-37, DE-38, DE-39, DE-41, DE-49, DE-55, Tertiary Bitmap , ]
+15:35:43.449 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61728941346045 Fields parsed successfully
+15:35:43.449 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61728941346045 STEP1: Message fields parsed successfully
+15:35:43.449 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61728941346045 STEP 2: Mandatory fields validated successfully
+15:35:43.449 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61728941346045 STEP 3: Subfields parsed successfully
+15:35:43.449 	INFO 	translator.cpp     	1586 	mapField       	61728941346045 Mapping found successfully for [RESPONSE_CODE] value = [00], mapped value = [000]
+15:35:43.449 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61728941346045 STEP 4: Incoming fields mapped successfully
+15:35:43.449 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61728941346045 STEP 5: Transaction specific fields parsed successfully
+15:35:43.449 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61728941346045 STEP 7: Institution based customization done successfully
+15:35:43.449 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61728941346045 Masking Message Fields
+15:35:43.449 	INFO 	message.cpp        	1675 	printMessageSt 	61728941346045 Message Stamp = [20251029103303000358530210000358484838**********]
+15:35:43.449 	INFO 	message.cpp        	1676 	printMessageSt 	61728941346045 DateTime = [20251029103303]
+15:35:43.449 	INFO 	message.cpp        	1677 	printMessageSt 	61728941346045 Stan [000358]
+15:35:43.449 	INFO 	message.cpp        	1678 	printMessageSt 	61728941346045 RRN [530210000358]
+15:35:43.449 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61728941346045 Message fields parsed successfully
+15:35:43.450 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61728941346045 Setting message format [HOSTISO87]
+15:35:43.450 	INFO 	transaction.cpp    	1602 	getRequestMess 	61728941346045 Checking if original transaction exists in in-memory database
+15:35:43.451 	INFO 	transaction.cpp    	1615 	getRequestMess 	61728941346045 Original transaction found successfully
+15:35:43.451 	INFO 	transactionprocess 	1020 	startParsing   	61728941346045 THREADTIME 00:00:00.004001
+15:35:43.452 	INFO 	transactionprocess 	1122 	checkUpdate    	61728941346045 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]
+15:35:43.452 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61728941346045 Updated datetime in shared memory is [20251029140820], transactions were loaded at [20251029140820]

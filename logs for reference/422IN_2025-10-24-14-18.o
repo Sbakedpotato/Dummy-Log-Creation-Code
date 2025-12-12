@@ -1,0 +1,694 @@
+14:18:47.375 	INFO 	transactionprocess 	0970 	startParsing   	61297429784001 Received message with priority [0]
+14:18:47.375 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61297429784001 Attaching library ./lib/libtranslator1linkiso.so
+14:18:47.375 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61297429784001 Setting message format [1linkiso]
+14:18:47.375 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61297429784001 Parsing Header
+14:18:47.376 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61297429784001 Header parsed successfully
+14:18:47.376 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61297429784001 Parsing message fields
+14:18:47.376 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61297429784001 Bitmap set successfully
+14:18:47.376 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61297429784001 Bitmap = [11110010001111100100010100000001101010001110001011010000000000000000000000000000000000000000000000000000000000000000000000000000]
+14:18:47.376 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61297429784001 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-14, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-35, DE-37, DE-41, DE-42, DE-43, DE-47, DE-49, DE-50, DE-52, Tertiary Bitmap , ]
+14:18:47.377 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61297429784001 Fields parsed successfully
+14:18:47.377 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61297429784001 STEP1: Message fields parsed successfully
+14:18:47.377 	INFO 	translator.cpp     	0106 	ProcessIncomin 	61297429784001 Validating mandatory fields
+14:18:47.377 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61297429784001 STEP 2: Mandatory fields validated successfully
+14:18:47.377 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61297429784001 STEP 3: Subfields parsed successfully
+14:18:47.377 	INFO 	translator.cpp     	1586 	mapField       	61297429784001 Mapping found successfully for [MERCHANT_TYPE] value = [0046], mapped value = [0046]
+14:18:47.377 	INFO 	translator1linkiso 	1406 	getSourceChann 	61297429784001 sourceChannelID [422]
+14:18:47.378 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.378 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:CHANNEL_MGR_channelList122CUP
+14:18:47.378 	INFO 	channelmgr.cpp     	0734 	getChannelIDby 	61297429784001 channelList is empty no detail found.
+14:18:47.378 	INFO 	translator1linkiso 	1414 	getSourceChann 	61297429784001 sourceChannelID [422]
+14:18:47.378 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61297429784001 STEP 4: Incoming fields mapped successfully
+14:18:47.378 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61297429784001 STEP 5: Transaction specific fields parsed successfully
+14:18:47.378 	INFO 	translator.cpp     	0170 	ProcessIncomin 	61297429784001 STEP 6: Validating transaction specific mandatory fields
+14:18:47.378 	ERROR 	translator.cpp     	1606 	validateMandat 	61297429784001 No mandatory fields list found for the key = [300200]
+14:18:47.378 	INFO 	translator.cpp     	0185 	ProcessIncomin 	61297429784001 STEP 6: Transaction specific mandatory fields validated successfully
+14:18:47.378 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61297429784001 STEP 7: Institution based customization done successfully
+14:18:47.378 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61297429784001 Masking Message Fields
+14:18:47.378 	INFO 	message.cpp        	1675 	printMessageSt 	61297429784001 Message Stamp = [20250301040032148206529714178220632701**********]
+14:18:47.378 	INFO 	message.cpp        	1676 	printMessageSt 	61297429784001 DateTime = [20250301040032]
+14:18:47.378 	INFO 	message.cpp        	1677 	printMessageSt 	61297429784001 Stan [148206]
+14:18:47.378 	INFO 	message.cpp        	1678 	printMessageSt 	61297429784001 RRN [529714178220]
+14:18:47.378 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61297429784001 Message fields parsed successfully
+14:18:47.378 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61297429784001 Setting message format [1LINKISO]
+14:18:47.378 	INFO 	transactionprocess 	0818 	processMessage 	61297429784001 Message received
+14:18:47.378 	INFO 	transactionprocess 	0820 	processMessage 	61297429784001 Message type received =[0200]
+14:18:47.379 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.381 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.381 	ERROR 	ientity.h          	0078 	getMakerObject 	61297429784001 Failed to load custom library from database
+14:18:47.381 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.382 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.382 	ERROR 	ientity.h          	0078 	getMakerObject 	61297429784001 Failed to load custom library from database
+14:18:47.382 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.383 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.383 	ERROR 	ientity.h          	0078 	getMakerObject 	61297429784001 Failed to load custom library from database
+14:18:47.383 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.384 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.384 	ERROR 	ientity.h          	0078 	getMakerObject 	61297429784001 Failed to load custom library from database
+14:18:47.384 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.385 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.385 	ERROR 	ientity.h          	0078 	getMakerObject 	61297429784001 Failed to load custom library from database
+14:18:47.386 	INFO 	safstore.cpp       	0031 	SAFStore       	61297429784001 SAF Store created
+14:18:47.386 	INFO 	saf.cpp            	0064 	SAF            	61297429784001 SAFThreadTimers values are SleepIntervalRetriever[2] SleepIntervalSender[1]
+14:18:47.386 	INFO 	imd.cpp            	0327 	getIMD         	61297429784001 Bin Max Range is 11
+14:18:47.386 	INFO 	imd.cpp            	0333 	getIMD         	61297429784001 Bin Min Range is 6
+14:18:47.386 	INFO 	imd.cpp            	0351 	getIMD         	61297429784001 BIN [63270111]
+14:18:47.386 	INFO 	imd.cpp            	0353 	getIMD         	61297429784001 IMD Found
+14:18:47.387 	INFO 	transactionmgr.cpp 	0688 	processMessage 	61297429784001 Message type received = [0200]
+14:18:47.387 	INFO 	message.cpp        	1675 	printMessageSt 	61297429784001 Message Stamp = [20250301040032148206529714178220632701**********]
+14:18:47.387 	INFO 	message.cpp        	1676 	printMessageSt 	61297429784001 DateTime = [20250301040032]
+14:18:47.387 	INFO 	message.cpp        	1677 	printMessageSt 	61297429784001 Stan [148206]
+14:18:47.387 	INFO 	message.cpp        	1678 	printMessageSt 	61297429784001 RRN [529714178220]
+14:18:47.388 	INFO 	transactionmgr.cpp 	0725 	processMessage 	61297429784001 Source Channel Key [632701**********20250301040032148206]
+14:18:47.388 	INFO 	transactionmgr.cpp 	0811 	processMessage 	61297429784001 Applying rules
+14:18:47.388 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.388 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:RULEENGINE_INCOMING_1LINK
+14:18:47.388 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.388 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:RULEENGINE_INCOMING_*
+14:18:47.388 	INFO 	transactionmgr.cpp 	0899 	processMessage 	61297429784001 Checking if transaction is local or foreign
+14:18:47.388 	INFO 	transactionmgr.cpp 	1319 	getLibrary     	61297429784001 Library selected [libtxnonelinkbi.so] location [./lib/libtxnonelinkbi.so]
+14:18:47.388 	INFO 	transaction.cpp    	3832 	getRoutingPara 	61297429784001 Routing will be based on IMD
+14:18:47.389 	INFO 	imd.cpp            	0327 	getIMD         	61297429784001 Bin Max Range is 11
+14:18:47.389 	INFO 	imd.cpp            	0333 	getIMD         	61297429784001 Bin Min Range is 6
+14:18:47.389 	INFO 	imd.cpp            	0351 	getIMD         	61297429784001 BIN [63270111]
+14:18:47.389 	INFO 	imd.cpp            	0353 	getIMD         	61297429784001 IMD Found
+14:18:47.389 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.389 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:Routing_63270111:30:422
+14:18:47.390 	INFO 	routing.cpp        	0489 	getRoutingInfo 	61297429784001 Routing found and destinationChannelID = [61]
+14:18:47.390 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.390 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:PAYMENTNETWORK_60
+14:18:47.390 	ERROR 	paymentnetwork.cpp 	0147 	getPaymentNetw 	61297429784001 Payment Network Record not found for key [60]
+14:18:47.390 	INFO 	paymentnetwork.cpp 	0086 	loadPaymentNet 	61297429784001 Loading PaymentNetworks
+14:18:47.390 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.391 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.392 	INFO 	paymentnetwork.cpp 	0156 	getPaymentNetw 	61297429784001 Payment Network Record got for key [PAYMENTNETWORK_60]
+14:18:47.392 	INFO 	paymentnetwork.cpp 	0190 	getInstitution 	61297429784001 Payment Network Record got and institutionID = [0001]
+14:18:47.392 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.392 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:CHANNEL_MGR_61
+14:18:47.392 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61297429784001 Initializing channel [61]
+14:18:47.392 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.393 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.393 	INFO 	paymentnetwork.cpp 	0156 	getPaymentNetw 	61297429784001 Payment Network Record got for key [PAYMENTNETWORK_60]
+14:18:47.393 	INFO 	paymentnetwork.cpp 	0190 	getInstitution 	61297429784001 Payment Network Record got and institutionID = [0001]
+14:18:47.394 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.394 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:CHANNEL_MGR_61
+14:18:47.394 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61297429784001 Initializing channel [61]
+14:18:47.394 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.394 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.395 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.395 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:CHANNEL_MGR_61
+14:18:47.395 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61297429784001 Initializing channel [61]
+14:18:47.395 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.395 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.396 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.396 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:CHANNEL_MGR_61
+14:18:47.396 	INFO 	channelmgr.cpp     	0253 	fetchFromDB    	61297429784001 Initializing channel [61]
+14:18:47.396 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784001 Start execute
+14:18:47.397 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784001 End executed
+14:18:47.397 	ERROR 	channelmgr.cpp     	0535 	getDestination 	61297429784001 Failed getting network for channel [61], no networks configured
+14:18:47.397 	ERROR 	transaction.cpp    	3946 	getDestination 	61297429784001 Failed find network for channel = [61]
+14:18:47.397 	ERROR 	transactionmgr.cpp 	0995 	processMessage 	61297429784001 Failed getting routing information
+14:18:47.398 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.398 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:RESPONSECODEMAPPING_OUTGOING_1LINKISO_0046104
+14:18:47.398 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61297429784001 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTTRAN
+14:18:47.408 	INFO 	transaction.cpp    	0717 	insertTransact 	61297429784001 Transaction with id [810] inserted successfully
+14:18:47.408 	INFO 	transaction.cpp    	2691 	sendToAcquirer 	61297429784001 ResponseCode = [104]
+14:18:47.409 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.409 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+14:18:47.410 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61297429784001 Payment Network Record got and FRMS Mode = []
+14:18:47.410 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784001 No record found
+14:18:47.410 	ERROR 	rediscache.cpp     	0066 	find           	61297429784001 Unable to find key:Configuration_FRMSV2
+14:18:47.410 	ERROR 	configuration.cpp  	0201 	getParamValue  	61297429784001 Could not find corresponding parameter for key = [V2FRMS]
+14:18:47.411 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61297429784001 Attaching library ./lib/libtranslator1linkiso.so
+14:18:47.411 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61297429784001 Setting message format [1linkiso]
+14:18:47.411 	INFO 	message.cpp        	1675 	printMessageSt 	61297429784001 Message Stamp = [20250301040032148206529714178220632701**********]
+14:18:47.411 	INFO 	message.cpp        	1676 	printMessageSt 	61297429784001 DateTime = [20250301040032]
+14:18:47.411 	INFO 	message.cpp        	1677 	printMessageSt 	61297429784001 Stan [148206]
+14:18:47.411 	INFO 	message.cpp        	1678 	printMessageSt 	61297429784001 RRN [529714178220]
+14:18:47.411 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61297429784001 STEP 1: Institution based customization done successfully
+14:18:47.411 	INFO 	translator.cpp     	1586 	mapField       	61297429784001 Mapping found successfully for [MERCHANT_TYPE] value = [0046], mapped value = [0046]
+14:18:47.412 	ERROR 	translator.cpp     	1544 	mapField       	61297429784001 Failed finding default mapping for [RESPONSE_CODE] value = [0046*], mapped value = []
+14:18:47.412 	ERROR 	translator.cpp     	1576 	mapField       	61297429784001 Failed finding default mapping for [RESPONSE_CODE]
+14:18:47.412 	INFO 	translator1linkiso 	0626 	setProcessingC 	61297429784001 tranCode [30]
+14:18:47.412 	ERROR 	translator1linkiso 	0670 	setProcessingC 	61297429784001 Transaction code not supported
+14:18:47.412 	ERROR 	translator1linkiso 	1332 	setOriginalDat 	61297429784001 Unable to make original data elements, cannot send reversal
+14:18:47.412 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61297429784001 STEP 2: Outgoing fields mapped successfully
+14:18:47.412 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61297429784001 STEP 3: Transaction specific customization done successfully
+14:18:47.412 	INFO 	translator.cpp     	0606 	buildSubFields 	61297429784001 Build sub fields, calling Base
+14:18:47.412 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61297429784001 STEP 4: Subfields built successfully
+14:18:47.412 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61297429784001 Start building message
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 LLVariable  ->ASCII ->Length = [18], Position = [2]
+14:18:47.412 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-2 PAN [18][632701**********]LLVariable Encoded[ASCII]
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [6], Position = [18]
+14:18:47.412 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-3 PROCESSING_CODE [6][300000]Fixed Encoded[ASCII]
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [12], Position = [24]
+14:18:47.412 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-4 AMOUNT_TRANSACTION [12][000000000000]Fixed Encoded[ASCII]
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [10], Position = [36]
+14:18:47.412 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-7 TRANSMISSION_DATE_TIME [10][0301040032]Fixed Encoded[ASCII]
+14:18:47.412 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-8
+14:18:47.412 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-9
+14:18:47.412 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-10
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [6], Position = [46]
+14:18:47.412 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][148206]Fixed Encoded[ASCII]
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [6], Position = [52]
+14:18:47.412 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-12 TIME_LOCAL_TRANSACTION [6][141727]Fixed Encoded[ASCII]
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [4], Position = [58]
+14:18:47.412 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-13 DATE_LOCAL_TRANSACTION [4][1024]Fixed Encoded[ASCII]
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [4], Position = [62]
+14:18:47.412 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [4], Position = [66]
+14:18:47.412 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-15 DATE_SETTLEMENT [4][0623]Fixed Encoded[ASCII]
+14:18:47.412 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-17
+14:18:47.412 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [4], Position = [70]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-18 MERCHANT_TYPE [4][0046]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-19
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-20
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-21
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [3], Position = [74]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-22 POS_ENTRY_MODE [3][901]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-23
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [3], Position = [77]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-24 NETWORK_INTERNATIONAL_IDENTIFIER [3][001]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-25
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-27
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-29
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-30
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-31
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 LLVariable  ->ASCII ->Length = [13], Position = [82]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-32 ACQ_INSTITUTION_ID_CODE [13][63270111000]LLVariable Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 LLVariable  ->ASCII ->Length = [6], Position = [95]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-33 FORWARD_INSTITUTION_ID_CODE [6][0001]LLVariable Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-34
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 LLVariable  ->ASCII ->Length = [32], Position = [101]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-35 TRACK2_DATA [32][632701**********D****22611888F]LLVariable Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [12], Position = [131]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][529714178220]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [2], Position = [143]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-39 RESPONSE_CODE [2][104]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-40
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [8], Position = [145]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-41 CARD_ACCEPTOR_TERMINAL_ID [8][35864852]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [15], Position = [153]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-42 CARD_ACCEPTOR_ID_CODE [15][3586000014852  ]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [40], Position = [168]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-43 CARD_ACCEPTOR_NAME_LOCATION [40][pakistan-----------------karachi------PK]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-46
+14:18:47.413 	INFO 	translatoriso.cpp  	1052 	buildField     	61297429784001 tempField = [0046]
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 LLLVariable  ->ASCII ->Length = [7], Position = [211]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-47 MERCHANT_CATEGORY_CODE [7][0046]LLLVariable Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [3], Position = [215]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-49 CURRENCY_CODE_TRANSACTION [3][586]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [3], Position = [218]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-50 CURRENCY_CODE_SETTLEMENT [3][156]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-51
+14:18:47.413 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [16], Position = [221]
+14:18:47.413 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-52 PIN_DATA [16][3C5E4F082A646C64]Fixed Encoded[ASCII]
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-53
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-56
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-57
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-58
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-59
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-62
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-63
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-64
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-65
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-66
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-67
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-68
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-69
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-71
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-72
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-73
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-74
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-75
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-76
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-77
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-78
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-79
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-80
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-81
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-82
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-83
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-84
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-85
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-86
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-87
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-88
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-89
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-91
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-92
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-93
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-94
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-96
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-97
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-98
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-99
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-100
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-101
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-104
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-105
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-106
+14:18:47.413 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-107
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-108
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-109
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-110
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-111
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-112
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-113
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-114
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-115
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-116
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-118
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-119
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-121
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-122
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-123
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-124
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-125
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-126
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-127
+14:18:47.414 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784001 Not required DE-128
+14:18:47.414 	INFO 	translatoriso.cpp  	1499 	buildBitmap    	61297429784001 Building bitmap
+14:18:47.414 	INFO 	translatoriso.cpp  	1535 	buildBitmap    	61297429784001 Bitmap [0111001000111110010001010000000110101010111000101101000000000000]
+14:18:47.414 	INFO 	translatoriso.cpp  	0108 	buildMessage   	61297429784001 Bitmap built successfully
+14:18:47.414 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784001 Fixed     ->ASCII ->Length = [4], Position = [0]
+14:18:47.414 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784001 DE-1 MESSAGE_TYPE [4][0210]Fixed Encoded[ASCII]
+14:18:47.414 	INFO 	translatoriso.cpp  	0118 	buildMessage   	61297429784001 Header built successfully
+14:18:47.414 	INFO 	translatoriso.cpp  	0120 	buildMessage   	61297429784001 Message built successfully
+14:18:47.414 	INFO 	translatoriso.cpp  	0127 	buildMessage   	61297429784001 Header Length is = [4]
+14:18:47.414 	INFO 	translatoriso.cpp  	0130 	buildMessage   	61297429784001 Message Fields Length is = [245]
+14:18:47.414 	INFO 	translatoriso.cpp  	0133 	buildMessage   	61297429784001 Message Length is = [249]
+14:18:47.414 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61297429784001 Message built successfully
+14:18:47.415 	INFO 	transactionprocess 	1020 	startParsing   	61297429784001 THREADTIME 00:00:00.040312
+14:18:47.416 	INFO 	transactionprocess 	1122 	checkUpdate    	61297429784001 Updated datetime in shared memory is [20251024141714], transactions were loaded at [20251024141714]
+14:18:47.416 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61297429784001 Updated datetime in shared memory is [20251024141714], transactions were loaded at [20251024141714]
+14:19:51.540 	INFO 	redisstreamreader. 	0344 	handleStreamRe 	61297429784001 422
+14:19:51.541 	INFO 	transactionprocess 	1122 	checkUpdate    	61297429784001 Updated datetime in shared memory is [20251024141714], transactions were loaded at [20251024141714]
+14:19:51.541 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61297429784001 Updated datetime in shared memory is [20251024141714], transactions were loaded at [20251024141714]
+14:19:51.542 	INFO 	transactionprocess 	0970 	startParsing   	61297429784002 Received message with priority [0]
+14:19:51.542 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61297429784002 Attaching library ./lib/libtranslator1linkiso.so
+14:19:51.542 	INFO 	translationmgr.cpp 	0718 	processIncomin 	61297429784002 Setting message format [1linkiso]
+14:19:51.542 	INFO 	translatoriso.cpp  	0034 	parseMessage   	61297429784002 Parsing Header
+14:19:51.542 	INFO 	translatoriso.cpp  	0041 	parseMessage   	61297429784002 Header parsed successfully
+14:19:51.542 	INFO 	translatoriso.cpp  	0043 	parseMessage   	61297429784002 Parsing message fields
+14:19:51.542 	INFO 	translatoriso.cpp  	0164 	fillBitmap     	61297429784002 Bitmap set successfully
+14:19:51.542 	INFO 	translatoriso.cpp  	0186 	showBitmap     	61297429784002 Bitmap = [11110010001111100100010100000001101010001110001010010000000000000000000000000000000000000000000000000000000000000000000000000000]
+14:19:51.542 	INFO 	translatoriso.cpp  	0213 	showBitmapFiel 	61297429784002 Fields = [SecondaryBitmap, DE-2, DE-3, DE-4, DE-7, DE-11, DE-12, DE-13, DE-14, DE-15, DE-18, DE-22, DE-24, DE-32, DE-33, DE-35, DE-37, DE-41, DE-42, DE-43, DE-47, DE-49, DE-52, Tertiary Bitmap , ]
+14:19:51.543 	INFO 	translatoriso.cpp  	0050 	parseMessage   	61297429784002 Fields parsed successfully
+14:19:51.543 	INFO 	translator.cpp     	0081 	ProcessIncomin 	61297429784002 STEP1: Message fields parsed successfully
+14:19:51.543 	INFO 	translator.cpp     	0106 	ProcessIncomin 	61297429784002 Validating mandatory fields
+14:19:51.543 	INFO 	translator.cpp     	0136 	ProcessIncomin 	61297429784002 STEP 2: Mandatory fields validated successfully
+14:19:51.543 	INFO 	translator.cpp     	0145 	ProcessIncomin 	61297429784002 STEP 3: Subfields parsed successfully
+14:19:51.543 	INFO 	translator.cpp     	1586 	mapField       	61297429784002 Mapping found successfully for [MERCHANT_TYPE] value = [0007], mapped value = [0007]
+14:19:51.543 	INFO 	translator1linkiso 	1406 	getSourceChann 	61297429784002 sourceChannelID [422]
+14:19:51.543 	INFO 	translator1linkiso 	1414 	getSourceChann 	61297429784002 sourceChannelID [420]
+14:19:51.543 	INFO 	translator.cpp     	0155 	ProcessIncomin 	61297429784002 STEP 4: Incoming fields mapped successfully
+14:19:51.543 	INFO 	translator.cpp     	0166 	ProcessIncomin 	61297429784002 STEP 5: Transaction specific fields parsed successfully
+14:19:51.543 	INFO 	translator.cpp     	0170 	ProcessIncomin 	61297429784002 STEP 6: Validating transaction specific mandatory fields
+14:19:51.543 	ERROR 	translator.cpp     	1606 	validateMandat 	61297429784002 No mandatory fields list found for the key = [300200]
+14:19:51.543 	INFO 	translator.cpp     	0185 	ProcessIncomin 	61297429784002 STEP 6: Transaction specific mandatory fields validated successfully
+14:19:51.543 	INFO 	translator.cpp     	0199 	ProcessIncomin 	61297429784002 STEP 7: Institution based customization done successfully
+14:19:51.543 	INFO 	translator.cpp     	0201 	ProcessIncomin 	61297429784002 Masking Message Fields
+14:19:51.544 	INFO 	message.cpp        	1675 	printMessageSt 	61297429784002 Message Stamp = [20250****40032148207529714188221484838**********]
+14:19:51.544 	INFO 	message.cpp        	1676 	printMessageSt 	61297429784002 DateTime = [20250****40032]
+14:19:51.544 	INFO 	message.cpp        	1677 	printMessageSt 	61297429784002 Stan [148207]
+14:19:51.544 	INFO 	message.cpp        	1678 	printMessageSt 	61297429784002 RRN [529714188221]
+14:19:51.544 	INFO 	translator.cpp     	0211 	ProcessIncomin 	61297429784002 Message fields parsed successfully
+14:19:51.544 	INFO 	translationmgr.cpp 	0754 	processIncomin 	61297429784002 Setting message format [1LINKISO]
+14:19:51.544 	INFO 	transactionprocess 	0818 	processMessage 	61297429784002 Message received
+14:19:51.544 	INFO 	transactionprocess 	0820 	processMessage 	61297429784002 Message type received =[0200]
+14:19:51.544 	INFO 	imd.cpp            	0327 	getIMD         	61297429784002 Bin Max Range is 11
+14:19:51.544 	INFO 	imd.cpp            	0333 	getIMD         	61297429784002 Bin Min Range is 6
+14:19:51.544 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.545 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:IMD_48483899
+14:19:51.545 	INFO 	imd.cpp            	0351 	getIMD         	61297429784002 BIN [48483899]
+14:19:51.545 	INFO 	imd.cpp            	0358 	getIMD         	61297429784002 IMD Key [IMD_48483899] not found in Cache
+14:19:51.545 	INFO 	imd.cpp            	0373 	getIMD         	61297429784002 IMD Cutting
+14:19:51.545 	INFO 	imd.cpp            	0376 	getIMD         	61297429784002 BIN after cutting[4848389]
+14:19:51.545 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.545 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:IMD_4848389
+14:19:51.545 	INFO 	imd.cpp            	0351 	getIMD         	61297429784002 BIN [4848389]
+14:19:51.545 	INFO 	imd.cpp            	0358 	getIMD         	61297429784002 IMD Key [IMD_4848389] not found in Cache
+14:19:51.545 	INFO 	imd.cpp            	0373 	getIMD         	61297429784002 IMD Cutting
+14:19:51.545 	INFO 	imd.cpp            	0376 	getIMD         	61297429784002 BIN after cutting[484838]
+14:19:51.545 	INFO 	imd.cpp            	0351 	getIMD         	61297429784002 BIN [484838]
+14:19:51.545 	INFO 	imd.cpp            	0353 	getIMD         	61297429784002 IMD Found
+14:19:51.545 	INFO 	transactionmgr.cpp 	0688 	processMessage 	61297429784002 Message type received = [0200]
+14:19:51.545 	INFO 	message.cpp        	1675 	printMessageSt 	61297429784002 Message Stamp = [20250****40032148207529714188221484838**********]
+14:19:51.545 	INFO 	message.cpp        	1676 	printMessageSt 	61297429784002 DateTime = [20250****40032]
+14:19:51.545 	INFO 	message.cpp        	1677 	printMessageSt 	61297429784002 Stan [148207]
+14:19:51.545 	INFO 	message.cpp        	1678 	printMessageSt 	61297429784002 RRN [529714188221]
+14:19:51.545 	INFO 	transactionmgr.cpp 	0725 	processMessage 	61297429784002 Source Channel Key [484838**********20250****40032148207]
+14:19:51.545 	INFO 	transactionmgr.cpp 	0811 	processMessage 	61297429784002 Applying rules
+14:19:51.545 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.545 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:RULEENGINE_INCOMING_1LINK
+14:19:51.546 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.546 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:RULEENGINE_INCOMING_*
+14:19:51.546 	INFO 	transactionmgr.cpp 	0899 	processMessage 	61297429784002 Checking if transaction is local or foreign
+14:19:51.546 	INFO 	transactionmgr.cpp 	1319 	getLibrary     	61297429784002 Library selected [libtxnonelinkbi.so] location [./lib/libtxnonelinkbi.so]
+14:19:51.546 	INFO 	transaction.cpp    	3832 	getRoutingPara 	61297429784002 Routing will be based on IMD
+14:19:51.546 	INFO 	imd.cpp            	0327 	getIMD         	61297429784002 Bin Max Range is 11
+14:19:51.546 	INFO 	imd.cpp            	0333 	getIMD         	61297429784002 Bin Min Range is 6
+14:19:51.546 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.546 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:IMD_48483899
+14:19:51.546 	INFO 	imd.cpp            	0351 	getIMD         	61297429784002 BIN [48483899]
+14:19:51.546 	INFO 	imd.cpp            	0358 	getIMD         	61297429784002 IMD Key [IMD_48483899] not found in Cache
+14:19:51.546 	INFO 	imd.cpp            	0373 	getIMD         	61297429784002 IMD Cutting
+14:19:51.546 	INFO 	imd.cpp            	0376 	getIMD         	61297429784002 BIN after cutting[4848389]
+14:19:51.546 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.546 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:IMD_4848389
+14:19:51.546 	INFO 	imd.cpp            	0351 	getIMD         	61297429784002 BIN [4848389]
+14:19:51.546 	INFO 	imd.cpp            	0358 	getIMD         	61297429784002 IMD Key [IMD_4848389] not found in Cache
+14:19:51.546 	INFO 	imd.cpp            	0373 	getIMD         	61297429784002 IMD Cutting
+14:19:51.546 	INFO 	imd.cpp            	0376 	getIMD         	61297429784002 BIN after cutting[484838]
+14:19:51.546 	INFO 	imd.cpp            	0351 	getIMD         	61297429784002 BIN [484838]
+14:19:51.546 	INFO 	imd.cpp            	0353 	getIMD         	61297429784002 IMD Found
+14:19:51.547 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.547 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:Routing_48483899:30:422
+14:19:51.547 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.547 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:Routing_48483899:30:*
+14:19:51.547 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.547 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:Routing_4848389:30:422
+14:19:51.547 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.547 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:Routing_4848389:30:*
+14:19:51.547 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.547 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:Routing_484838:30:422
+14:19:51.547 	INFO 	routing.cpp        	0489 	getRoutingInfo 	61297429784002 Routing found and destinationChannelID = [401]
+14:19:51.548 	INFO 	paymentnetwork.cpp 	0156 	getPaymentNetw 	61297429784002 Payment Network Record got for key [PAYMENTNETWORK_60]
+14:19:51.548 	INFO 	paymentnetwork.cpp 	0190 	getInstitution 	61297429784002 Payment Network Record got and institutionID = [0001]
+14:19:51.551 	INFO 	channelmgr.cpp     	0560 	getDestination 	61297429784002 Failsafe & default handling
+14:19:51.552 	ERROR 	redisconnection.cp 	0024 	RedisConnectio 	61297429784002 Failed connecting to redis
+14:19:51.552 	INFO 	loadbalancer.cpp   	0120 	doWork         	61297429784002 Comms Status [1], processing status [1], processing Mode [1]
+14:19:51.553 	INFO 	transaction.cpp    	4042 	getRoutingChan 	61297429784002 Destination Channel ID [401] network ID [241]
+14:19:51.553 	INFO 	transaction.cpp    	4043 	getRoutingChan 	61297429784002 Comms Type = [TCPIP_SERVER]
+14:19:51.553 	INFO 	transaction.cpp    	0088 	processRequest 	61297429784002 InprocessRequest Method
+14:19:51.553 	INFO 	transaction.cpp    	1983 	printCriticalI 	61297429784002 ChannelCategory:External
+14:19:51.553 	INFO 	transaction.cpp    	1995 	printCriticalI 	61297429784002 acquirerInstCode:48483800000
+14:19:51.553 	INFO 	transaction.cpp    	2003 	printCriticalI 	61297429784002 amount:000000000000
+14:19:51.553 	INFO 	transaction.cpp    	2011 	printCriticalI 	61297429784002 cardAcceptorIDCode:3586000014852  
+14:19:51.553 	INFO 	transaction.cpp    	2015 	printCriticalI 	61297429784002 cardAcceptorNameLoc:pakistan-----------------karachi------US
+14:19:51.553 	INFO 	transaction.cpp    	2019 	printCriticalI 	61297429784002 cardAcceptorTermID:35864852
+14:19:51.553 	INFO 	transaction.cpp    	2027 	printCriticalI 	61297429784002 cardType:OFFUS
+14:19:51.553 	INFO 	transaction.cpp    	2035 	printCriticalI 	61297429784002 channelType:1LINK
+14:19:51.553 	INFO 	transaction.cpp    	2075 	printCriticalI 	61297429784002 transactionCurrency:484
+14:19:51.553 	INFO 	transaction.cpp    	2079 	printCriticalI 	61297429784002 currencyCodeTransactionAcq:484
+14:19:51.553 	INFO 	transaction.cpp    	2087 	printCriticalI 	61297429784002 currencyCodeTransactionIss:484
+14:19:51.553 	INFO 	transaction.cpp    	2099 	printCriticalI 	61297429784002 dateExpiry:****
+14:19:51.553 	INFO 	transaction.cpp    	2111 	printCriticalI 	61297429784002 IMD:48483899
+14:19:51.553 	INFO 	transaction.cpp    	2115 	printCriticalI 	61297429784002 sourceKeyGroupId:181
+14:19:51.553 	INFO 	transaction.cpp    	2119 	printCriticalI 	61297429784002 logID:61297429784002
+14:19:51.553 	INFO 	transaction.cpp    	2131 	printCriticalI 	61297429784002 merchantCode:0007
+14:19:51.553 	INFO 	transaction.cpp    	2135 	printCriticalI 	61297429784002 messageFormat:1LINKISO
+14:19:51.553 	INFO 	transaction.cpp    	2139 	printCriticalI 	61297429784002 messageType:0200
+14:19:51.553 	INFO 	transaction.cpp    	2143 	printCriticalI 	61297429784002 POSEntryMode:901
+14:19:51.553 	INFO 	transaction.cpp    	2147 	printCriticalI 	61297429784002 PAN:484838**********
+14:19:51.553 	INFO 	transaction.cpp    	2151 	printCriticalI 	61297429784002 Processing Code:300000
+14:19:51.553 	INFO 	transaction.cpp    	2171 	printCriticalI 	61297429784002 relationshipID:484838**********=****
+14:19:51.553 	INFO 	transaction.cpp    	2179 	printCriticalI 	61297429784002 retrievalReferenceNumber:529714188221
+14:19:51.553 	INFO 	transaction.cpp    	2183 	printCriticalI 	61297429784002 sourceChannelID:422
+14:19:51.553 	INFO 	transaction.cpp    	2187 	printCriticalI 	61297429784002 sourceNetworkID:259
+14:19:51.553 	INFO 	transaction.cpp    	2191 	printCriticalI 	61297429784002 sourceChannelKey:484838**********20250****40032148207
+14:19:51.553 	INFO 	transaction.cpp    	2195 	printCriticalI 	61297429784002 STAN:148207
+14:19:51.553 	INFO 	transaction.cpp    	2203 	printCriticalI 	61297429784002 transactionAmount:000000000000
+14:19:51.553 	INFO 	transaction.cpp    	2207 	printCriticalI 	61297429784002 amountTransactionAcq:000000000000
+14:19:51.553 	INFO 	transaction.cpp    	2211 	printCriticalI 	61297429784002 transactionAmountCurrency:484
+14:19:51.553 	INFO 	transaction.cpp    	2215 	printCriticalI 	61297429784002 amountTransactionIss:000000000000
+14:19:51.553 	INFO 	transaction.cpp    	2223 	printCriticalI 	61297429784002 transactionCode:30
+14:19:51.553 	INFO 	transaction.cpp    	2227 	printCriticalI 	61297429784002 dateTime:20250****40032
+14:19:51.553 	INFO 	transaction.cpp    	2243 	printCriticalI 	61297429784002 destinationChannelID:401
+14:19:51.553 	INFO 	transaction.cpp    	2247 	printCriticalI 	61297429784002 destinationNetworkID:241
+14:19:51.553 	INFO 	transaction.cpp    	2251 	printCriticalI 	61297429784002 destinationChannelKey:484838**********20250****40032148207
+14:19:51.553 	INFO 	transaction.cpp    	2259 	printCriticalI 	61297429784002 forwardInstIDCode:0001
+14:19:51.553 	INFO 	transaction.cpp    	2263 	printCriticalI 	61297429784002 routingTag:48483899
+14:19:51.553 	INFO 	transaction.cpp    	2267 	printCriticalI 	61297429784002 routingType:CARD_BASED
+14:19:51.554 	INFO 	transaction.cpp    	2271 	printCriticalI 	61297429784002 sourceQueue:P10007
+14:19:51.554 	INFO 	transaction.cpp    	2275 	printCriticalI 	61297429784002 AccountType:00
+14:19:51.554 	INFO 	transaction.cpp    	2295 	printCriticalI 	61297429784002 timeLocal: 141832
+14:19:51.554 	INFO 	transaction.cpp    	2299 	printCriticalI 	61297429784002 dateLocal: 20251024
+14:19:51.554 	INFO 	transaction.cpp    	2303 	printCriticalI 	61297429784002 dateSettlment: 20250623
+14:19:51.554 	INFO 	transaction.cpp    	2307 	printCriticalI 	61297429784002 merchantType: 0007
+14:19:51.554 	INFO 	transaction.cpp    	2311 	printCriticalI 	61297429784002 networkInternationalID: 000
+14:19:51.554 	INFO 	transaction.cpp    	2339 	printCriticalI 	61297429784002 recInstIDCode: 0001
+14:19:51.554 	INFO 	transaction.cpp    	0100 	processRequest 	61297429784002 Processing new message...[0200]
+14:19:51.554 	INFO 	transaction.cpp    	0114 	processRequest 	61297429784002 Masking Message Object
+14:19:51.554 	INFO 	transaction.cpp    	4254 	maskMessage    	61297429784002 Masked values filled successfully
+14:19:51.555 	INFO 	imd.cpp            	0327 	getIMD         	61297429784002 Bin Max Range is 11
+14:19:51.555 	INFO 	imd.cpp            	0333 	getIMD         	61297429784002 Bin Min Range is 6
+14:19:51.555 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.555 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:IMD_48483899
+14:19:51.555 	INFO 	imd.cpp            	0351 	getIMD         	61297429784002 BIN [48483899]
+14:19:51.555 	INFO 	imd.cpp            	0358 	getIMD         	61297429784002 IMD Key [IMD_48483899] not found in Cache
+14:19:51.555 	INFO 	imd.cpp            	0373 	getIMD         	61297429784002 IMD Cutting
+14:19:51.555 	INFO 	imd.cpp            	0376 	getIMD         	61297429784002 BIN after cutting[4848389]
+14:19:51.555 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.555 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:IMD_4848389
+14:19:51.555 	INFO 	imd.cpp            	0351 	getIMD         	61297429784002 BIN [4848389]
+14:19:51.555 	INFO 	imd.cpp            	0358 	getIMD         	61297429784002 IMD Key [IMD_4848389] not found in Cache
+14:19:51.555 	INFO 	imd.cpp            	0373 	getIMD         	61297429784002 IMD Cutting
+14:19:51.555 	INFO 	imd.cpp            	0376 	getIMD         	61297429784002 BIN after cutting[484838]
+14:19:51.555 	INFO 	imd.cpp            	0351 	getIMD         	61297429784002 BIN [484838]
+14:19:51.555 	INFO 	imd.cpp            	0353 	getIMD         	61297429784002 IMD Found
+14:19:51.555 	INFO 	onelinkbalanceinqu 	0040 	processRequest 	61297429784002 Proceed with Balance inquiry REQUEST transaction processing
+14:19:51.555 	INFO 	onelinkissnonfinan 	0203 	processRequest 	61297429784002 Proceed with REQUEST transaction processing
+14:19:51.556 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.556 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:CMSCHANNEL_BASE1
+14:19:51.556 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784002 Start execute
+14:19:51.558 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784002 End executed
+14:19:51.560 	INFO 	cmschannel.cpp     	0349 	fetchSingleRec 	61297429784002 CMSchannel loaded successfully
+14:19:51.560 	INFO 	cmschannel.cpp     	0180 	getCMSChannela 	61297429784002 channelType[1LINK]
+14:19:51.560 	INFO 	cmschannel.cpp     	0181 	getCMSChannela 	61297429784002 channelCode[0007]
+14:19:51.560 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61297429784002 Procedure name: IRIS_CMS.PKGTRANSACTION.GETCCADATABYPAN
+14:19:51.565 	INFO 	dbconnmgr.cpp      	0875 	dbHitForStored 	61297429784002 Number of rows returned from database = 0
+14:19:51.565 	ERROR 	cca.cpp            	0393 	initialize     	61297429784002 Card, Customer, Account information not found for relationshipID = [484838**********=****] , channelID = [0007]
+14:19:51.566 	ERROR 	onelinkiss.cpp     	2321 	performCustome 	61297429784002 Customer validation failed, rejecting transaction
+14:19:51.566 	ERROR 	onelinkissnonfinan 	0207 	processRequest 	61297429784002 Failed to perform Customer & Channel Validations
+14:19:51.566 	INFO 	transaction.cpp    	1685 	insertTransact 	61297429784002 Insert transaction message in in-memory database
+14:19:51.566 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.566 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:TransactionProfileTimeOut_30-422-401
+14:19:51.566 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.566 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:TransactionProfileTimeOut_30-401
+14:19:51.566 	INFO 	transactionprofile 	0427 	fetchChannelsT 	61297429784002 Loading channel timeouts
+14:19:51.567 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784002 Start execute
+14:19:51.570 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784002 End executed
+14:19:51.572 	INFO 	transactionprofile 	0464 	fetchChannelsT 	61297429784002 Loading channel timeouts
+14:19:51.572 	INFO 	transactionprofile 	0478 	fetchChannelsT 	61297429784002 channel type is = [443] , Message Type = [0200] , Source channel is = [ ] , tranCode = [30] , timeout = [30]
+14:19:51.572 	INFO 	transactionprofile 	0464 	fetchChannelsT 	61297429784002 Loading channel timeouts
+14:19:51.572 	INFO 	transactionprofile 	0478 	fetchChannelsT 	61297429784002 channel type is = [401] , Message Type = [0200] , Source channel is = [ ] , tranCode = [30] , timeout = [30]
+14:19:51.572 	INFO 	transactionprofile 	0464 	fetchChannelsT 	61297429784002 Loading channel timeouts
+14:19:51.573 	INFO 	transactionprofile 	0478 	fetchChannelsT 	61297429784002 channel type is = [445] , Message Type = [0200] , Source channel is = [ ] , tranCode = [30] , timeout = [30]
+14:19:51.573 	INFO 	transactionprofile 	0464 	fetchChannelsT 	61297429784002 Loading channel timeouts
+14:19:51.573 	INFO 	transactionprofile 	0478 	fetchChannelsT 	61297429784002 channel type is = [446] , Message Type = [0200] , Source channel is = [ ] , tranCode = [30] , timeout = [30]
+14:19:51.573 	INFO 	transactionprofile 	0464 	fetchChannelsT 	61297429784002 Loading channel timeouts
+14:19:51.573 	INFO 	transactionprofile 	0478 	fetchChannelsT 	61297429784002 channel type is = [444] , Message Type = [0200] , Source channel is = [ ] , tranCode = [30] , timeout = [30]
+14:19:51.573 	INFO 	transactionprofile 	0597 	getTimeoutValu 	61297429784002 Timeout Value found for = [30-401] = [30]
+14:19:51.574 	INFO 	transactionstore.c 	0298 	addTransaction 	61297429784002 Message as it is dumped into the internal database trxDateTime = [20250****40032]
+14:19:51.574 	INFO 	transactionstore.c 	0300 	addTransaction 	61297429784002 srcChannelId =  [422] , srcChannelKey =   [484838**********20250****40032148207]
+14:19:51.574 	INFO 	transactionstore.c 	0301 	addTransaction 	61297429784002 destChannelId = [401] , dstChannelKey = [484838**********20250****40032148207]
+14:19:51.575 	INFO 	transactionstore.c 	0363 	addTransaction 	61297429784002 Transaction [iris:txn:484838**********20250****40032148207] successfully inserted in redis
+14:19:51.575 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61297429784002 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.GETTRANLOGID
+14:19:51.577 	ERROR 	dbconnmgr.cpp      	0909 	dbHitForStored 	61297429784002 No data found
+14:19:51.577 	INFO 	transaction.cpp    	1730 	insertTransact 	61297429784002 Successfully inserted transaction in-memory database
+14:19:51.578 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.578 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:RESPONSECODEMAPPING_OUTGOING_1LINKISO_0007057
+14:19:51.578 	INFO 	onelinkiss.cpp     	1546 	processRejecti 	61297429784002 Inserting transaction in database
+14:19:51.578 	INFO 	dbconnmgr.cpp      	0765 	dbHitForStored 	61297429784002 Procedure name: IRIS_TRANSACTION.TRANSACTIONLOG.INSERTTRAN
+14:19:51.587 	INFO 	transaction.cpp    	0717 	insertTransact 	61297429784002 Transaction with id [811] inserted successfully
+14:19:51.587 	INFO 	transaction.cpp    	2691 	sendToAcquirer 	61297429784002 ResponseCode = [057]
+14:19:51.587 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.587 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+14:19:51.589 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	61297429784002 Payment Network Record got and FRMS Mode = []
+14:19:51.589 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.589 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:Configuration_FRMSV2
+14:19:51.589 	ERROR 	configuration.cpp  	0201 	getParamValue  	61297429784002 Could not find corresponding parameter for key = [V2FRMS]
+14:19:51.589 	INFO 	translationmgr.cpp 	0460 	getTranslator  	61297429784002 Attaching library ./lib/libtranslator1linkiso.so
+14:19:51.589 	INFO 	translationmgr.cpp 	1196 	processOutgoin 	61297429784002 Setting message format [1linkiso]
+14:19:51.589 	INFO 	message.cpp        	1675 	printMessageSt 	61297429784002 Message Stamp = [20250****40032148207529714188221484838**********]
+14:19:51.590 	INFO 	message.cpp        	1676 	printMessageSt 	61297429784002 DateTime = [20250****40032]
+14:19:51.590 	INFO 	message.cpp        	1677 	printMessageSt 	61297429784002 Stan [148207]
+14:19:51.590 	INFO 	message.cpp        	1678 	printMessageSt 	61297429784002 RRN [529714188221]
+14:19:51.590 	INFO 	translator.cpp     	0458 	ProcessOutgoin 	61297429784002 STEP 1: Institution based customization done successfully
+14:19:51.590 	INFO 	translator.cpp     	1586 	mapField       	61297429784002 Mapping found successfully for [MERCHANT_TYPE] value = [0007], mapped value = [0007]
+14:19:51.590 	ERROR 	translator.cpp     	1544 	mapField       	61297429784002 Failed finding default mapping for [RESPONSE_CODE] value = [0007*], mapped value = []
+14:19:51.590 	ERROR 	translator.cpp     	1576 	mapField       	61297429784002 Failed finding default mapping for [RESPONSE_CODE]
+14:19:51.590 	INFO 	translator1linkiso 	0626 	setProcessingC 	61297429784002 tranCode [30]
+14:19:51.590 	ERROR 	translator1linkiso 	0670 	setProcessingC 	61297429784002 Transaction code not supported
+14:19:51.590 	ERROR 	translator1linkiso 	1332 	setOriginalDat 	61297429784002 Unable to make original data elements, cannot send reversal
+14:19:51.590 	INFO 	translator.cpp     	0467 	ProcessOutgoin 	61297429784002 STEP 2: Outgoing fields mapped successfully
+14:19:51.590 	INFO 	translator.cpp     	0489 	ProcessOutgoin 	61297429784002 STEP 3: Transaction specific customization done successfully
+14:19:51.590 	INFO 	translator.cpp     	0606 	buildSubFields 	61297429784002 Build sub fields, calling Base
+14:19:51.590 	INFO 	translator.cpp     	0498 	ProcessOutgoin 	61297429784002 STEP 4: Subfields built successfully
+14:19:51.590 	INFO 	translatoriso.cpp  	0061 	buildMessage   	61297429784002 Start building message
+14:19:51.590 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 LLVariable  ->ASCII ->Length = [18], Position = [2]
+14:19:51.590 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-2 PAN [18][484838**********]LLVariable Encoded[ASCII]
+14:19:51.590 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [6], Position = [18]
+14:19:51.590 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-3 PROCESSING_CODE [6][300000]Fixed Encoded[ASCII]
+14:19:51.590 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [12], Position = [24]
+14:19:51.590 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-4 AMOUNT_TRANSACTION [12][000000000000]Fixed Encoded[ASCII]
+14:19:51.590 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [10], Position = [36]
+14:19:51.590 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-7 TRANSMISSION_DATE_TIME [10][0****40032]Fixed Encoded[ASCII]
+14:19:51.590 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-8
+14:19:51.590 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-9
+14:19:51.590 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-10
+14:19:51.590 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [6], Position = [46]
+14:19:51.590 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-11 SYSTEM_TRACE_AUDIT_NUMBER [6][148207]Fixed Encoded[ASCII]
+14:19:51.590 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [6], Position = [52]
+14:19:51.590 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-12 TIME_LOCAL_TRANSACTION [6][141832]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [4], Position = [58]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-13 DATE_LOCAL_TRANSACTION [4][1024]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [4], Position = [62]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-14 DATE_EXPIRY [4][****]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [4], Position = [66]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-15 DATE_SETTLEMENT [4][0623]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-17
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [4], Position = [70]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-18 MERCHANT_TYPE [4][0007]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-19
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-20
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-21
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [3], Position = [74]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-22 POS_ENTRY_MODE [3][901]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-23
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [3], Position = [77]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-24 NETWORK_INTERNATIONAL_IDENTIFIER [3][001]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-25
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-27
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-29
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-30
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-31
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 LLVariable  ->ASCII ->Length = [13], Position = [82]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-32 ACQ_INSTITUTION_ID_CODE [13][48483800000]LLVariable Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 LLVariable  ->ASCII ->Length = [8], Position = [95]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-33 FORWARD_INSTITUTION_ID_CODE [8][484838]LLVariable Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-34
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 LLVariable  ->ASCII ->Length = [32], Position = [103]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-35 TRACK2_DATA [32][484838**********D****22611888F]LLVariable Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [12], Position = [133]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-37 RETRIEVAL_REFERENCE_NUMBER [12][529714188221]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [2], Position = [145]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-39 RESPONSE_CODE [2][057]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-40
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [8], Position = [147]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-41 CARD_ACCEPTOR_TERMINAL_ID [8][35864852]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [15], Position = [155]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-42 CARD_ACCEPTOR_ID_CODE [15][3586000014852  ]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [40], Position = [170]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-43 CARD_ACCEPTOR_NAME_LOCATION [40][pakistan-----------------karachi------US]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-46
+14:19:51.591 	INFO 	translatoriso.cpp  	1052 	buildField     	61297429784002 tempField = [0007]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 LLLVariable  ->ASCII ->Length = [7], Position = [213]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-47 MERCHANT_CATEGORY_CODE [7][0007]LLLVariable Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [3], Position = [217]
+14:19:51.591 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-49 CURRENCY_CODE_TRANSACTION [3][484]Fixed Encoded[ASCII]
+14:19:51.591 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-51
+14:19:51.591 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [16], Position = [220]
+14:19:51.592 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-52 PIN_DATA [16][889D2E025691687C]Fixed Encoded[ASCII]
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-53
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-56
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-57
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-58
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-59
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-62
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-63
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-64
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-65
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-66
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-67
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-68
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-69
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-71
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-72
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-73
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-74
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-75
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-76
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-77
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-78
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-79
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-80
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-81
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-82
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-83
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-84
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-85
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-86
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-87
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-88
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-89
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-91
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-92
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-93
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-94
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-96
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-97
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-98
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-99
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-100
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-101
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-104
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-105
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-106
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-107
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-108
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-109
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-110
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-111
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-112
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-113
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-114
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-115
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-116
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-118
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-119
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-121
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-122
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-123
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-124
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-125
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-126
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-127
+14:19:51.592 	INFO 	translatoriso.cpp  	0777 	buildMsgFields 	61297429784002 Not required DE-128
+14:19:51.592 	INFO 	translatoriso.cpp  	1499 	buildBitmap    	61297429784002 Building bitmap
+14:19:51.592 	INFO 	translatoriso.cpp  	1535 	buildBitmap    	61297429784002 Bitmap [0111001000111110010001010000000110101010111000101001000000000000]
+14:19:51.592 	INFO 	translatoriso.cpp  	0108 	buildMessage   	61297429784002 Bitmap built successfully
+14:19:51.592 	INFO 	translatoriso.cpp  	1251 	buildField     	61297429784002 Fixed     ->ASCII ->Length = [4], Position = [0]
+14:19:51.592 	INFO 	translatoriso.cpp  	1264 	buildField     	61297429784002 DE-1 MESSAGE_TYPE [4][0210]Fixed Encoded[ASCII]
+14:19:51.592 	INFO 	translatoriso.cpp  	0118 	buildMessage   	61297429784002 Header built successfully
+14:19:51.592 	INFO 	translatoriso.cpp  	0120 	buildMessage   	61297429784002 Message built successfully
+14:19:51.592 	INFO 	translatoriso.cpp  	0127 	buildMessage   	61297429784002 Header Length is = [4]
+14:19:51.592 	INFO 	translatoriso.cpp  	0130 	buildMessage   	61297429784002 Message Fields Length is = [244]
+14:19:51.592 	INFO 	translatoriso.cpp  	0133 	buildMessage   	61297429784002 Message Length is = [248]
+14:19:51.592 	INFO 	translator.cpp     	0509 	ProcessOutgoin 	61297429784002 Message built successfully
+14:19:51.593 	INFO 	onelinkiss.cpp     	4711 	sendToAcquirer 	61297429784002 Removing transaction from in-memory database
+14:19:51.594 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.594 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:ProAlert_05730CUSTOMERen
+14:19:51.594 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61297429784002 Loading Product Alerts
+14:19:51.595 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784002 Start execute
+14:19:51.596 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784002 End executed
+14:19:51.597 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61297429784002 No rows returned
+14:19:51.597 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61297429784002 Alerts Record not found for Key [Key =05730CUSTOMER]
+14:19:51.597 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.597 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:ProAlert_05730CUSTOMER
+14:19:51.597 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61297429784002 Loading Product Alerts
+14:19:51.597 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784002 Start execute
+14:19:51.598 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784002 End executed
+14:19:51.598 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61297429784002 No rows returned
+14:19:51.598 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61297429784002 Alerts Record not found for Key [Key =05730CUSTOMER]
+14:19:51.598 	INFO 	transactionmgr.cpp 	1381 	sendAlert      	61297429784002 Customer Alerts not configured for Product ID[]
+14:19:51.598 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.599 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:ProAlert_05730BENEFICIARYen
+14:19:51.599 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61297429784002 Loading Product Alerts
+14:19:51.599 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784002 Start execute
+14:19:51.599 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784002 End executed
+14:19:51.600 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61297429784002 No rows returned
+14:19:51.600 	ERROR 	productalerts.cpp  	0260 	getAlertsDetai 	61297429784002 Alerts Record not found for Key [Key =05730BENEFICIARY]
+14:19:51.600 	ERROR 	redisconnectionmgr 	0864 	getValue       	61297429784002 No record found
+14:19:51.600 	ERROR 	rediscache.cpp     	0066 	find           	61297429784002 Unable to find key:ProAlert_05730BENEFICIARY
+14:19:51.600 	INFO 	productalerts.cpp  	0132 	fetchFromDB    	61297429784002 Loading Product Alerts
+14:19:51.600 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	61297429784002 Start execute
+14:19:51.601 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	61297429784002 End executed
+14:19:51.602 	ERROR 	productalerts.cpp  	0163 	fetchFromDB    	61297429784002 No rows returned
+14:19:51.602 	ERROR 	productalerts.cpp  	0291 	getAlertsDetai 	61297429784002 Alerts Record not found for Key [Key =05730BENEFICIARY]
+14:19:51.602 	INFO 	transactionmgr.cpp 	1397 	sendAlert      	61297429784002 Beneficiary Alerts not configured for Product ID[]
+14:19:51.602 	INFO 	transactionprocess 	1020 	startParsing   	61297429784002 THREADTIME 00:00:00.060584
+14:19:51.602 	INFO 	transactionprocess 	1122 	checkUpdate    	61297429784002 Updated datetime in shared memory is [20251024141714], transactions were loaded at [20251024141714]
+14:19:51.603 	INFO 	translationmgr.cpp 	1495 	checkUpdate    	61297429784002 Updated datetime in shared memory is [20251024141714], transactions were loaded at [20251024141714]

@@ -1,0 +1,44 @@
+15:26:16.767 	INFO 	redisstreamsmgr.cp 	0043 	RedisStreams   	 Creating new instance of Redis QueueMgr
+15:26:16.768 	INFO 	dbconnmgr.cpp      	0160 	DBConnMgr      	 Connection pool created with Minimum connections [1] Maximum connections [50] Connection increments [1] and Retry counts [5]
+15:26:16.802 	INFO 	connectionstring.c 	0506 	parseConnectio 	 Database credentials: iris/******@10.100.53.26:1521/CMSATM
+15:26:16.923 	INFO 	event.cpp          	0067 	initialize     	 IP 127.0.0.1 Machine localhost.localdomain
+15:26:16.924 	INFO 	redisstreamsmgr.cp 	0043 	RedisStreams   	 Creating new instance of Redis QueueMgr
+15:26:16.924 	INFO 	redisstreamsmgr.cp 	0503 	checkConnectio 	 Connecting to redis
+15:26:16.924 	INFO 	redisstreamsmgr.cp 	0564 	connectStream  	 Connecting to redis host [127.0.0.1], port [1337]
+15:26:16.936 	INFO 	redisstreamsmgr.cp 	0581 	connectStream  	 Successfully connected to redis
+15:26:16.944 	INFO 	alert_main.cpp     	0110 	startAlerts    	 Starting ALERTS
+15:26:16.950 	ERROR 	redisconnection.cp 	0024 	RedisConnectio 	 Failed connecting to redis
+15:26:16.950 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.952 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.953 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.955 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.956 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.957 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.958 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.958 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.959 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.959 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.960 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.961 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.961 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.962 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.962 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.963 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.964 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.964 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.965 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.968 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.969 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.969 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.970 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.979 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:16.987 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:16.988 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:17.0 	INFO 	dbconnmgr.cpp      	0569 	dbHitForMultip 	 Start execute
+15:26:17.11 	INFO 	dbconnmgr.cpp      	0578 	dbHitForMultip 	 End executed
+15:26:17.14 	ERROR 	ientity.h          	0078 	getMakerObject 	 Failed to load custom library from database
+15:26:17.14 	INFO 	alerts.cpp         	0082 	initialize     	 Running ALERT Retriever thread
+15:26:17.14 	INFO 	alerts.cpp         	0084 	initialize     	 ALERTS STARTING
+15:26:17.14 	INFO 	alerts.cpp         	0086 	initialize     	 Sync from Q thread started
+15:26:17.15 	INFO 	redisstreamreader. 	0204 	connect        	 Connecting redis stream reader on [127.0.0.1:1337]
+15:26:17.15 	INFO 	redisstreamreader. 	0213 	connect        	 127.0.0.1

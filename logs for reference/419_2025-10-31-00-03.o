@@ -1,0 +1,95 @@
+00:03:32.472 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:03:32.472 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+00:03:32.475 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+00:03:32.475 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:03:32.475 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+00:03:32.475 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+00:03:32.475 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:03:32.475 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+00:03:32.475 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+00:03:32.476 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+00:03:32.476 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+00:03:32.476 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [41] to 241
+00:03:32.477 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+00:03:32.477 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000
+11:45:51.486 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+11:45:51.486 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [4]
+11:45:51.486 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+11:45:51.486 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+11:45:51.488 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251031064313000525] updated successfully.
+11:46:41.67 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:46:41.67 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+11:46:41.71 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+11:46:41.72 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:46:41.72 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+11:46:41.72 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+11:46:41.72 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:46:41.72 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+11:46:41.72 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+11:46:41.74 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+11:46:41.75 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+11:46:41.75 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [42] to 241
+11:46:41.75 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:46:41.75 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000
+11:46:41.79 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+11:46:41.79 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [3]
+11:46:41.79 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+11:46:41.79 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+11:46:41.81 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251031064313000525] updated successfully.
+11:47:31.696 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:47:31.696 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+11:47:31.699 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+11:47:31.700 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:47:31.700 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+11:47:31.700 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+11:47:31.700 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:47:31.700 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+11:47:31.700 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+11:47:31.701 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+11:47:31.701 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+11:47:31.701 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [42] to 241
+11:47:31.702 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:47:31.702 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000
+11:47:31.704 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+11:47:31.704 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [2]
+11:47:31.704 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+11:47:31.704 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+11:47:31.705 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251031064313000525] updated successfully.
+11:48:21.968 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:48:21.968 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+11:48:21.969 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+11:48:21.970 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:48:21.970 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+11:48:21.970 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+11:48:21.970 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:48:21.970 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+11:48:21.970 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+11:48:21.970 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+11:48:21.971 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+11:48:21.971 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [42] to 241
+11:48:21.971 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:48:21.971 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000
+11:48:21.973 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+11:48:21.973 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [1]
+11:48:21.973 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+11:48:21.973 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+11:48:21.974 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251031064313000525] updated successfully.
+11:49:11.140 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:49:11.140 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:PAYMENTNETWORK_IRIS_FMS_MODE
+11:49:11.142 	INFO 	paymentnetwork.cpp 	0177 	getFRMSMode    	 Payment Network Record got and FRMS Mode = []
+11:49:11.142 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:49:11.142 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_FRMSV2
+11:49:11.142 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [V2FRMS]
+11:49:11.142 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:49:11.142 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:Configuration_CUSTOMSAF_ROUTING_ALGO_ALLOWED_401
+11:49:11.142 	ERROR 	configuration.cpp  	0201 	getParamValue  	 Could not find corresponding parameter for key = [SAF_ROUTING_ALGO_ALLOWED_401CUSTOM]
+11:49:11.143 	INFO 	channelmgr.cpp     	0560 	getDestination 	 Failsafe & default handling
+11:49:11.143 	INFO 	loadbalancer.cpp   	0120 	doWork         	 Comms Status [1], processing status [1], processing Mode [1]
+11:49:11.143 	INFO 	saf.cpp            	0867 	sendSAFToIssue 	 Sending SAFID = [42] to 241
+11:49:11.144 	ERROR 	redisconnectionmgr 	0864 	getValue       	 No record found
+11:49:11.144 	ERROR 	rediscache.cpp     	0066 	find           	 Unable to find key:RESPONSECODEMAPPING_OUTGOING_241_000
+11:49:11.146 	INFO 	saf.cpp            	1007 	sendSAFToIssue 	 SAF successfully sent to HOST
+11:49:11.146 	INFO 	saf.cpp            	1017 	sendSAFToIssue 	 Updating SAF status to SENT_TO_HOST and decrementing send attempts to [0]
+11:49:11.146 	INFO 	safstore.cpp       	0075 	updateSAFRecor 	 Updating SAF data in in-memory DB
+11:49:11.146 	INFO 	safstore.cpp       	0087 	updateSAFRecor 	 Updating transaction in redis db
+11:49:11.148 	INFO 	safstore.cpp       	0109 	updateSAFRecor 	 SAF record with channelkey = [484838**********20251031064313000525] updated successfully.
