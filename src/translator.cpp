@@ -80,9 +80,17 @@ bool Translator::ProcessOutgoing(Message& msg,
 }
 
 bool Translator::CheckCondition(const std::string& condition, const std::string& threadId) {
-    // Simulate condition check - often fails
-    LOG_ERROR("translator.cpp", 1654, "CheckCondition", threadId, "Condition unmatched");
-    return false;
+    // Define valid conditions
+    std::vector<std::string> validConditions = {"condition1", "condition2"};
+    
+    // Check if the condition is valid
+    if (std::find(validConditions.begin(), validConditions.end(), condition) != validConditions.end()) {
+        LOG_INFO("translator.cpp", 1654, "CheckCondition", threadId, "Condition matched");
+        return true;
+    } else {
+        LOG_ERROR("translator.cpp", 1654, "CheckCondition", threadId, "Condition unmatched");
+        return false;
+    }
 }
 
 bool Translator::mapField(const std::string& fieldName, 
