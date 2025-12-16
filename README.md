@@ -52,3 +52,65 @@ g++ -std=c++11 -I. *.cpp -o payment_switch
 ```
 
 The simulation will output logs in the same format as the original system.
+
+---
+
+## 🤖 AI Log Analyzer Agent
+
+This repository includes an AI-powered agent that analyzes log files, identifies errors, proposes fixes, and creates GitHub Pull Requests.
+
+### Quick Start
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run setup wizard
+python -m agent.main setup
+
+# 3. Analyze a log file
+python -m agent.main analyze "logs for reference/log_sample.o"
+```
+
+### Features
+
+- **Error Detection**: Parses logs and extracts ERROR/CRITICAL entries
+- **AI Analysis**: Uses Google Gemini to analyze root causes
+- **Smart Classification**: Distinguishes code bugs from config/data issues
+- **Fix Generation**: Proposes code changes or config/data fixes
+- **GitHub Integration**: Creates PRs with fixes automatically
+
+### Commands
+
+| Command | Description |
+|---------|-------------|
+| `analyze <log>` | Analyze a log file interactively |
+| `analyze <log> --dry-run` | Analyze without creating PRs |
+| `analyze <log> --batch` | List errors without interactive prompts |
+| `config` | Show current configuration |
+| `setup` | Interactive setup wizard |
+
+### Configuration
+
+Copy `.env.example` to `.env` and configure:
+
+```env
+GOOGLE_API_KEY=your_gemini_api_key    # Get from: https://aistudio.google.com/apikey
+GITHUB_TOKEN=your_github_token        # Create at: https://github.com/settings/tokens
+GITHUB_REPO=owner/repo                 # Your repository
+```
+
+### Architecture
+
+```
+agent/
+├── main.py          # CLI entry point
+├── graph.py         # LangGraph state machine
+├── nodes/           # Processing nodes
+│   ├── log_parser.py
+│   ├── error_analyzer.py
+│   ├── fix_generator.py
+│   └── github_integration.py
+├── models/          # Data models
+└── prompts/         # LLM prompts
+```
