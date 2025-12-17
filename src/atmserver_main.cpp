@@ -1,31 +1,3 @@
-/**
- * @file atmserver_main.cpp
- * @brief ATM Server Main implementation
- * 
- * Reconstructed from log file analysis.
- */
-
-#include "atmserver_main.h"
-
-ATMServerMain::ATMServerMain() 
-    : m_redisHost("127.0.0.1")
-    , m_redisPort(1337)
-    , m_pollingTime(0)
-    , m_pollingCounter(0) {
-}
-
-ATMServerMain::~ATMServerMain() {
-}
-
-bool ATMServerMain::connectToRedis(const std::string& host, int port) {
-    m_redisHost = host;
-    m_redisPort = port;
-    
-    LOG_INFO("atmserver_main.cpp", "0377", "connectToRedis", "",
-             host + " , port [" + std::to_string(port) + "]");
-    return true;
-}
-
 int ATMServerMain::main() {
     LOG_INFO("atmserver_main.cpp", "0479", "main", "", "Run Program");
     
@@ -40,6 +12,12 @@ int ATMServerMain::main() {
         LOG_ERROR("atmserver_main.cpp", "0582", "main", "",
                   "Polling not defined in param, setting default polling counter");
         m_pollingCounter = 10;
+    }
+    
+    // Validate endpoint data before running the program
+    if (!validateEndpoint(m_redisHost)) {
+        LOG_ERROR("atmserver_main.cpp", "0590", "main", "", "Endpoint is empty, cannot run program");
+        return -1;
     }
     
     return 0;
