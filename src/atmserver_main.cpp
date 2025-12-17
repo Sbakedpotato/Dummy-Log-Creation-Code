@@ -17,11 +17,25 @@ ATMServerMain::ATMServerMain()
 ATMServerMain::~ATMServerMain() {
 }
 
+// New function to validate endpoint
+bool ATMServerMain::validateEndpoint(const std::string& endpoint) {
+    // Check if endpoint is empty
+    if (endpoint.empty()) {
+        LOG_ERROR("atmserver_main.cpp", "0568", "validateEndpoint", "", "Endpoint is empty");
+        return false;
+    }
+    return true;
+}
+
 bool ATMServerMain::connectToRedis(const std::string& host, int port) {
+    // Validate endpoint before connecting to Redis
+    if (!validateEndpoint(host)) {
+        return false;
+    }
     m_redisHost = host;
     m_redisPort = port;
     
-    LOG_INFO("atmserver_main.cpp", "0377", "connectToRedis", "",
+    LOG_INFO("atmserver_main.cpp", "0377", "connectToRedis", "", 
              host + " , port [" + std::to_string(port) + "]");
     return true;
 }
