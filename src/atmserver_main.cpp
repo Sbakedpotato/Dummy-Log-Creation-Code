@@ -21,6 +21,12 @@ bool ATMServerMain::connectToRedis(const std::string& host, int port) {
     m_redisHost = host;
     m_redisPort = port;
     
+    // Check if endpoint is set before connecting to Redis
+    if (m_endpoint.empty()) {
+        LOG_ERROR("atmserver_main.cpp", "0378", "connectToRedis", "", "Endpoint is not set");
+        return false;
+    }
+    
     LOG_INFO("atmserver_main.cpp", "0377", "connectToRedis", "",
              host + " , port [" + std::to_string(port) + "]");
     return true;
