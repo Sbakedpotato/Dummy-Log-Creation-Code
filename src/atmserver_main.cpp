@@ -18,11 +18,31 @@ ATMServerMain::~ATMServerMain() {
 }
 
 bool ATMServerMain::connectToRedis(const std::string& host, int port) {
+    if (host.empty()) {
+        // Input validation: Check if the host is empty
+        LOG_ERROR("atmserver_main.cpp", "0377", "connectToRedis", "",
+                 "Host cannot be empty");
+        return false;
+    }
     m_redisHost = host;
     m_redisPort = port;
     
     LOG_INFO("atmserver_main.cpp", "0377", "connectToRedis", "",
              host + " , port [" + std::to_string(port) + "]");
+    return true;
+}
+
+// New function to process commands with endpoint validation
+bool ATMServerMain::processCommand(const std::string& endpoint) {
+    if (endpoint.empty()) {
+        // Input validation: Check if the endpoint is empty
+        LOG_ERROR("atmserver_main.cpp", "0479", "processCommand", "",
+                 "Endpoint cannot be empty");
+        return false;
+    }
+    // Process the command with the valid endpoint
+    LOG_INFO("atmserver_main.cpp", "0479", "processCommand", "",
+             "Processing command with endpoint: " + endpoint);
     return true;
 }
 
