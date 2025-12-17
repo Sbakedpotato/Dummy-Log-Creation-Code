@@ -18,6 +18,12 @@ ATMServerMain::~ATMServerMain() {
 }
 
 bool ATMServerMain::connectToRedis(const std::string& host, int port) {
+    if (host.empty()) {
+        LOG_ERROR("atmserver_main.cpp", "0377", "connectToRedis", "",
+                  "Host is empty, cannot connect to Redis");
+        return false;
+    }
+    
     m_redisHost = host;
     m_redisPort = port;
     
@@ -40,6 +46,13 @@ int ATMServerMain::main() {
         LOG_ERROR("atmserver_main.cpp", "0582", "main", "",
                   "Polling not defined in param, setting default polling counter");
         m_pollingCounter = 10;
+    }
+    
+    // Check for empty endpoint
+    if (m_redisHost.empty()) {
+        LOG_ERROR("atmserver_main.cpp", "0590", "main", "",
+                  "Endpoint is empty, cannot proceed");
+        return -1;
     }
     
     return 0;
