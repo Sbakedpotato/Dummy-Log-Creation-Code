@@ -44,3 +44,46 @@ int ATMServerMain::main() {
     
     return 0;
 }
+
+
+// === atmserver_main.cpp ===
+/**
+ * @file atmserver_main.cpp
+ * @brief ATM Server Main implementation
+ * 
+ * Reconstructed from log file analysis.
+ */
+
+#include "atmserver_main.h"
+
+ATMServerMain::ATMServerMain() 
+    : m_redisHost("127.0.0.1")
+    , m_redisPort(1337)
+    , m_pollingTime(0)
+    , m_pollingCounter(0) {
+}
+
+ATMServerMain::~ATMServerMain() {
+}
+
+// New function to validate endpoint
+bool ATMServerMain::validateEndpoint(const std::string& endpoint) {
+    if (endpoint.empty()) {
+        LOG_ERROR("atmserver_main.cpp", "0568", "validateEndpoint", "", "Endpoint is empty");
+        return false;
+    }
+    return true;
+}
+
+bool ATMServerMain::connectToRedis(const std::string& host, int port) {
+    if (!validateEndpoint(host)) {
+        // Do not connect to Redis if endpoint is invalid
+        return false;
+    }
+    m_redisHost = host;
+    m_redisPort = port;
+    
+    LOG_INFO("atmserver_main.cpp", "0377", "connectToRedis", "", 
+             host + " , port [" + std::to_string(port) + "]");
+    return true;
+}
