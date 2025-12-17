@@ -18,6 +18,11 @@ ATMServerMain::~ATMServerMain() {
 }
 
 bool ATMServerMain::connectToRedis(const std::string& host, int port) {
+    if (host.empty()) {
+        LOG_WARNING("atmserver_main.cpp", "0377", "connectToRedis", "",
+                   "Endpoint received is empty");
+        return false;
+    }
     m_redisHost = host;
     m_redisPort = port;
     
