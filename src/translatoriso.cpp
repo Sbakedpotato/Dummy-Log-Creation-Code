@@ -130,6 +130,15 @@ bool TranslatorISO::parseFields(const std::string& messageData,
     LOG_INFO("translatoriso.cpp", 263, "parseFields", threadId, 
              "DE-48 [ADDITIONAL_DATA_PRIVATE], value [D9] length = 1");
     
+    // Add a check for DE-55 length
+    if (messageData.length() > 0) {
+        std::string de55Value = messageData.substr(0, 255); // Assuming max length of 255 for DE-55
+        if (de55Value.length() > 0) {
+            LOG_INFO("translatoriso.cpp", 270, "parseFields", threadId, 
+                     "DE-55 [ICC_DATA], value [" + de55Value + "] length = [" + std::to_string(de55Value.length()) + "]");
+        }
+    }
+    
     return true;
 }
 
@@ -179,7 +188,7 @@ bool TranslatorISO::buildField(const std::string& fieldName,
     
     LOG_INFO("translatoriso.cpp", 1251, "buildField", threadId, 
              fieldType + "     ->" + encoding + "->Length = [" + std::to_string(length) + 
-             "], Position = [" + std::to_string(position) + "]");
+             "]", Position = [" + std::to_string(position) + "]");
     
     LOG_INFO("translatoriso.cpp", 1264, "buildField", threadId, 
              fieldName + " " + description + " [" + std::to_string(value.length()) + 
