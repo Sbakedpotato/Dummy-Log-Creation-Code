@@ -18,11 +18,28 @@ ATMServerMain::~ATMServerMain() {
 }
 
 bool ATMServerMain::connectToRedis(const std::string& host, int port) {
+    if (host.empty()) {
+        LOG_ERROR("atmserver_main.cpp", "0377", "connectToRedis", "",
+                  "Host cannot be empty");
+        return false;
+    }
     m_redisHost = host;
     m_redisPort = port;
     
     LOG_INFO("atmserver_main.cpp", "0377", "connectToRedis", "",
              host + " , port [" + std::to_string(port) + "]");
+    return true;
+}
+
+bool ATMServerMain::processCommand(const std::string& command, const std::string& endpoint) {
+    if (endpoint.empty()) {
+        LOG_ERROR("atmserver_main.cpp", "0600", "processCommand", "",
+                  "Endpoint cannot be empty");
+        return false;
+    }
+    // Process the command with the given endpoint
+    LOG_INFO("atmserver_main.cpp", "0601", "processCommand", "",
+             "Processing command: " + command + " with endpoint: " + endpoint);
     return true;
 }
 
