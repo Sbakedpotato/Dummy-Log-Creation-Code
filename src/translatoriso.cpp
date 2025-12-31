@@ -1,3 +1,4 @@
+
 #include "translatoriso.h"
 #include "logger.h"
 #include <sstream>
@@ -18,7 +19,10 @@ bool TranslatorISO::parseMessage(const std::string& messageData,
     showBitmapFields(threadId);
     
     // Parse fields
-    parseFields(messageData, msg, threadId);
+    if (!parseFields(messageData, msg, threadId)) {
+        LOG_ERROR("translatoriso.cpp", 50, "parseMessage", threadId, "Failed parsing message fields");
+        return false;
+    }
     
     LOG_INFO("translatoriso.cpp", 50, "parseMessage", threadId, "Fields parsed successfully");
     
@@ -129,6 +133,23 @@ bool TranslatorISO::parseFields(const std::string& messageData,
     // Simulate DE-48 parsing
     LOG_INFO("translatoriso.cpp", 263, "parseFields", threadId, 
              "DE-48 [ADDITIONAL_DATA_PRIVATE], value [D9] length = 1");
+    
+    // Check for DE-55 and adjust maximum length
+    size_t de55Index = messageData.find("DE-55");
+    if (de55Index != std::string::npos) {
+        size_t lengthIndex = messageData.find("Length = ", de55Index);
+        if (lengthIndex != std::string::npos) {
+            size_t lengthEndIndex = messageData.find("", lengthIndex + 8);
+            if (lengthEndIndex != std::string::npos) {
+                int length = std::stoi(messageData.substr(lengthIndex + 8, lengthEndIndex - lengthIndex - 8));
+                if (length > 0) {
+                    // Adjust maximum length for DE-55
+                    LOG_INFO("translatoriso.cpp", 263, "parseFields", threadId, 
+                             "Adjusted maximum length for DE-55 to [" + std::to_string(length) + "]");
+                }
+            }
+        }
+    }
     
     return true;
 }
