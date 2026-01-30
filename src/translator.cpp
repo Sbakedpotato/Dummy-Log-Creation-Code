@@ -19,8 +19,10 @@ bool Translator::ProcessIncoming(const std::string& messageData,
     
     // Map fields
     std::string mappedValue;
-    mapField("CAVV", "0", mappedValue, threadId);
-    mapField("ECIFlag", "*", mappedValue, threadId);
+    if (!messageData.empty()) {
+        mapField("CAVV", "0", mappedValue, threadId);
+        mapField("ECIFlag", "*", mappedValue, threadId);
+    }
     
     LOG_INFO("translator.cpp", 152, "ProcessIncomin", threadId, 
              "STEP 4: Incoming fields mapped successfully");
