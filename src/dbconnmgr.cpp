@@ -28,7 +28,8 @@ bool DBConnMgr::dbHitForStoredProcedure(const std::string& procedureName,
         return true;
     }
     
-    return true;
+    LOG_ERROR("dbconnmgr.cpp", 909, "dbHitForStored", threadId, "Unknown procedure");
+    return false;
 }
 
 bool DBConnMgr::dbHitForMultiple(const std::string& threadId) {
