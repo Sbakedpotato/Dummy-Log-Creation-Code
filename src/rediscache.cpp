@@ -14,7 +14,6 @@ bool RedisCache::find(const std::string& key, const std::string& threadId, std::
                   "Unable to find key:" + key);
         return false;
     }
-    
     return true;
 }
 
