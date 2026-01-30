@@ -8,6 +8,10 @@ RedisConnectionMgr& RedisConnectionMgr::getInstance() {
 
 bool RedisConnectionMgr::getValue(const std::string& key, const std::string& threadId, std::string& value) {
     // Simulate Redis lookup - most keys are not found in our simulation
+    if (key.empty()) {
+        LOG_ERROR("redisconnectionmgr", 864, "getValue", threadId, "Key is empty");
+        return false;
+    }
     LOG_ERROR("redisconnectionmgr", 864, "getValue", threadId, "No record found");
     return false;
 }
