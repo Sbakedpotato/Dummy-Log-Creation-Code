@@ -1,23 +1,20 @@
-#include "rediscache.h"
-#include "redisconnectionmgr.h"
-#include "logger.h"
+// rediscache.cpp
+#include <iostream>
+#include <unordered_map>
 
-RedisCache& RedisCache::getInstance() {
-    static RedisCache instance;
-    return instance;
+class RedisCache {
+public:
+    void addRecord(const std::string& key, const std::string& value);
+    std::string getRecord(const std::string& key);
+    // Other methods...
+};
+
+void RedisCache::addRecord(const std::string& key, const std::string& value) {
+    // Simulated adding record to cache
+    std::cout << "Adding record to cache: " << key << std::endl;
 }
 
-bool RedisCache::find(const std::string& key, const std::string& threadId, std::string& value) {
-    // Try to get from Redis connection manager
-    if (!RedisConnectionMgr::getInstance().getValue(key, threadId, value)) {
-        LOG_ERROR("rediscache.cpp", 91, "find", threadId, 
-                  "Unable to find key:" + key);
-        return false;
-    }
-    
-    return true;
-}
-
-bool RedisCache::store(const std::string& key, const std::string& value, const std::string& threadId) {
-    return RedisConnectionMgr::getInstance().setValue(key, value, threadId);
+std::string RedisCache::getRecord(const std::string& key) {
+    // Simulated retrieval of record from cache
+    return ""; // Placeholder for actual retrieval logic
 }
