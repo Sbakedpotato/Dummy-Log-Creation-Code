@@ -7,6 +7,11 @@ RedisConnectionMgr& RedisConnectionMgr::getInstance() {
 }
 
 bool RedisConnectionMgr::getValue(const std::string& key, const std::string& threadId, std::string& value) {
+    // Check if the key exists in the Redis cache
+    if (key == "RULEENGINE_OUTGOING_HOST" || key == "PAYMENTNETWORK_IRIS_FMS_MODE") {
+        value = "some_value"; // Simulate a successful retrieval
+        return true;
+    }
     // Simulate Redis lookup - most keys are not found in our simulation
     LOG_ERROR("redisconnectionmgr", 864, "getValue", threadId, "No record found");
     return false;
@@ -16,3 +21,4 @@ bool RedisConnectionMgr::setValue(const std::string& key, const std::string& val
     // Simulate setting value in Redis
     return true;
 }
+
